@@ -2,6 +2,7 @@
 @import url(projects-items/img-dem.css);
 @import url(projects-items/logo-dem.css);
 @import url(projects-items/font-dem.css);
+@import url(projects-items/sticky-footer.css);
 
 header {
   display: -webkit-box;
