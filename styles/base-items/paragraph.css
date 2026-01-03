@@ -1,0 +1,14 @@
+.paragraph {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0 12px;
+}

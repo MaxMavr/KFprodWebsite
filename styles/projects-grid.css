@@ -15,9 +15,7 @@
   -webkit-transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   -o-transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
-}
-
-.grid-container article {
+  
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,6 +54,7 @@
 }
 
 .grid-container article > a:nth-child(1) {
+  gap: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,7 +76,7 @@
 }
 
 .grid-container article.paragraph {
-  gap: 12px;
+  width: 100%;
   padding: 20px;
   position: relative;
 }

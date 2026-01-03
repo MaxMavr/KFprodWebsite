@@ -114,7 +114,6 @@ footer .copyright:hover {
   opacity: 1;
 }
 
-
 @media (max-width: 800px) {
   footer .hlink {
     display: none;

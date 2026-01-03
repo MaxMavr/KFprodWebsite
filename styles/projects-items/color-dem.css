@@ -7,6 +7,7 @@
   overflow: hidden;
   
   font-weight: normal;
+  font-feature-settings: "tnum";
 }
 
 .color:first-child {

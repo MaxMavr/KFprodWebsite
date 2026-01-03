@@ -1,0 +1,9 @@
+.two-columns {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 40px;
+}
+
+.two-columns img {
+  max-width: 100%;
+}

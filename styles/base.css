@@ -1,10 +1,13 @@
 @import url("base-items/fonts/fonts.css");
-@import url("base-items/colors.css");
+@import url("base-items/const.css");
 
 @import url("base-items/button.css");
 @import url("base-items/hlink.css");
 @import url("base-items/footer.css");
 @import url("base-items/pop-up.css");
+@import url("base-items/tag.css");
+@import url("base-items/two-columns.css");
+@import url("base-items/paragraph.css");
 
 * {
   -ms-touch-action: manipulation;
@@ -14,6 +17,7 @@
 html {
   overflow-y: scroll;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -23,7 +27,6 @@ body {
   background-color: var(--bg-color);
   font-family: Noah, Arial, sans-serif;
   min-height: 100vh;
-  overflow-x: hidden;
 }
 
 main {
@@ -39,13 +42,6 @@ main {
   max-width: 1600px;
   min-height: 80vh;
   margin: 40px auto 80px auto;
-}
-
-main > p.minor,
-main > p:not([class]),
-h2 {
-  width: 80%;
-  margin: 0 auto;
 }
 
 span:not([class]) {
@@ -83,7 +79,6 @@ h1 {
 }
 
 h2 {
-  margin-bottom: -30px;
   font-size: 48px;
   line-height: 1;
 }
@@ -97,14 +92,14 @@ p:not([class]) {
   font-size: 32px;
 }
 
-p .fun {
+.fun {
   opacity: 0;
   -webkit-transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   -o-transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
 }
 
-p:hover .fun {
+*:hover .fun {
   opacity: 100%;
 }
 
@@ -135,28 +130,43 @@ strong {
     font-size: 16px;
   }
 
-  span:not([class]) {
-    font-size: 16px;
+  h1,
+  .paragraph {
+    width: 100%;
   }
 
-  h2,
-  h1,
-  main > p:not([class]) {
-    width: 100%;
+  .fun {
+    display: none;
+  }
+
+  .two-columns {
+    grid-template-columns: 1fr;
   }
 }
 
 /* Полоса прокрутки */
 body::-webkit-scrollbar {
-  width: 3px;
+  width: 10px;
 }
+
 body::-webkit-scrollbar-track {
   background-color: #00000000;
   background-color: transparent;
   background-color: var(--scrollbar-bg-color);
 }
+
 body::-webkit-scrollbar-thumb {
   background-color: #231f2066;
   background-color: var(--scrollbar-color);
   border-radius: 20px;
 }
+
+/* ::selection {
+  background: var(--link-color);
+  opacity: 10%;
+}
+
+::-moz-selection {
+  background: var(--link-color);
+  opacity: 10%;
+} */

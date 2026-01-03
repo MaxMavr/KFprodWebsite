@@ -1,0 +1,16 @@
+.tag-container {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  padding: 6px 12px;
+  border-radius: 10px;
+  border: 1px solid #f2f3f51a; 
+  backdrop-filter: blur(20px);
+}
+
+.tag span {
+  opacity: 60%;
+}

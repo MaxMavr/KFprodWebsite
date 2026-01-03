@@ -90,5 +90,13 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+
+    width: 100vw;
+    max-width: 1920px;
+    align-self: center;
+  }
+
+  .font-demonstration {
+    border-radius: 0;
   }
 }

@@ -24,6 +24,8 @@ header {
   -moz-column-gap: 80px;
   column-gap: 80px;
   margin: 80px auto 0 auto;
+
+  z-index: 30;
 }
 
 header > div {
@@ -72,30 +74,9 @@ h1 {
   margin-left: auto;
 }
 
-.two-columns {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-}
-
-.two-columns img {
-  pointer-events: none;
-  max-width: 100%;
-}
-
-.two-columns > div {
-  display: flex;
-  gap: 12px;
-  flex-direction: column;
-}
-
 @media (max-width: 800px) {
   header .button-container {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-  }
-
-  .two-columns {
-    grid-template-columns: 1fr;
   }
 }
