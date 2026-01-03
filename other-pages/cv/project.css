@@ -4,10 +4,10 @@ main {
 
 h1 {
   font-size: 40px;
-  line-height: normal;
+  margin: 40px 0 0;
 }
 
-.resume-container {
+.cv-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 3fr;
@@ -15,7 +15,7 @@ h1 {
   gap: 40px;
 }
 
-.resume-container > section:nth-child(1) {
+.cv-container > section:nth-child(1) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,7 +30,7 @@ h1 {
   }
 }
 
-.resume-container > section:nth-child(2) {
+.cv-container > section:nth-child(2) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,7 +45,7 @@ h1 {
   }
 }
 
-.resume-photo {
+.cv-photo {
   pointer-events: none;
   width: 100%;
   -o-object-fit: cover;
@@ -60,12 +60,12 @@ h2 {
 }
 
 @media (max-width: 800px) {
-  .resume-container {
+  .cv-container {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
 
-  .resume-container > section:nth-child(1) {
+  .cv-container > section:nth-child(1) {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 0px;
     flex: 0 0 0;
@@ -75,7 +75,7 @@ h2 {
     }
   }
 
-  .resume-container > section:nth-child(2) {
+  .cv-container > section:nth-child(2) {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 0px;
     flex: 0 0 0;
