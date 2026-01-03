@@ -1,0 +1,53 @@
+.sticky-footer {
+  width: 100%;
+  position: fixed;
+  z-index: 30;
+  bottom: 0;
+  opacity: 0%;
+  -webkit-transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  -o-transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  pointer-events: none;
+  padding: 20px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.sticky-footer.isvisible {
+  opacity: 100%;
+  pointer-events: all;
+}
+
+.sticky-footer-link {
+  display: block;
+  opacity: 60%;
+  -webkit-transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  -o-transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  cursor: pointer;
+}
+
+.sticky-footer-link span {
+  color: #231f20;
+  color: var(--txt-color);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: inline-block;
+}
+
+.sticky-footer.isvisible .sticky-footer-link:hover {
+  opacity: 100%;
+}
+
+@media (max-width: 800px) {
+  .sticky-footer {
+    display: none;
+  }
+}
