@@ -7,7 +7,7 @@ const rad2deg = 180;
 
 let debounceTimeout;
 
-const sides = ['left', 'right', 'top', 'buttom'];
+const sides = ['left', 'right', 'top', 'bottom'];
 
 sides.forEach(side => {
   const sideDiv = document.createElement('div');

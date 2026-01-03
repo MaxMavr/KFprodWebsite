@@ -48,8 +48,8 @@
   transform: rotateX(90deg);
 }
 
-.side.buttom {
-  background: url(../img/logo/cube/logo-buttom.svg) no-repeat center center /
+.side.bottom {
+  background: url(../img/logo/cube/logo-bottom.svg) no-repeat center center /
     contain;
   -webkit-transform: rotateX(-90deg);
   transform: rotateX(-90deg);
