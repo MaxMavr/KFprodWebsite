@@ -7,10 +7,7 @@
 .tag {
   padding: 6px 12px;
   border-radius: 10px;
-  border: 1px solid #f2f3f51a; 
+  border: 1px solid #231f20;
+  border: 1px solid var(--border-color); 
   backdrop-filter: blur(20px);
-}
-
-.tag span {
-  opacity: 60%;
 }

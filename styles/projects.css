@@ -80,4 +80,8 @@ h1 {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
+
+  header > div > *:last-child {
+    margin-bottom: 0px;
+  }
 }

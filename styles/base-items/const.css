@@ -1,5 +1,5 @@
 :root {
-  /* Неизменяемые */
+  /* Цвета Неизменяемые */
   --highlight-o-color: #ff6433;
   --highlight-r-color: #ff4267;
   --highlight-p-color: #9943e2;
@@ -9,12 +9,14 @@
   --highlight-d-color: #414271;
 
   --black: #231f20;
+  --black-trans10: #231f201a;
   --black-trans30: #231f204d;
   --black-trans60: #231f2099;
   --black-bg: #191717;
   --black-draw-color: #2b2628;
 
   --white: #f2f3f5;
+  --white-trans10: #f2f3f51a;
   --white-trans30: #f2f3f54d;
   --white-trans60: #f2f3f599;
   --white-bg: #fff;
@@ -22,7 +24,7 @@
 
   --scrollbar-bg-color: transparent;
 
-  /* Изменяемые */
+  /* Цвета Изменяемые */
   --bg-color: var(--white-bg);
   --bg-accent-color: var(--white);
   --bg-accent-invert-color: var(--black);
@@ -30,10 +32,18 @@
 
   --txt-color: var(--black);
 
+  --border-color: var(--black-trans10);
   --shadow-color: var(--white-trans60);
   --poster-bg-color: var(--white-trans30);
   --scrollbar-color: #231f2066;
   --link-color: var(--highlight-b-color); /* JS */
+
+  /* Отступы */
+  --gap-section: 40px;
+  --gap-block: 20px;
+  --gap-element: 12px;
+
+  --border-radius: 20px;
 }
 
 svg {
@@ -50,6 +60,7 @@ svg {
 
     --txt-color: var(--white);
 
+    --border-color: var(--white-trans10);
     --shadow-color: var(--black-trans60);
     --poster-bg-color: var(--black-trans30);
     --scrollbar-color: #f1f2f41a;
