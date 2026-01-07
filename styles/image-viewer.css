@@ -6,6 +6,10 @@
   top: 0;
 }
 
+.image-viewer-container img {
+  cursor: pointer;
+}
+
 .image-viewer-overlay-bg {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -8,23 +8,17 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  overflow: hidden;
 }
 
-.full-screen-header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+.full-screen-block {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 60%,
-    var(--bg-color) 100%
-  );
-  z-index: 1;
-}
+  height: 100vh;
 
-.full-screen-header header {
-  margin: 80px auto 40px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

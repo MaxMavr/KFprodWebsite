@@ -24,10 +24,17 @@
   aspect-ratio: 1;
   background-color: #f2f3f5;
   background-color: var(--bg-accent-color);
-  cursor: pointer;
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+
+  -webkit-transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  -o-transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+}
+
+.poster-demonstration img:hover {
+  border-radius: var(--border-radius);
 }
 
 .poster-demonstration-container.s1x1 .poster-demonstration img {

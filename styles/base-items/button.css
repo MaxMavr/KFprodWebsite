@@ -71,6 +71,10 @@
   --shadow-button-color: transparent;
 }
 
+.button-container.alpha .button {
+  opacity: 60%;
+}
+
 .button.in-text {
   cursor: default;
   display: inline-block;
@@ -218,12 +222,6 @@
 
 .button.mail {
   background-image: url(../../img/icons/mail-fill.svg);
-}
-
-footer .button,
-.font-demonstration-container .button,
-.button.mail {
-  opacity: 60%;
 }
 
 footer .button.tg {

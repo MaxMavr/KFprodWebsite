@@ -4,7 +4,7 @@
 @import url(projects-items/font-dem.css);
 @import url(projects-items/sticky-footer.css);
 
-header {
+.project-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,7 +29,7 @@ header {
   z-index: 30;
 }
 
-header > div {
+.project-header > div {
   display: -ms-grid;
   display: grid;
   -ms-flex-line-pack: justify;
@@ -38,16 +38,12 @@ header > div {
   gap: 12px;
 }
 
-header > div > *:last-child {
+.project-header > div > *:last-child {
   margin-bottom: 30px;
 }
 
-header > div > *:first-child {
+.project-header > div > *:first-child {
   margin-top: 18px;
-}
-
-header .button:empty {
-  opacity: 60%;
 }
 
 h1 {
@@ -76,12 +72,20 @@ h1 {
 }
 
 @media (max-width: 800px) {
-  header .button-container {
+  .project-header .button-container {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 
-  header > div > *:last-child {
+  .project-header > div > *:last-child {
     margin-bottom: 0px;
   }
+}
+
+.project-header.glass-clear {
+  margin: 80px auto 40px auto;
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  border: 1px solid hsla(220, 13%, 95%, 0.1); 
 }

@@ -11,3 +11,11 @@
   border: 1px solid var(--border-color); 
   backdrop-filter: blur(20px);
 }
+
+.tag.white {
+  border: 1px solid var(--white-trans10);
+}
+
+.tag.black {
+  border: 1px solid var(--black-trans10);
+}

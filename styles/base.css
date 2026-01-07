@@ -8,6 +8,7 @@
 @import url("base-items/tag.css");
 @import url("base-items/two-columns.css");
 @import url("base-items/paragraph.css");
+@import url("base-items/modifier.css");
 
 * {
   -ms-touch-action: manipulation;
@@ -27,6 +28,7 @@ body {
   background-color: var(--bg-color);
   font-family: Noah, Arial, sans-serif;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 main {
@@ -46,25 +48,6 @@ main {
 
 span:not([class]) {
   font-size: 20px;
-}
-
-.minor {
-  font-size: 20px;
-  font-weight: normal;
-  opacity: 60%;
-}
-.white {
-  color: #f2f3f5;
-  color: var(--white);
-}
-.black {
-  color: #231f20;
-  color: var(--black);
-}
-
-.no-break {
-  white-space: nowrap;
-  vertical-align: baseline;
 }
 
 h1 {
