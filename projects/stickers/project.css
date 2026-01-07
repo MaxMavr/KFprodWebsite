@@ -1,0 +1,142 @@
+.kosko {
+  font-family: Kosko, Arial, sans-serif;
+}
+
+h1 {
+  font-family: Kosko, Arial, sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+.stickers-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 30;
+  gap: var(--gap-block);
+}
+
+.full-screen-block {
+  position: relative;
+}
+
+.stickers-footer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-element);
+}
+
+.sticker {
+  position: absolute;
+  height: 50%;
+  z-index: 1;
+}
+
+#sticker-live {
+  transform: rotate(17deg);
+  top: -1%;
+  right: -5%;
+}
+
+#sticker-dream {
+  transform: rotate(-23deg);
+  bottom: -11%;
+  left: 5%;
+}
+
+#sticker-bread {
+  transform: rotate(-14deg);
+  top: -13%;
+  left: -6%;
+}
+
+#sticker-melon {
+  transform: rotate(25deg);
+  bottom: -4%;
+  right: -13%;
+}
+
+#sticker-alien {
+  transform: rotate(-18deg);
+  top: -18%;
+  left: -11%;
+}
+
+#sticker-patch {
+  transform: rotate(14deg);
+  top: -15%;
+  right: -11%;
+}
+
+#sticker-void {
+  transform: rotate(-9deg);
+  bottom: -19%;
+  left: 30%;
+}
+
+@media (max-width: 1200px) {
+  #sticker-live {
+    top: auto;
+    bottom: -9%;
+    right: 2%;
+  }
+
+  #sticker-melon {
+    bottom: -10%;
+  }
+
+  #sticker-alien {
+    top: -27%;
+    left: -21%;
+  }
+
+  #sticker-patch {
+    top: -24%;
+    right: -20%;
+  }
+
+  #sticker-void {
+    bottom: -26%;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .sticker {
+    width: 70%;
+  }
+
+  #sticker-live {
+    top: -9%;
+    right: -9%;
+  }
+
+  #sticker-dream {
+    bottom: -9%;
+    left: -3%;
+  }
+
+  #sticker-bread {
+    top: -16%;
+    left: 7%;
+  }
+
+  #sticker-melon {
+    bottom: -9%;
+    right: -10%;
+  }
+
+  #sticker-alien {
+    top: -18%;
+    left: -2%;
+  }
+
+  #sticker-patch {
+    top: -14%;
+    right: -5%;
+  }
+
+  #sticker-void {
+    bottom: -19%;
+  }
+}
