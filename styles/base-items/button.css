@@ -102,6 +102,9 @@
 .button.myskotom {
   background-image: url(../../img/icons/logo-black/myskotom-logo.svg);
 }
+.button.fonts-online {
+  background-image: url(../../img/icons/logo-black/fonts-online-logo.svg);
+}
 
 @media (prefers-color-scheme: dark) {
   .button.tg {
@@ -121,6 +124,9 @@
   }
   .button.myskotom {
     background-image: url(../../img/icons/logo-white/myskotom-logo.svg);
+  }
+  .button.fonts-online {
+    background-image: url(../../img/icons/logo-white/fonts-online-logo.svg);
   }
 }
 
@@ -142,6 +148,9 @@
 .button.myskotom.black {
   background-image: url(../../img/icons/logo-black/myskotom-logo.svg);
 }
+.button.fonts-online.black {
+  background-image: url(../../img/icons/logo-black/fonts-online-logo.svg);
+}
 
 .button.tg.white {
   background-image: url(../../img/icons/logo-white/tg-logo.svg);
@@ -160,6 +169,9 @@
 }
 .button.myskotom.white {
   background-image: url(../../img/icons/logo-white/myskotom-logo.svg);
+}
+.button.fonts-online.white {
+  background-image: url(../../img/icons/logo-white/fonts-online-logo.svg);
 }
 
 .button.tg.colored {
@@ -185,6 +197,10 @@
 .button.myskotom.colored {
   --shadow-button-color: rgba(35, 31, 32, 0.3);
   background-image: url(../../img/icons/logo-colored/myskotom-logo.svg);
+}
+.button.fonts-online.colored {
+  --shadow-button-color: rgba(35, 31, 32, 0.3);
+  background-image: url(../../img/icons/logo-colored/fonts-online-logo.svg);
 }
 
 .button.ae {
@@ -222,16 +238,6 @@
 
 .button.mail {
   background-image: url(../../img/icons/mail-fill.svg);
-}
-
-footer .button.tg {
-  background-image: url(../../img/icons/logo-white/tg-logo.svg);
-}
-footer .button.vk {
-  background-image: url(../../img/icons/logo-white/vk-logo.svg);
-}
-footer .button.yt {
-  background-image: url(../../img/icons/logo-white/yt-logo.svg);
 }
 
 .button:hover:not(.in-text):not(:active) {
