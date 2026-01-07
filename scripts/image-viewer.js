@@ -1,11 +1,14 @@
 const imageViewerOverlay = document.querySelector(".image-viewer-overlay");
-const imageViewerContainer = document.querySelector(".image-viewer-container");
+const imageViewerContainers = document.querySelectorAll(".image-viewer-container");
 
-imageViewerContainer.addEventListener("click", (e) => {
-  const img = e.target.closest("img");
-  if (!img) return;
 
-  popUpPosterCreate(img.cloneNode(true));
+imageViewerContainers.forEach(container => {
+  container.addEventListener("click", (e) => {
+    const img = e.target.closest("img");
+    if (!img) return;
+
+    popUpPosterCreate(img.cloneNode(true));
+  });
 });
 
 function popUpPosterCreate(img) {
