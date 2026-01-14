@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /download-res/
+Disallow: /img/
+Disallow: /plug-in-elements/
+Disallow: /scripts/
+Disallow: /service-pages/
+Disallow: /styles/
+Disallow: /projects/default
+
+Allow: /
