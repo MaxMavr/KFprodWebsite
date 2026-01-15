@@ -20,12 +20,6 @@ h1 {
   position: relative;
 }
 
-.stickers-footer {
-  display: flex;
-  flex-direction: column;
-  gap: var(--gap-element);
-}
-
 .sticker {
   position: absolute;
   height: 50%;
