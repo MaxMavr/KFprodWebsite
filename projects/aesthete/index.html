@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 
-<!--
-  Оригинальные авторские права
-  принадлежат KFproduction
-  Редакция 2024
--->
+<!--#include virtual="/plug-in-elements/copyright-signature.html" -->
 
 <html lang="ru-RU">
   <head>
@@ -13,103 +9,114 @@
     <title>Эстет</title>
     <meta name="description" content="Логотип для моушн-дизайнера" />
 
-    <link rel="icon" href="../../img/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" type="image/svg+xml" href="../../img/favicon.svg"  />
     <link rel="stylesheet" type="text/css" href="../../styles/reset.css" />
     <link rel="stylesheet" type="text/css" href="../../styles/base.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="../../styles/projects-grid.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="../../styles/poster-grid.css"
-    />
+    <link rel="stylesheet" type="text/css" href="../../styles/projects-grid.css"/>
     <link rel="stylesheet" type="text/css" href="../../styles/projects.css" />
     <link rel="stylesheet" type="text/css" href="project.css" />
   </head>
 
   <body>
-    <header>
+    <header class="project-header">
       <h1>Эстет</h1>
       <div>
-        <p class="minor">Логотип&nbsp;&bull; Красота&nbsp;&bull; Изящность</p>
+        <div class="tag-container">
+          <span class="tag"><span class="minor">Логотип</span></span>
+          <span class="tag"><span class="minor">Изящность</span></span>
+        </div>
       </div>
     </header>
 
     <main>
-      <h2>Второй абзац</h2>
-      <p>
-        Здесь можно описать красоту этого проекта и все усилия, которые я
-        приложил, чтобы добиться успешного завершения
-      </p>
+      <section class="paragraph">
+        <p>
+          Для друга, который делал моушн-графику. Он&nbsp;ценил простоту
+          и&nbsp;чистоту&nbsp;&mdash; даже когда работал с&nbsp;клиентами,
+          которым это было не&nbsp;очень важно
+        </p>
+      </section>
+
+      <section class="paragraph">
+        <h2>Логотип</h2>
+        <p>
+          Я&nbsp;нарисовал вручную: не&nbsp;шрифт, а&nbsp;просто буквы
+          из&nbsp;мягких, закруглённых линий. Хотел, чтобы выглядело спокойно
+          и&nbsp;аккуратно&nbsp;&mdash; без резкостей
+        </p>
+      </section>
 
       <article class="logo-demonstration">
-        <div
-          class="big"
-          style="
-            background-color: #f2f3f5;
-            background-color: var(--bg-accent-color);
-          "
-        >
-          <object type="image/svg+xml" data="img/aesthete.svg"></object>
+        <div class="big" style="background-color: #f2f3f5; background-color: var(--bg-accent-color);">
+          <object type="image/svg+xml" data="img/logo/main.svg"></object>
         </div>
-        <div
-          class="big"
-          style="
-            background-color: #231f20;
-            background-color: var(--bg-accent-invert-color);
-          "
-        >
-          <object type="image/svg+xml" data="img/aesthete-w.svg"></object>
+        <div class="big" style="background-color: #231f20; background-color: var(--bg-accent-invert-color);">
+          <object type="image/svg+xml" data="img/logo/white.svg"></object>
         </div>
       </article>
 
-      <h2>Цвета</h2>
-      <p>
-        Были выбраны беспроигрышные цвета — жёлтый и тёмно-синий. Сразу ловится
-        ассоциация с какой элитарностью
-      </p>
 
-      <div class="color-container">
-        <a
-          class="pop-up-button color white"
-          style="background-color: #1c2229"
-          data-mode="copy"
-          data-img="../../img/icons/pop-up/pipette.svg"
-          data-msg="Цвет скопирован"
-          data-copytxt="#1c2229"
-        >
-          <span>#1c2229</span> <span>28 34 41</span> <span>32 17 0 84</span>
-          <span>Ночной индиго</span>
-        </a>
-        <a
-          class="pop-up-button color black"
-          style="background-color: #ffffff"
-          data-mode="copy"
-          data-img="../../img/icons/pop-up/pipette.svg"
-          data-msg="Цвет скопирован"
-          data-copytxt="#FFFFFF"
-        >
-          <span>#FFFFFF</span> <span>255 255 255</span> <span>0 0 0 0</span>
-        </a>
-        <a
-          class="pop-up-button color black"
-          style="background-color: #feb060"
-          data-mode="copy"
-          data-img="../../img/icons/pop-up/pipette.svg"
-          data-msg="Цвет скопирован"
-          data-copytxt="#feb060"
-        >
-          <span>#feb060</span> <span>254 176 96</span> <span>0 31 62 0</span>
-          <span>Золотистый жёлтый</span>
-        </a>
-      </div>
+      <section class="section">
+        <section class="paragraph">
+          <h2>Цвета</h2>
+          <p>
+            Цвета подобрал в&nbsp;тон названию: приглушённый синий и&nbsp;немного золотого.
+            Не&nbsp;кричащие, но&nbsp;с&nbsp;характером
+          </p>
+        </section>
+
+        <div class="color-container">
+          <a
+            class="pop-up-button color white"
+            style="background-color: #1C2229"
+            data-mode="copy"
+            data-img="../../img/icons/pop-up/pipette.svg"
+            data-msg="Цвет скопирован"
+            data-copytxt="#1C2229"
+          >
+            <span>#1C2229</span>
+            <span>28 34 41</span>
+            <span>32 17 0 84</span>
+            <span>Ночной индиго</span>
+          </a>
+          <a
+            class="pop-up-button color black"
+            style="background-color: #FFFFFF"
+            data-mode="copy"
+            data-img="../../img/icons/pop-up/pipette.svg"
+            data-msg="Цвет скопирован"
+            data-copytxt="#FFFFFF"
+          >
+            <span>#FFFFFF</span>
+            <span>255 255 255</span>
+            <span>0 0 0 0</span>
+          </a>
+          <a
+            class="pop-up-button color black"
+            style="background-color: #FEB060"
+            data-mode="copy"
+            data-img="../../img/icons/pop-up/pipette.svg"
+            data-msg="Цвет скопирован"
+            data-copytxt="#FEB060"
+          >
+            <span>#FEB060</span>
+            <span>254 176 96</span>
+            <span>0 31 62 0</span>
+            <span>Золотистый жёлтый</span>
+          </a>
+        </div>
+      </section>
 
       <img class="img-demonstration" src="img/img.webp" />
 
-      <div class="pop-up-poster-container"></div>
+      <section class="paragraph">
+        <p>
+          Проект был сделан давно, и&nbsp;сейчас друг уже не&nbsp;занимается графикой,
+          но&nbsp;до&nbsp;сих пор говорит, что это одна из&nbsp;самых удачных его визуальных
+          вещей. Никаких альтернатив не&nbsp;было&nbsp;&mdash; сразу пошла эта версия.
+          Иногда так бывает: всё складывается с&nbsp;первого раза
+        </p>
+      </section>
 
       <div class="project-footer">
         <p class="minor">Дизайнер<br />Максим Мавряшин</p>
@@ -151,46 +158,10 @@
 
     <div class="pop-up-container"></div>
 
-    <footer>
-      <a
-        class="logo-footer"
-        href="../../index.html#narrow"
-        target="KFproduction"
-      ></a>
-      <p class="copyright minor white">
-        Оригинальные авторские&nbsp;права
-        <br />
-        принадлежат&nbsp;KFproduction
-        <br />
-        Редакция&nbsp;2024
-      </p>
-      <div class="footer-button-container">
-        <a
-          class="pop-up-button hlink minor white"
-          data-mode="copy"
-          data-img="../../img/icons/pop-up/at-sign.svg"
-          data-msg="Почта скопирована"
-          data-copytxt="KFproduction@yandex.ru"
-          >KFproduction@yandex.ru</a
-        >
-        <div class="button-container">
-          <a href="https://vk.com/kfprod" class="button vk"></a>
-          <a href="https://t.me/maxmavr" class="button tg"></a>
-          <a href="https://www.youtube.com/@kfprod" class="button yt"></a>
-        </div>
-        <a
-          class="pop-up-button button mail"
-          data-mode="copy"
-          data-img="../../img/icons/pop-up/at-sign.svg"
-          data-msg="Почта скопирована"
-          data-copytxt="KFproduction@yandex.ru"
-        ></a>
-      </div>
-    </footer>
+    <!--#include virtual="/plug-in-elements/projects-footer.html" -->
+    <!--#include virtual="/plug-in-elements/sticky-footer.html" -->
 
-    <script src="project.js"></script>
     <script src="../../scripts/lang&theme.js"></script>
-    <script src="../../scripts/poster.js"></script>
     <script src="../../scripts/hlink.js"></script>
     <script src="../../scripts/pop-up.js"></script>
   </body>

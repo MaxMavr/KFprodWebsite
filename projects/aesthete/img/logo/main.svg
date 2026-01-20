@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1220 410">
 <style type="text/css">
-	@import url("../../../styles/logos-draft.css");
+	@import url("../../../../styles/logos-draft.css");
 </style>
-
-<g class="main w">
+<g class="main">
 	<rect class="bg" x="4.64" y="5" width="1210.71" height="400"/>
 
 	<g class="mnl">
