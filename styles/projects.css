@@ -81,11 +81,3 @@ h1 {
     margin-bottom: 0px;
   }
 }
-
-.project-header.glass-clear {
-  margin: 80px auto 40px auto;
-  padding: 40px;
-  border-radius: 20px;
-  backdrop-filter: blur(20px);
-  border: 1px solid hsla(220, 13%, 95%, 0.1); 
-}

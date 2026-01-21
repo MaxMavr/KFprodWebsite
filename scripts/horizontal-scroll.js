@@ -15,19 +15,27 @@ containers.forEach((container) => {
       raf = requestAnimationFrame(animate);
     } else {
       raf = null;
+      current = target;
     }
   }
 
   container.addEventListener(
     'wheel',
     (e) => {
+      const maxScroll = container.scrollWidth - container.clientWidth;
+      const delta = e.deltaX !== 0 ? e.deltaX : e.deltaY;
+
+      const atLeftEdge = target <= 0 && delta < 0;
+      const atRightEdge = target >= maxScroll && delta > 0;
+
+      if (atLeftEdge || atRightEdge) {
+        return;
+      }
+
       e.preventDefault();
 
-      target += e.deltaY;
-      target = Math.max(
-        0,
-        Math.min(target, container.scrollWidth - container.clientWidth)
-      );
+      target += delta;
+      target = Math.max(0, Math.min(target, maxScroll));
 
       if (!raf) {
         current = container.scrollLeft;

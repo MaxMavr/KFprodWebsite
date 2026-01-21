@@ -1,0 +1,8 @@
+.horizontal-scroll-container {
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.horizontal-scroll-container::-webkit-scrollbar {
+  display: none;
+}

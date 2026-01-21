@@ -39,6 +39,8 @@
   --link-color: var(--highlight-b-color); /* JS */
 
   /* Отступы */
+  --gap-main: 80px;
+  --gap-main: 120px;
   --gap-section: 40px;
   --gap-block: 20px;
   --gap-element: 12px;

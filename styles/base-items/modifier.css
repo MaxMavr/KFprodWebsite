@@ -34,3 +34,34 @@
   white-space: nowrap;
   vertical-align: baseline;
 }
+
+.glass {
+  padding: var(--gap-section);
+  border-radius: var(--border-radius);
+  backdrop-filter: blur(20px);
+  border: 1px solid #231f20;
+  border: 1px solid var(--border-color); 
+}
+
+.glass.white {
+  border: 1px solid var(--white-trans10);
+}
+
+.glass.black {
+  border: 1px solid var(--black-trans10);
+}
+
+.noise {
+  background-image: url(../../img/textures/noise.svg);
+  background-repeat: repeat;
+  background-size: 256px 256px;
+}
+
+
+@media (max-width: 800px) {
+  .visible-in-desktop { display: none; }
+}
+
+@media (min-width: 800px) {
+  .visible-in-mobile { display: none; }
+}

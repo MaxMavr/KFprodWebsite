@@ -1,13 +1,13 @@
-@import url(base-items/colors.css);
+@import url(base-items/const.css);
 
 .bg {
   opacity: 0;
 }
 
 .mjl, .mnl, .d, .dl, .logo, .logo-draft {
-  -webkit-transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
-  -o-transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
-  transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  -webkit-transition: all .5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  -o-transition: all .5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  transition: all .5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
 }
 
 .mjl, .mnl, .dl {
@@ -39,7 +39,6 @@
 
 .d {
   opacity: 0;
-  fill: url(#d);
 }
 
 .logo {

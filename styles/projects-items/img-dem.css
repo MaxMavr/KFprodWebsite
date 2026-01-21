@@ -1,27 +1,24 @@
-video.video-demonstration,
-img.img-demonstration {
-  pointer-events: none;
+.video-demonstration,
+.img-demonstration {
   width: 100vw;
   max-width: 1920px;
   position: relative;
   /* -webkit-transform: translate(-50%, 0);
   -ms-transform: translate(-50%, 0);
   transform: translate(-50%, 0); */
-  background-color: #f2f3f5;
-  background-color: var(--bg-accent-color);
+  /* background-color: #f2f3f5;
+  background-color: var(--bg-accent-color); */
   align-self: center;
 }
 
-img.img-demonstration + img.img-demonstration,
-video.video-demonstration + video.video-demonstration {
-  margin-top: -40px;
+.img-demonstration + .img-demonstration,
+.video-demonstration + .video-demonstration {
+  margin-top: calc(0px - var(--gap-main));
 }
 
 .long-image {
   height: 100vh;
   width: 100vw;
-  overflow-y: hidden;
-  overflow-x: auto;
   align-self: center;
 }
 

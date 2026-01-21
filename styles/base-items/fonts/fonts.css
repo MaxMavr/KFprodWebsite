@@ -62,5 +62,34 @@
 
 @font-face {
   font-family: Kosko;
+  font-weight: bold;
   src: url(Kosko-Bold.otf);
+}
+
+@font-face {
+  font-family: Fira;
+  font-weight: bold;
+  src: url(FiraSans-Ultra.otf);
+}
+
+@font-face {
+  font-family: Manrope;
+  font-weight: bold;
+  src: url(Manrope-SemiBold.otf);
+}
+
+@font-face {
+  font-family: "Magnet Trial";
+  font-weight: bold;
+  src: url();
+}
+
+@font-face {
+  font-family: "Cocogoose Classic";
+  src: url();
+}
+
+@font-face {
+  font-family: Pecita;
+  src: url();
 }
