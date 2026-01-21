@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 
-<!--
-  Оригинальные авторские права
-  принадлежат KFproduction
-  Редакция 2024
--->
+<!--#include virtual="/plug-in-elements/copyright-signature.html" -->
 
 <html lang="ru-RU">
   <head>
@@ -12,12 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Melectron</title>
-    <meta
-      name="description"
-      content="Бесплатный декоративный шрифт с автоматическим соединением глифов"
-    />
+    <meta name="description" content="Бесплатный декоративный шрифт с автоматическим соединением глифов"/>
 
-    <link rel="icon" href="../../img/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" type="image/svg+xml" href="../../img/favicon.svg" />
     <link rel="stylesheet" type="text/css" href="../../styles/reset.css" />
     <link rel="stylesheet" type="text/css" href="../../styles/base.css" />
     <link rel="stylesheet" type="text/css" href="../../styles/projects-grid.css" />
@@ -26,22 +19,13 @@
   </head>
 
   <body>
-    <header>
+    <header class="project-header">
       <h1>Melectron</h1>
       <div>
         <div class="button-container">
-          <a
-            href="https://fontesk.com/melectron-font/"
-            class="button fontesk white"
-          ></a>
-          <a
-            href="https://fontstorage.com/ru/font/kfproduction/melectron"
-            class="button fontstorage white"
-          ></a>
-          <a
-            href="https://myskotom.ru/tproduct/504619321-765018708731-melectron-regular"
-            class="button myskotom white"
-          ></a>
+          <a href="https://fontesk.com/melectron-font/" class="button fontesk white"></a>
+          <a href="https://fontstorage.com/ru/font/kfproduction/melectron" class="button fontstorage white"></a>
+          <a href="https://myskotom.ru/tproduct/504619321-765018708731-melectron-regular" class="button myskotom white"></a>
           <a
             href="../../download-res/melectron/Melectron-Regular.zip"
             download
@@ -56,11 +40,13 @@
     </header>
 
     <main>
-      <p>
-        Бесплатная декоративная гарнитура с&nbsp;автоматическим соединением
-        глифов. Подходит для&nbsp;заголовков, которые хочется написать прописью,
-        но&nbsp;добавить строгости гротеска
-      </p>
+      <section class="paragraph">
+        <p>
+          Бесплатная декоративная гарнитура с&nbsp;автоматическим соединением
+          глифов. Подходит для&nbsp;заголовков, которые хочется написать прописью,
+          но&nbsp;добавить строгости гротеска
+        </p>
+      </section>
 
       <div class="melectron-demonstration">
         <img class="orbit" src="img/orbit/1.svg" />
@@ -111,7 +97,6 @@
 
       <div class="project-footer">
         <p class="minor">Дизайнер<br />Максим Мавряшин</p>
-
         <p class="minor">Готово в&nbsp;августе<br />2023&nbsp;года</p>
       </div>
 
@@ -150,43 +135,12 @@
 
     <div class="pop-up-container"></div>
 
-    <footer>
-      <a class="logo-footer" href="../../index.html#narrow" target="KFproduction"></a>
-      <p class="copyright minor white">
-        Оригинальные авторские&nbsp;права
-        <br />
-        принадлежат&nbsp;KFproduction
-        <br />
-        Редакция&nbsp;2024
-      </p>
-      <div class="footer-button-container">
-        <a
-          class="pop-up-button hlink minor white"
-          data-mode="copy"
-          data-img="../../img/icons/pop-up/at-sign.svg"
-          data-msg="Почта скопирована"
-          data-copytxt="KFproduction@yandex.ru"
-          >KFproduction@yandex.ru</a
-        >
-        <div class="button-container">
-          <a href="https://vk.com/kfprod" class="button vk"></a>
-          <a href="https://t.me/maxmavr" class="button tg"></a>
-          <a href="https://www.youtube.com/@kfprod" class="button yt"></a>
-        </div>
-        <a
-          class="pop-up-button button mail"
-          data-mode="copy"
-          data-img="../../img/icons/pop-up/at-sign.svg"
-          data-msg="Почта скопирована"
-          data-copytxt="KFproduction@yandex.ru"
-        ></a>
-      </div>
-    </footer>
+    <!--#include virtual="/plug-in-elements/projects-footer.html" -->
+    <!--#include virtual="/plug-in-elements/sticky-footer.html" -->
 
     <script src="../../scripts/lang&theme.js"></script>
     <script src="../../scripts/font-preview.js"></script>
     <script src="project.js"></script>
-    <script src="../../scripts/poster.js"></script>
     <script src="../../scripts/hlink.js"></script>
     <script src="../../scripts/pop-up.js"></script>
   </body>
