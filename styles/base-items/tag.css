@@ -10,6 +10,7 @@
   border: 1px solid #231f20;
   border: 1px solid var(--border-color); 
   backdrop-filter: blur(20px);
+  text-transform: capitalize;
 }
 
 .tag.white {
