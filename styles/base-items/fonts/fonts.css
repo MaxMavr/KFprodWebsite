@@ -79,6 +79,12 @@
 }
 
 @font-face {
+  font-family: Intro;
+  font-weight: normal;
+  src: url(Intro.otf);
+}
+
+@font-face {
   font-family: "Magnet Trial";
   font-weight: bold;
   src: url();

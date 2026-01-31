@@ -43,3 +43,8 @@
 .hlink:hover:after {
   width: 100%;
 }
+
+.hlink:not([href]) {
+  opacity: 30%;
+  pointer-events: none;
+}
