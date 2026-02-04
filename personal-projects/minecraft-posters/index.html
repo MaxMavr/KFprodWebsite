@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 
-<!--
-  Оригинальные авторские права
-  принадлежат KFproduction
-  Редакция 2024
--->
+<!--#include virtual="/plug-in-elements/copyright-signature.html" -->
 
 <html lang="ru-RU">
   <head>
@@ -12,70 +8,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Плакаты для Майнкрафт сервера</title>
-    <meta
-      name="description"
-      content="Уникальные плакаты моего Minecraft сервера"
-    />
+    <meta name="description" content="Плакаты для Minecraft-сервера, оформленные в духе советской эпохи" />
 
-    <link rel="icon" href="../../img/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" type="image/webp" href="../../img/favicon-minecraft.webp" />
     <link rel="stylesheet" type="text/css" href="../../styles/reset.css" />
     <link rel="stylesheet" type="text/css" href="../../styles/base.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="../../styles/projects-grid.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="../../styles/poster-grid.css"
-    />
+    <link rel="stylesheet" type="text/css" href="../../styles/projects-grid.css" />
+    <link rel="stylesheet" type="text/css" href="../../styles/poster-grid.css" />
+    <link rel="stylesheet" type="text/css" href="../../styles/image-viewer.css" />
     <link rel="stylesheet" type="text/css" href="../../styles/projects.css" />
-    <link rel="stylesheet" type="text/css" href="project.css" />
   </head>
 
   <body>
-    <header>
-      <h1>Плакаты</h1>
+    <header class="project-header">
+      <h1>Плакаты<br />сервера</h1>
+      <div>
+        <div class="tag-container">
+          <span class="tag"><span class="minor">Плакаты</span></span>
+          <span class="tag"><span class="minor">Блоки</span></span>
+        </div>
+      </div>
     </header>
 
     <main>
-      <p>
-        Я&nbsp;тот&nbsp;самый счастливый обладатель сервера в&nbsp;Майнкрафт,
-        и&nbsp;эти&nbsp;плакаты созданы для&nbsp;особых событий на&nbsp;нём<span
-          class="fun"
-          >. АйПи не дам</span
-        >
-      </p>
+      <section class="paragraph">
+        <p>
+          Я&nbsp;тот&nbsp;самый счастливый обладатель сервера в&nbsp;Майнкрафт,
+          и&nbsp;эти&nbsp;плакаты созданы для&nbsp;особых событий на&nbsp;нём
+          <span class="fun">. АйПи не дам</span>
+        </p>
+      </section>
 
-      <div class="poster-demonstration-container s1x1">
-        <div class="poster-demonstration">
+      <div class="poster-demonstration-container s1x1 image-viewer-container">
+        <div class="poster-demonstration element">
           <img src="img/poster1.webp" loading="lazy" />
-          <p>Союз кирки и меча</p>
+          <section class="description">
+            <p>Союз кирки и меча</p>
+          </section>
         </div>
 
-        <div class="poster-demonstration">
+        <div class="poster-demonstration element">
           <img src="img/poster2.webp" loading="lazy" />
-          <p>Карьер</p>
+          <section class="description">
+            <p>Карьер</p>
+          </section>
         </div>
 
-        <div class="poster-demonstration">
+        <div class="poster-demonstration element">
           <img src="img/poster3.webp" loading="lazy" />
-          <p>Маяк</p>
+          <section class="description">
+            <p>Маяк</p>
+          </section>
         </div>
 
-        <div class="poster-demonstration">
+        <div class="poster-demonstration element">
           <img src="img/poster4.webp" loading="lazy" />
-          <p>Костюмы</p>
+          <section class="description">
+            <p>Костюмы</p>
+          </section>
         </div>
 
         <div class="poster-demonstration">
           <img src="img/poster5.webp" loading="lazy" />
-          <p>Ошибки</p>
+          <section class="description">
+            <p>Ошибки</p>
+          </section>
         </div>
       </div>
-
-      <div class="pop-up-poster-container"></div>
 
       <div class="project-footer">
         <p class="minor">Дизайнер<br />Максим Мавряшин</p>
@@ -116,47 +115,13 @@
     </main>
 
     <div class="pop-up-container"></div>
+    <div class="image-viewer-overlay"></div>
 
-    <footer>
-      <a
-        class="logo-footer"
-        href="../../index.html#narrow"
-        target="KFproduction"
-      ></a>
-      <p class="copyright minor white">
-        Оригинальные авторские&nbsp;права
-        <br />
-        принадлежат&nbsp;KFproduction
-        <br />
-        Редакция&nbsp;2024
-      </p>
-      <div class="footer-button-container">
-        <a
-          class="pop-up-button hlink minor white"
-          data-mode="copy"
-          data-img="../../img/icons/pop-up/at-sign.svg"
-          data-msg="Почта скопирована"
-          data-copytxt="KFproduction@yandex.ru"
-          >KFproduction@yandex.ru</a
-        >
-        <div class="button-container">
-          <a href="https://vk.com/kfprod" class="button vk"></a>
-          <a href="https://t.me/maxmavr" class="button tg"></a>
-          <a href="https://www.youtube.com/@kfprod" class="button yt"></a>
-        </div>
-        <a
-          class="pop-up-button button mail"
-          data-mode="copy"
-          data-img="../../img/icons/pop-up/at-sign.svg"
-          data-msg="Почта скопирована"
-          data-copytxt="KFproduction@yandex.ru"
-        ></a>
-      </div>
-    </footer>
+    <!--#include virtual="/plug-in-elements/projects-footer.html" -->
+    <!--#include virtual="/plug-in-elements/sticky-personal-footer.html" -->
 
-    <script src="project.js"></script>
     <script src="../../scripts/lang&theme.js"></script>
-    <script src="../../scripts/poster.js"></script>
+    <script src="../../scripts/image-viewer.js"></script>
     <script src="../../scripts/hlink.js"></script>
     <script src="../../scripts/pop-up.js"></script>
   </body>
