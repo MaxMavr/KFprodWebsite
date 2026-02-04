@@ -1,5 +1,12 @@
 TEST/
-*.txt
-*.mp4
+junk/
 .vscode/
 download-res/
+
+*.mp4
+
+other-pages/bottle-caps/assets
+other-pages/bottle-caps/img
+
+personal-projects/posters/img
+personal-projects/covers/img
