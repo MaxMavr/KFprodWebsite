@@ -57,13 +57,11 @@ h1 {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-column-gap: 40px;
-  -moz-column-gap: 40px;
-  column-gap: 40px;
-  row-gap: 20px;
-  width: 100%;
-  margin-top: 40px;
-  padding: 0 10px;
+  -webkit-column-gap: var(--gap-section);
+  -moz-column-gap: var(--gap-section);
+  column-gap: var(--gap-section);
+  row-gap: var(--gap-block);
+  margin: 0 12px;
 }
 
 .project-footer :last-child {
