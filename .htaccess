@@ -1,120 +1,92 @@
-# 16.12.2024 20:09
+# 05.02.2026 06:24
 
-Options +Includes
+# Включаем необходимые модули
+Options +Includes -Indexes
+ServerSignature Off
 
+# Настройка MIME-типов и фильтров
 AddType text/html .html
 AddOutputFilter INCLUDES .html
 
+# Включаем движок перезаписи
 RewriteEngine On
+RewriteBase /
 
-RewriteCond %{REQUEST_URI} ^/about/$
-RewriteRule ^(.*)$ /kfbrand/ [R=301]
-RewriteCond %{REQUEST_URI} ^/about$
-RewriteRule ^(.*)$ /kfbrand/ [R=301]
+# === Безопасность ===
+# Защита от прямого доступа к чувствительным файлам
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>
 
-RewriteCond %{REQUEST_URI} ^/download/$
-RewriteRule ^(.*)$ /kfbrand/ [R=301]
-RewriteCond %{REQUEST_URI} ^/download$
-RewriteRule ^(.*)$ /kfbrand/ [R=301]
+# Запрет доступа к .htaccess
+<Files ".htaccess">
+    Require all denied
+</Files>
 
-ErrorDocument 404 http://kfprod.ru/service-pages/404/
+# === Обработка ошибок ===
+ErrorDocument 404 /service-pages/404/
 
+# === Оптимизация производительности ===
+# Включение сжатия
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+</IfModule>
 
-# personal-projects
-RewriteCond %{REQUEST_URI} ^/1523tv/$
-RewriteRule ^(.*)$ /personal-projects/1523tv/ [L,R=301]
-RewriteCond %{REQUEST_URI} ^/1523tv$
-RewriteRule ^(.*)$ /personal-projects/1523tv/ [L,R=301]
-RewriteCond %{REQUEST_URI} ^/birthday/$
-RewriteRule ^(.*)$ /personal-projects/birthday/ [L,R=301]
-RewriteCond %{REQUEST_URI} ^/birthday$
-RewriteRule ^(.*)$ /personal-projects/birthday/ [L,R=301]
-RewriteCond %{REQUEST_URI} ^/desktops/$
-RewriteRule ^(.*)$ /personal-projects/desktops/ [L,R=301]
-RewriteCond %{REQUEST_URI} ^/desktops$
-RewriteRule ^(.*)$ /personal-projects/desktops/ [L,R=301]
-RewriteCond %{REQUEST_URI} ^/kfbrand/$
-RewriteRule ^(.*)$ /personal-projects/kfbrand/ [L,R=301]
-RewriteCond %{REQUEST_URI} ^/kfbrand$
-RewriteRule ^(.*)$ /personal-projects/kfbrand/ [L,R=301]
-RewriteCond %{REQUEST_URI} ^/minecraft-posters/$
-RewriteRule ^(.*)$ /personal-projects/minecraft-posters/ [L,R=301]
-RewriteCond %{REQUEST_URI} ^/minecraft-posters$
-RewriteRule ^(.*)$ /personal-projects/minecraft-posters/ [L,R=301]
-RewriteCond %{REQUEST_URI} ^/posters/$
-RewriteRule ^(.*)$ /personal-projects/posters/ [L,R=301]
-RewriteCond %{REQUEST_URI} ^/posters$
-RewriteRule ^(.*)$ /personal-projects/posters/ [L,R=301]
+# Кэширование статических ресурсов
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>
 
+# Заголовки для кэширования
+<IfModule mod_headers.c>
+    Header set Cache-Control "max-age=2592000, public"
+    <FilesMatch "\.(ico|jpg|jpeg|png|gif|webp|svg|woff|woff2)$">
+        Header set Cache-Control "max-age=31536000, public"
+    </FilesMatch>
+    <FilesMatch "\.(css|js)$">
+        Header set Cache-Control "max-age=2678400, public"
+    </FilesMatch>
+</IfModule>
 
-# projects
-RewriteCond %{REQUEST_URI} ^/aesthete/$
-RewriteRule ^(.*)$ /projects/aesthete/ [L,R=301]
-RewriteCond %{REQUEST_URI} ^/aesthete$
-RewriteRule ^(.*)$ /projects/aesthete/ [L,R=301]
-RewriteCond %{REQUEST_URI} ^/default/$
-RewriteRule ^(.*)$ /projects/default/ [L,R=301]
-RewriteCond %{REQUEST_URI} ^/default$
-RewriteRule ^(.*)$ /projects/default/ [L,R=301]
-RewriteCond %{REQUEST_URI} ^/melectron/$
-RewriteRule ^(.*)$ /projects/melectron/ [L,R=301]
-RewriteCond %{REQUEST_URI} ^/melectron$
-RewriteRule ^(.*)$ /projects/melectron/ [L,R=301]
-RewriteCond %{REQUEST_URI} ^/morfin/$
-RewriteRule ^(.*)$ /projects/morfin/ [L,R=301]
-RewriteCond %{REQUEST_URI} ^/morfin$
-RewriteRule ^(.*)$ /projects/morfin/ [L,R=301]
-RewriteCond %{REQUEST_URI} ^/morfinizm/$
-RewriteRule ^(.*)$ /projects/morfinizm/ [L,R=301]
-RewriteCond %{REQUEST_URI} ^/morfinizm$
-RewriteRule ^(.*)$ /projects/morfinizm/ [L,R=301]
-RewriteCond %{REQUEST_URI} ^/morfinizm-lyrics/$
-RewriteRule ^(.*)$ /projects/morfinizm-lyrics/ [L,R=301]
-RewriteCond %{REQUEST_URI} ^/morfinizm-lyrics$
-RewriteRule ^(.*)$ /projects/morfinizm-lyrics/ [L,R=301]
-RewriteCond %{REQUEST_URI} ^/nuqun/$
-RewriteRule ^(.*)$ /projects/nuqun/ [L,R=301]
-RewriteCond %{REQUEST_URI} ^/nuqun$
-RewriteRule ^(.*)$ /projects/nuqun/ [L,R=301]
-RewriteCond %{REQUEST_URI} ^/stickers/$
-RewriteRule ^(.*)$ /projects/stickers/ [L,R=301]
-RewriteCond %{REQUEST_URI} ^/stickers$
-RewriteRule ^(.*)$ /projects/stickers/ [L,R=301]
-RewriteCond %{REQUEST_URI} ^/wild-mathing/$
-RewriteRule ^(.*)$ /projects/wild-mathing/ [L,R=301]
-RewriteCond %{REQUEST_URI} ^/wild-mathing$
-RewriteRule ^(.*)$ /projects/wild-mathing/ [L,R=301]
+# === Перенаправления ===
+
+# Универсальное правило для добавления слеша в конце
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !(.*)/$
+RewriteRule ^(.*)$ $1/ [L,R=301]
+
+# Объединенные правила перенаправлений
+RewriteRule ^(about|download)/?$ /kfbrand/ [R=301,L]
 
 
-# service-pages
-RewriteCond %{REQUEST_URI} ^/404/$
-RewriteRule ^(.*)$ /service-pages/404/ [L,R=301]
-RewriteCond %{REQUEST_URI} ^/404$
-RewriteRule ^(.*)$ /service-pages/404/ [L,R=301]
-RewriteCond %{REQUEST_URI} ^/all-pages/$
-RewriteRule ^(.*)$ /service-pages/all-pages/ [L,R=301]
-RewriteCond %{REQUEST_URI} ^/all-pages$
-RewriteRule ^(.*)$ /service-pages/all-pages/ [L,R=301]
+# Articles
+RewriteRule ^(artemy)/?$ /articles/$1/ [R=301,L]
 
 
-# other-pages
-RewriteCond %{REQUEST_URI} ^/history/$
-RewriteRule ^(.*)$ /other-pages/history/ [L,R=301]
-RewriteCond %{REQUEST_URI} ^/history$
-RewriteRule ^(.*)$ /other-pages/history/ [L,R=301]
-RewriteCond %{REQUEST_URI} ^/personal/$
-RewriteRule ^(.*)$ /other-pages/personal/ [L,R=301]
-RewriteCond %{REQUEST_URI} ^/personal$
-RewriteRule ^(.*)$ /other-pages/personal/ [L,R=301]
-RewriteCond %{REQUEST_URI} ^/resume/$
-RewriteRule ^(.*)$ /other-pages/resume/ [L,R=301]
-RewriteCond %{REQUEST_URI} ^/resume$
-RewriteRule ^(.*)$ /other-pages/resume/ [L,R=301]
-RewriteCond %{REQUEST_URI} ^/showreel/$
-RewriteRule ^(.*)$ /other-pages/showreel/ [L,R=301]
-RewriteCond %{REQUEST_URI} ^/showreel$
-RewriteRule ^(.*)$ /other-pages/showreel/ [L,R=301]
-RewriteCond %{REQUEST_URI} ^/useful/$
-RewriteRule ^(.*)$ /other-pages/useful/ [L,R=301]
-RewriteCond %{REQUEST_URI} ^/useful$
-RewriteRule ^(.*)$ /other-pages/useful/ [L,R=301]
+# Fonts
+
+
+
+# Other pages
+RewriteRule ^(bottle-caps|cv|history|personal|showreel|useful)/?$ /other-pages/$1/ [R=301,L]
+
+
+# Personal projects
+RewriteRule ^(1523tv|birthday|desktops|kfbrand|minecraft-posters|posters)/?$ /personal-projects/$1/ [R=301,L]
+
+
+# Projects
+RewriteRule ^(1ppc|aesthete|amusevill|amusics|default|lumet|melectron|morfin|morfinizm|morfinizm-lyrics|nuqun|oh-my-toast|stickers|wild-mathing)/?$ /projects/$1/ [R=301,L]
+
+
+# Service pages
+RewriteRule ^(404|all-pages)/?$ /service-pages/$1/ [R=301,L]
