@@ -1,4 +1,9 @@
-.block {
+.block,
+.section,
+.element,
+.paragraph,
+.description
+{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6,52 +11,29 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+
+
+.block {
   gap: var(--gap-block);
 }
 
 .section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
   gap: var(--gap-section);
 }
 
-.element {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+.element,
+.paragraph,
+.description {
   gap: var(--gap-element);
 }
 
+
 .paragraph {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  gap: var(--gap-element);
   width: 80%;
   margin: 0 auto;
 }
 
 .description {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  gap: var(--gap-element);
   margin: 0 12px;
 }
