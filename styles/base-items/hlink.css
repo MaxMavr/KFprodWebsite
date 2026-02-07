@@ -1,16 +1,19 @@
-.hlink {
+.hlink,
+.hlink-with-icon {
   -webkit-transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   -o-transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
-  color: #5646ff;
-  color: var(--link-color);
-  position: relative;
   text-decoration: none;
   white-space: nowrap;
   -webkit-user-select: all;
   -moz-user-select: all;
   user-select: all;
   cursor: pointer;
+}
+
+.hlink {
+  color: var(--link-color, #5646ff);
+  position: relative;
 }
 
 .hlink:hover {
@@ -47,4 +50,25 @@
 .hlink:not([href]) {
   opacity: 30%;
   pointer-events: none;
+}
+
+.hlink-with-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  font-weight: normal;
+  color: var(--txt-color, #231f20);
+  gap: var(--gap-detail);
+  align-items: center;
+}
+
+.hlink-with-icon .icon {
+  -webkit-transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  -o-transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+}
+
+.hlink-with-icon:hover .icon-arrow {
+  transform: translate(10%, -10%);
 }
