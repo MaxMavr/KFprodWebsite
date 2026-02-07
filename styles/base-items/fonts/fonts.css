@@ -87,15 +87,15 @@
 @font-face {
   font-family: "Magnet Trial";
   font-weight: bold;
-  src: url();
+  src: url(Magnet-Trial-bold.ttf);
 }
 
 @font-face {
   font-family: "Cocogoose Classic";
-  src: url();
+  src: url(Cocogoose-Classic-regular.otf);
 }
 
 @font-face {
   font-family: Pecita;
-  src: url();
+  src: url(Pecita.otf);
 }
