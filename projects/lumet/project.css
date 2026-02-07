@@ -8,15 +8,7 @@
 
 .mesh-gradient {
     background-color:hsla(324,100%,42%,1);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 110vw;
-    height: 110vh;
-    pointer-events: none;
-    z-index: -1;
     filter: blur(30px) brightness(1.2);
-    transform: translate(-50%, -50%);
 }
 
 .point-gradient1 {

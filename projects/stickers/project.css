@@ -18,7 +18,7 @@
 .sticker {
   position: absolute;
   height: 50%;
-  z-index: 1;
+  z-index: 100;
 }
 
 #sticker-live {
