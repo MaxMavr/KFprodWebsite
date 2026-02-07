@@ -16,14 +16,11 @@
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-
-  -webkit-transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
-  -o-transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
-  transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
 }
 
-.poster-demonstration img:hover {
-  border-radius: var(--border-radius);
+.poster-demonstration-container.with-one-columns {
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
 }
 
 .poster-demonstration-container.s1x1 .poster-demonstration img {

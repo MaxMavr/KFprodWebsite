@@ -8,6 +8,13 @@
 
 .image-viewer-container img {
   cursor: pointer;
+  -webkit-transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  -o-transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+}
+
+.image-viewer-container img:hover {
+  border-radius: var(--border-radius);
 }
 
 .image-viewer-overlay-bg {
