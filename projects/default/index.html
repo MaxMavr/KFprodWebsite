@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 
-<!--
-  Оригинальные авторские права
-  принадлежат KFproduction
-  Редакция 2024
--->
+<!--#include virtual="/plug-in-elements/copyright-signature.html" -->
 
 <html lang="ru-RU">
   <head>
@@ -13,7 +9,7 @@
     <title>default$$$</title>
     <meta name="description" content="Он должен быть лаконичным и содержательным$$$"/>
     
-    <link rel="icon" href="../../img/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" type="image/svg+xml" href="../../img/favicon.svg" />
     <link rel="stylesheet" type="text/css" href="../../styles/reset.css" />
     <link rel="stylesheet" type="text/css" href="../../styles/base.css" />
     <link rel="stylesheet" type="text/css" href="../../styles/projects-grid.css"/>
@@ -23,12 +19,14 @@
   </head>
 
   <body>
-    <header>
+    <header class="project-header">
       <h1>Первый<br />Печатный</h1>
       <div>
-        <p class="minor">
-          Айдентика&nbsp;&bull; Логотип&nbsp;&bull; Дашка-лягушка
-        </p>
+        <div class="tag-container">
+          <span class="tag"><span class="minor">Айдентика</span></span>
+          <span class="tag"><span class="minor">Логотип</span></span>
+          <span class="tag"><span class="minor">Дашка-лягушка</span></span>
+        </div>
 
         <div class="button-container">
           <a href="" class="button fontesk"></a>
@@ -50,28 +48,43 @@
     </header>
 
     <main>
-      <p>
-        Бесплатная <a class="hlink">ссылка</a> декоративная гарнитура с
-        автоматическим соединением глифов. Подходит для заголовков, которые
-        хочется написать прописью, но добавить строгости гротеска
-        <span class="fun">Приветик, ты нашёл секретик</span>
-        <span class="fun">&#129322;</span>
-      </p>
-      <h2>Второй абзац</h2>
-      <p>
-        Здесь можно описать красоту этого проекта и все усилия, которые я
-        приложил, чтобы добиться успешного завершения
-      </p>
-      <h2>Цвета</h2>
-      <p>
-        Здесь стоит уделить внимание красоте этого проекта и тем значительным
-        усилиям, которые я приложил для его успешного завершения. Я
-        действительно много работал над тем, чтобы реализовать все задумки и
-        довести проект до поистине впечатляющего финала. Этот процесс потребовал
-        от меня полной отдачи и преодоления множества трудностей, но результат
-        стоит всех затраченных усилий
-        <span class="fun">&#10024;</span>
-      </p>
+      <section class="paragraph">
+        <p>
+          Бесплатная <a class="hlink">ссылка</a> декоративная гарнитура с
+          автоматическим соединением глифов. Подходит для заголовков, которые
+          хочется написать прописью, но добавить строгости гротеска
+          <span class="fun">Приветик, ты нашёл секретик</span>
+          <span class="fun">&#129322;</span>
+        </p>
+      </section>
+
+      <section class="paragraph">
+        <h2>Второй абзац</h2>
+        <p>
+          Здесь можно описать красоту этого проекта и все усилия, которые я
+          приложил, чтобы добиться успешного завершения
+        </p>
+        
+      </section>
+      
+      <section class="paragraph">
+        <h2>Цвета</h2>
+        <p>
+          Здесь стоит уделить внимание красоте этого проекта и тем значительным
+          усилиям, которые я приложил для его успешного завершения. Я
+          действительно много работал над тем, чтобы реализовать все задумки и
+          довести проект до поистине впечатляющего финала. Этот процесс потребовал
+          от меня полной отдачи и преодоления множества трудностей, но результат
+          стоит всех затраченных усилий
+          <span class="fun">&#10024;</span>
+        </p>
+      </section>
+
+      
+      <div class="long-image">
+        <img src="../../TEST/ГОТОВОЕ НО НЕТ КЕЙСА/choose-board-game/TEST.png" />
+      </div>
+
 
       <div class="color-container">
         <a
@@ -259,104 +272,107 @@
         muted
         loop
       ></video>
+      
 
-      <h2>Шрифты</h2>
-      <div class="font-demonstration-container">
-        <div class="font-demonstration">
-          <div class="font-name">
-            <h3>Noah</h3>
-            <span class="minor">Thin&nbsp;&bull; ExtraLight Italic</span>
+      <section class="section">
+        <h2>Шрифты</h2>
+        <div class="font-demonstration-container">
+          <div class="font-demonstration">
+            <div class="font-name">
+              <h3>Noah</h3>
+              <span class="minor">Thin&nbsp;&bull; ExtraLight Italic</span>
+            </div>
+            <p style="font-family: Noah">
+              Аа Бб Вв Гг Дд Ее Ёё Жж Зз Ии Йй Кк Лл Мм Нн Оо Пп Рр Сс Тт Уу Фф Хх
+              Цц Чч Шш Щщ Ъъ Ыы Ьь Ээ Юю Яя
+            </p>
+            <p style="font-family: Noah">
+              Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww
+              Xx Yy Zz
+            </p>
+            <p style="font-family: Noah">
+              0 1 2 3 4 5 6 7 8 9 ! ? @ # $ % & * № ( )
+            </p>
+
+            <div class="button-container">
+              <a href="" class="button fontesk"></a>
+              <a href="" class="button fontstorage"></a>
+              <a href="" class="button myskotom"></a>
+            </div>
           </div>
-          <p style="font-family: Noah">
-            Аа Бб Вв Гг Дд Ее Ёё Жж Зз Ии Йй Кк Лл Мм Нн Оо Пп Рр Сс Тт Уу Фф Хх
-            Цц Чч Шш Щщ Ъъ Ыы Ьь Ээ Юю Яя
-          </p>
-          <p style="font-family: Noah">
-            Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww
-            Xx Yy Zz
-          </p>
-          <p style="font-family: Noah">
-            0 1 2 3 4 5 6 7 8 9 ! ? @ # $ % & * № ( )
-          </p>
+          <div class="font-demonstration">
+            <div class="font-name">
+              <h3>Times new roman</h3>
+              <span class="minor">ExtraBlack&nbsp;&bull; Bold</span>
+            </div>
+            <p style="font-family: Times new roman">
+              Аа Бб Вв Гг Дд Ее Ёё Жж Зз Ии Йй Кк Лл Мм Нн Оо Пп Рр Сс Тт Уу Фф Хх
+              Цц Чч Шш Щщ Ъъ Ыы Ьь Ээ Юю Яя
+            </p>
+            <p style="font-family: Times new roman">
+              Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww
+              Xx Yy Zz
+            </p>
+            <p style="font-family: Times new roman">
+              0 1 2 3 4 5 6 7 8 9 ! ? @ # $ % & * № ( )
+            </p>
 
-          <div class="button-container">
-            <a href="" class="button fontesk"></a>
-            <a href="" class="button fontstorage"></a>
-            <a href="" class="button myskotom"></a>
+            <div class="button-container">
+              <a href="" class="button fontesk"></a>
+              <a href="" class="button fontstorage"></a>
+              <a href="" class="button myskotom"></a>
+            </div>
           </div>
         </div>
-        <div class="font-demonstration">
-          <div class="font-name">
-            <h3>Times new roman</h3>
-            <span class="minor">ExtraBlack&nbsp;&bull; Bold</span>
-          </div>
-          <p style="font-family: Times new roman">
-            Аа Бб Вв Гг Дд Ее Ёё Жж Зз Ии Йй Кк Лл Мм Нн Оо Пп Рр Сс Тт Уу Фф Хх
-            Цц Чч Шш Щщ Ъъ Ыы Ьь Ээ Юю Яя
-          </p>
-          <p style="font-family: Times new roman">
-            Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww
-            Xx Yy Zz
-          </p>
-          <p style="font-family: Times new roman">
-            0 1 2 3 4 5 6 7 8 9 ! ? @ # $ % & * № ( )
-          </p>
+        <div class="font-demonstration-container">
+          <div class="font-demonstration">
+            <div class="font-name">
+              <h3>Arial</h3>
+              <span class="minor">ExtraBold&nbsp;&bull; Normal</span>
+            </div>
+            <p style="font-family: Arial">
+              Аа Бб Вв Гг Дд Ее Ёё Жж Зз Ии Йй Кк Лл Мм Нн Оо Пп Рр Сс Тт Уу Фф Хх
+              Цц Чч Шш Щщ Ъъ Ыы Ьь Ээ Юю Яя
+            </p>
+            <p style="font-family: Arial">
+              Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww
+              Xx Yy Zz
+            </p>
+            <p style="font-family: Arial">
+              0 1 2 3 4 5 6 7 8 9 ! ? @ # $ % & * № ( )
+            </p>
 
-          <div class="button-container">
-            <a href="" class="button fontesk"></a>
-            <a href="" class="button fontstorage"></a>
-            <a href="" class="button myskotom"></a>
+            <div class="button-container">
+              <a href="" class="button fontesk"></a>
+              <a href="" class="button fontstorage"></a>
+              <a href="" class="button myskotom"></a>
+            </div>
+          </div>
+          <div class="font-demonstration">
+            <div class="font-name">
+              <h3>Morfin</h3>
+              <span class="minor">Regular</span>
+            </div>
+            <p style="font-family: Morfin">
+              Аа Бб Вв Гг Дд Ее Ёё Жж Зз Ии Йй Кк Лл Мм Нн Оо Пп Рр Сс Тт Уу Фф Хх
+              Цц Чч Шш Щщ Ъъ Ыы Ьь Ээ Юю Яя
+            </p>
+            <p style="font-family: Morfin">
+              Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww
+              Xx Yy Zz
+            </p>
+            <p style="font-family: Morfin">
+              0 1 2 3 4 5 6 7 8 9 ! ? @ # $ % & * № ( )
+            </p>
+
+            <div class="button-container">
+              <a href="" class="button fontesk"></a>
+              <a href="" class="button fontstorage"></a>
+              <a href="" class="button myskotom"></a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="font-demonstration-container">
-        <div class="font-demonstration">
-          <div class="font-name">
-            <h3>Arial</h3>
-            <span class="minor">ExtraBold&nbsp;&bull; Normal</span>
-          </div>
-          <p style="font-family: Arial">
-            Аа Бб Вв Гг Дд Ее Ёё Жж Зз Ии Йй Кк Лл Мм Нн Оо Пп Рр Сс Тт Уу Фф Хх
-            Цц Чч Шш Щщ Ъъ Ыы Ьь Ээ Юю Яя
-          </p>
-          <p style="font-family: Arial">
-            Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww
-            Xx Yy Zz
-          </p>
-          <p style="font-family: Arial">
-            0 1 2 3 4 5 6 7 8 9 ! ? @ # $ % & * № ( )
-          </p>
-
-          <div class="button-container">
-            <a href="" class="button fontesk"></a>
-            <a href="" class="button fontstorage"></a>
-            <a href="" class="button myskotom"></a>
-          </div>
-        </div>
-        <div class="font-demonstration">
-          <div class="font-name">
-            <h3>Morfin</h3>
-            <span class="minor">Regular</span>
-          </div>
-          <p style="font-family: Morfin">
-            Аа Бб Вв Гг Дд Ее Ёё Жж Зз Ии Йй Кк Лл Мм Нн Оо Пп Рр Сс Тт Уу Фф Хх
-            Цц Чч Шш Щщ Ъъ Ыы Ьь Ээ Юю Яя
-          </p>
-          <p style="font-family: Morfin">
-            Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww
-            Xx Yy Zz
-          </p>
-          <p style="font-family: Morfin">
-            0 1 2 3 4 5 6 7 8 9 ! ? @ # $ % & * № ( )
-          </p>
-
-          <div class="button-container">
-            <a href="" class="button fontesk"></a>
-            <a href="" class="button fontstorage"></a>
-            <a href="" class="button myskotom"></a>
-          </div>
-        </div>
-      </div>
+      </section>
 
       <h2>Шрифт в реальной жизни</h2>
       <div class="poster-demonstration-container s1x1">
@@ -396,8 +412,6 @@
           </p>
         </div>
       </div>
-
-      <div class="pop-up-poster-container"></div>
 
       <div class="project-footer">
         <p class="minor">Дизайнер<br />Максим Мавряшин</p>
@@ -441,43 +455,10 @@
     </main>
 
     <div class="pop-up-container"></div>
+    <div class="image-viewer-overlay"></div>
 
-    <footer>
-      <a
-        class="logo-footer"
-        href="../../index.html#narrow"
-        target="KFproduction"
-      ></a>
-      <p class="copyright minor white">
-        Оригинальные авторские&nbsp;права
-        <br />
-        принадлежат&nbsp;KFproduction
-        <br />
-        Редакция&nbsp;2024
-      </p>
-      <div class="footer-button-container">
-        <a
-          class="pop-up-button hlink minor white"
-          data-mode="copy"
-          data-img="../../img/icons/pop-up/at-sign.svg"
-          data-msg="Почта скопирована"
-          data-copytxt="KFproduction@yandex.ru"
-          >KFproduction@yandex.ru</a
-        >
-        <div class="button-container">
-          <a href="https://vk.com/kfprod" class="button vk"></a>
-          <a href="https://t.me/maxmavr" class="button tg"></a>
-          <a href="https://www.youtube.com/@kfprod" class="button yt"></a>
-        </div>
-        <a
-          class="pop-up-button button mail"
-          data-mode="copy"
-          data-img="../../img/icons/pop-up/at-sign.svg"
-          data-msg="Почта скопирована"
-          data-copytxt="KFproduction@yandex.ru"
-        ></a>
-      </div>
-    </footer>
+    <!--#include virtual="/plug-in-elements/projects-footer.html" -->
+    <!--#include virtual="/plug-in-elements/sticky-footer.html" -->
 
     <script src="project.js"></script>
     <script src="../../scripts/lang&theme.js"></script>

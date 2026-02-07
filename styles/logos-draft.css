@@ -1,17 +1,22 @@
 @import url(base-items/const.css);
 
+.main {
+  --stroke-width: 1;
+  --animation-time: .5s;
+}
+
 .bg {
   opacity: 0;
 }
 
 .mjl, .mnl, .d, .dl, .logo, .logo-draft {
-  -webkit-transition: all .5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
-  -o-transition: all .5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
-  transition: all .5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  -webkit-transition: all var(--animation-time) cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  -o-transition: all var(--animation-time) cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  transition: all var(--animation-time) cubic-bezier(0.75, 0.35, 0.4, 0.99);
 }
 
 .mjl, .mnl, .dl {
-  stroke-width: 1;
+  stroke-width: var(--stroke-width);
   fill: none;
   stroke: var(--draft-color);
   stroke-miterlimit: 10;
@@ -56,7 +61,7 @@
 }
 
 .logo-draft{
-  stroke-width: 1;
+  stroke-width: var(--stroke-width);
   fill: var(--draft-color);
   stroke: var(--draft-color);
   stroke-miterlimit: 10;
