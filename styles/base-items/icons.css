@@ -1,0 +1,21 @@
+.icon {
+  height: 16px;
+  width: 16px;
+  aspect-ratio: 1;
+  pointer-events: none;
+}
+
+.icon.small {
+  height: 16px;
+  width: 16px;
+}
+
+.icon.medium {
+  height: 32px;
+  width: 32px;
+}
+
+.icon.large {
+  height: 48px;
+  width: 48px;
+}
