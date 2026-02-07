@@ -5,14 +5,24 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-
 }
 
-.with-image {
+.with-background-image {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; 
   overflow: hidden;
+}
+
+.full-screen-background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 110vw;
+  height: 110vh;
+  pointer-events: none;
+  z-index: 1;
+  transform: translate(-50%, -50%);
 }
 
 .full-screen-block {
