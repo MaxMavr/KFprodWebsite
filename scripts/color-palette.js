@@ -15,5 +15,4 @@ function handleColorMouseEnter(event) {
 
 for (let i = 0; i < colorElements.length; i++) {
   colorElements[i].addEventListener('mouseenter', handleColorMouseEnter);
-  console.log(colorElements[i]);
 }

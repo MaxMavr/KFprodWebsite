@@ -109,6 +109,26 @@
   }
 }
 
+.main.wbi {
+  .mjl, .mnl, .dl {
+    stroke: var(--draft-color);
+  }
+
+  .logo-draft{
+    fill: var(--draft-color);
+    stroke: var(--draft-color);
+    fill-opacity: 1;
+  }
+
+  .h{
+    stroke: var(--draft-color);
+  }
+
+  #dot {
+    fill: var(--draft-color);
+  }
+}
+
 .main:hover {
   .mjl,
   .mnl {

@@ -1,9 +1,15 @@
 .two-columns {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: 40px;
+  gap: var(--gap-section);
 }
 
 .two-columns img {
   max-width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .two-columns {
+    grid-template-columns: 1fr;
+  }
 }

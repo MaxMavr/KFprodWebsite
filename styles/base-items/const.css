@@ -47,6 +47,10 @@
   --gap-detail: 6px;
 
   --border-radius: 20px;
+  
+  /* Кегли */
+  --main-font-size: 32px;
+  --minor-font-size: 20px;
 }
 
 svg {
@@ -72,5 +76,13 @@ svg {
   svg {
     --draft-color: var(--white);
     --draft-invert-color: var(--black);
+  }
+}
+
+
+@media (max-width: 800px) {
+  :root  {
+    --main-font-size: 24px;
+    --minor-font-size: 16px;
   }
 }

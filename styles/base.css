@@ -36,11 +36,11 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: var(--gap-main);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  gap: var(--gap-main);
   width: 80%;
   max-width: 1600px;
   min-height: 80vh;
@@ -48,7 +48,7 @@ main {
 }
 
 span:not([class]) {
-  font-size: 20px;
+  font-size: var(--minor-font-size);
 }
 
 h1 {
@@ -73,7 +73,7 @@ h3 {
 }
 
 p:not([class]) {
-  font-size: 32px;
+  font-size: var(--main-font-size);
 }
 
 .fun {
@@ -106,14 +106,6 @@ strong {
     line-height: 1;
   }
 
-  p:not([class]) {
-    font-size: 24px;
-  }
-
-  .minor {
-    font-size: 16px;
-  }
-
   h1,
   .paragraph {
     width: 100%;
@@ -121,10 +113,6 @@ strong {
 
   .fun {
     display: none;
-  }
-
-  .two-columns {
-    grid-template-columns: 1fr;
   }
 }
 
