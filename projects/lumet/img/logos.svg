@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3584 3584">
 <style type="text/css">
 	@import url("../../../styles/logos-draft.css");
@@ -7,21 +6,6 @@
 	.mjl,.mnl{stroke-dasharray:3650;stroke-dashoffset:3650;}
 </style>
 <defs>
-	<!-- <radialGradient id="grad2" cx="0%" cy="0%" r="100%" fx="0%" fy="0%">
-	<stop offset="0%" stop-color="#ffbe0b">
-		<animate 
-		attributeName="stop-opacity"
-		values="1; 0.4; 1"
-		dur="9.5s"
-		repeatCount="indefinite"
-		easing="ease-in-out"
-		/>
-	</stop>
-	<stop offset="100%" stop-color="#ffbe0b" stop-opacity="0"/>
-	</radialGradient> -->
-
-
-
 	<linearGradient id="grad1" x1="0" y1="0" x2="0" y2="1">
 		<stop offset="0%" stop-color="#ffbe0b"/>
 		<stop offset="100%" stop-color="#ffd366"/>
@@ -43,7 +27,6 @@
 		<stop offset="0%" stop-color="#5299ff"/>
 		<stop offset="100%" stop-color="#92c4ff"/>
 	</linearGradient>
-
 	<radialGradient id="grad5-rad1" cx="100%" cy="0%" r="100%" fx="100%" fy="0%">
 		<stop offset="0%" stop-color="#da0082">
 			<animate 
@@ -56,7 +39,6 @@
 		</stop>
 		<stop offset="100%" stop-color="#da0082" stop-opacity="0"/>
 	</radialGradient>
-
 	<radialGradient id="grad5-rad2" cx="0%" cy="100%" r="100%" fx="0%" fy="100%">
 		<stop offset="0%" stop-color="#d852a9">
 			<animate 
@@ -74,7 +56,6 @@
 		<stop offset="0%" stop-color="#5299ff"/>
 		<stop offset="100%" stop-color="#92c4ff"/>
 	</linearGradient>
-
 	<radialGradient id="grad6-rad1" cx="0%" cy="0%" r="100%" fx="0%" fy="0%">
 		<stop offset="0%" stop-color="#8338ec">
 			<animate 
@@ -87,7 +68,6 @@
 		</stop>
 		<stop offset="100%" stop-color="#8338ec" stop-opacity="0"/>
 	</radialGradient>
-
 	<radialGradient id="grad6-rad2" cx="100%" cy="100%" r="100%" fx="100%" fy="100%">
 		<stop offset="0%" stop-color="#aa81ea">
 			<animate 
@@ -105,7 +85,6 @@
 		<stop offset="0%" stop-color="#da0082"/>
 		<stop offset="100%" stop-color="#d852a9"/>
 	</linearGradient>
-
 	<radialGradient id="grad7-rad1" cx="0%" cy="0%" r="100%" fx="0%" fy="0%">
 		<stop offset="0%" stop-color="#ffbe0b">
 			<animate 
@@ -118,7 +97,6 @@
 		</stop>
 		<stop offset="100%" stop-color="#ffbe0b" stop-opacity="0"/>
 	</radialGradient>
-
 	<radialGradient id="grad7-rad2" cx="100%" cy="100%" r="100%" fx="100%" fy="100%">
 		<stop offset="0%" stop-color="#ffd366">
 			<animate 
@@ -136,7 +114,6 @@
 		<stop offset="0%" stop-color="#da0082"/>
 		<stop offset="100%" stop-color="#d852a9"/>
 	</linearGradient>
-
 	<radialGradient id="grad8-rad1" cx="0%" cy="0%" r="100%" fx="0%" fy="0%">
 		<stop offset="0%" stop-color="#8338ec">
 			<animate 
@@ -149,7 +126,6 @@
 		</stop>
 		<stop offset="100%" stop-color="#8338ec" stop-opacity="0"/>
 	</radialGradient>
-
 	<radialGradient id="grad8-rad2" cx="100%" cy="100%" r="100%" fx="100%" fy="100%">
 		<stop offset="0%" stop-color="#aa81ea">
 			<animate 

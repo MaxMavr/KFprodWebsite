@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
 <style>
 	polygon{fill:#000;}
 	@media (prefers-color-scheme: dark){polygon{fill:#fff;}}
 </style>
-<rect style="fill:#FD5052;" x="6.32" y="15.76"  width="11.36" height="2.24"/>
+<rect fill="#FD5052" x="6.32" y="15.76"  width="11.36" height="2.24"/>
 <polygon points="15.34,6 15.34,12.59 13.17,12.59 13.17,6 10.83,6 10.83,12.59 8.66,12.59 8.66,6 6.32,6 6.32,12.59 6.32,14.83 
 	8.66,14.83 10.83,14.83 13.17,14.83 15.34,14.83 17.68,14.83 17.68,12.59 17.68,6"/>
 </svg>

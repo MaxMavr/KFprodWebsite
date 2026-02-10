@@ -1,15 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 8938.15 2575.53">
 <style type="text/css">
-	<!-- 
-	width="8938.15" height="2575.53"
-	
-	@import url("../../../../styles/logos-draft.css");
-	.d{fill:url(#d);}
-	-draft-invert-color: #252525;
-	-draft-color: #FFF; -->
-
-
 	.shw{fill:#2C191C;filter:blur(15px);opacity:0.13;}
 	.clr-shw{filter:blur(15px);opacity:0.5;}
 
@@ -20,90 +10,83 @@
 	.b{fill:#252525;}
 	
 	.st5{opacity:0.2;fill:#252525;}
-	.st7{fill:#FF00FF;}
-	
-	.st10{font-family:'Manrope-Medium';}
-	.st11{font-size:50px;}
-	.st12{opacity:0.3;}
 </style>
 
-
 <defs>
-<clipPath id="interface1">
-	<path d="M1881.91,196.59l509.87,1902.87c14.29,53.35-17.36,108.18-70.71,122.47l-850.01,227.76
-	c-53.35,14.29-108.18-17.36-122.47-70.71L838.71,476.12c-14.29-53.35,17.36-108.18,70.71-122.47l850.01-227.76
-	C1812.78,111.59,1867.61,143.25,1881.91,196.59z"/>
-</clipPath>
-<clipPath id="interface2">
-	<path d="M3311.33,196.59l509.87,1902.87c14.29,53.35-17.36,108.18-70.71,122.47l-850.01,227.76
-	c-53.35,14.29-108.18-17.36-122.47-70.71L2268.13,476.12c-14.29-53.35,17.36-108.18,70.71-122.47l850.01-227.76
-	C3242.21,111.59,3297.04,143.25,3311.33,196.59z"/>
-</clipPath>
-<clipPath id="interface3">
-	<path d="M4741.56,196.59l509.87,1902.87c14.29,53.35-17.36,108.18-70.71,122.47L4330.7,2449.7
-	c-53.35,14.29-108.18-17.36-122.47-70.71L3698.36,476.12c-14.29-53.35,17.36-108.18,70.71-122.47l850.01-227.76
-	C4672.43,111.59,4727.26,143.25,4741.56,196.59z"/>
-</clipPath>
-<clipPath id="interface4">
-	<path d="M6171.78,196.59l509.87,1902.87c14.29,53.35-17.36,108.18-70.71,122.47l-850.01,227.76
-	c-53.35,14.29-108.18-17.36-122.47-70.71L5128.58,476.12c-14.29-53.35,17.36-108.18,70.71-122.47l850.01-227.76
-	C6102.65,111.59,6157.48,143.25,6171.78,196.59z"/>
-</clipPath>
-<clipPath id="interface5">
-	<path d="M7602,196.65l509.87,1902.87c14.29,53.35-17.36,108.18-70.71,122.47l-850.02,227.76
-	c-53.35,14.29-108.18-17.36-122.47-70.71L6558.8,476.17c-14.29-53.35,17.36-108.18,70.71-122.47l850.01-227.76
-	C7532.87,111.64,7587.71,143.3,7602,196.65z"/>
-</clipPath>
-<clipPath id="profile">
-	<circle cx="5465.38" cy="670.57" r="175"/>
-</clipPath>
-<clipPath id="event">
-	<path d="M6996.3,949.05l-96.59,25.88c-53.35,14.29-108.18-17.36-122.47-70.71l-25.88-96.59
-	c-14.29-53.35,17.36-108.18,70.71-122.47l96.59-25.88c53.35-14.29,108.18,17.36,122.47,70.71l25.88,96.59
-	C7081.31,879.93,7049.65,934.76,6996.3,949.05z"/>
-</clipPath>
-<clipPath id="small-profile">
-	<circle cx="6950.53" cy="1348.01" r="52.52"/>
-</clipPath>
-<linearGradient id="grad1" x1="0" y1="0" x2="0" y2="1">
-  <stop offset="0%" stop-color="#da0082"/>
-  <stop offset="100%" stop-color="#d852a9"/>
-</linearGradient>
-<radialGradient id="grad2" cx="0%" cy="0%" r="100%" fx="0%" fy="0%">
-  <stop offset="0%" stop-color="#ffbe0b">
-    <animate 
-      attributeName="stop-opacity"
-      values="1; 0.4; 1"
-      dur="9.5s"
-      repeatCount="indefinite"
-      easing="ease-in-out"
-    />
-  </stop>
-  <stop offset="100%" stop-color="#ffbe0b" stop-opacity="0"/>
-</radialGradient>
-<radialGradient id="grad3" cx="100%" cy="100%" r="100%" fx="100%" fy="100%">
-  <stop offset="0%" stop-color="#ffd366">
-    <animate 
-      attributeName="stop-opacity"
-      values="1; 0.4; 1"
-      dur="8.2s"
-      repeatCount="indefinite"
-      easing="ease-in-out"
-    />
-  </stop>
-  <stop offset="100%" stop-color="#ffd366" stop-opacity="0"/>
-</radialGradient>
-<linearGradient id="grad4" x1="0" y1="0" x2="0" y2="1">
-	<stop offset="0%" stop-color="#5299ff"/>
-	<stop offset="100%" stop-color="#92c4ff"/>
-</linearGradient>
+	<clipPath id="interface1">
+		<path d="M1881.91,196.59l509.87,1902.87c14.29,53.35-17.36,108.18-70.71,122.47l-850.01,227.76
+		c-53.35,14.29-108.18-17.36-122.47-70.71L838.71,476.12c-14.29-53.35,17.36-108.18,70.71-122.47l850.01-227.76
+		C1812.78,111.59,1867.61,143.25,1881.91,196.59z"/>
+	</clipPath>
+	<clipPath id="interface2">
+		<path d="M3311.33,196.59l509.87,1902.87c14.29,53.35-17.36,108.18-70.71,122.47l-850.01,227.76
+		c-53.35,14.29-108.18-17.36-122.47-70.71L2268.13,476.12c-14.29-53.35,17.36-108.18,70.71-122.47l850.01-227.76
+		C3242.21,111.59,3297.04,143.25,3311.33,196.59z"/>
+	</clipPath>
+	<clipPath id="interface3">
+		<path d="M4741.56,196.59l509.87,1902.87c14.29,53.35-17.36,108.18-70.71,122.47L4330.7,2449.7
+		c-53.35,14.29-108.18-17.36-122.47-70.71L3698.36,476.12c-14.29-53.35,17.36-108.18,70.71-122.47l850.01-227.76
+		C4672.43,111.59,4727.26,143.25,4741.56,196.59z"/>
+	</clipPath>
+	<clipPath id="interface4">
+		<path d="M6171.78,196.59l509.87,1902.87c14.29,53.35-17.36,108.18-70.71,122.47l-850.01,227.76
+		c-53.35,14.29-108.18-17.36-122.47-70.71L5128.58,476.12c-14.29-53.35,17.36-108.18,70.71-122.47l850.01-227.76
+		C6102.65,111.59,6157.48,143.25,6171.78,196.59z"/>
+	</clipPath>
+	<clipPath id="interface5">
+		<path d="M7602,196.65l509.87,1902.87c14.29,53.35-17.36,108.18-70.71,122.47l-850.02,227.76
+		c-53.35,14.29-108.18-17.36-122.47-70.71L6558.8,476.17c-14.29-53.35,17.36-108.18,70.71-122.47l850.01-227.76
+		C7532.87,111.64,7587.71,143.3,7602,196.65z"/>
+	</clipPath>
+	<clipPath id="profile">
+		<circle cx="5465.38" cy="670.57" r="175"/>
+	</clipPath>
+	<clipPath id="event">
+		<path d="M6996.3,949.05l-96.59,25.88c-53.35,14.29-108.18-17.36-122.47-70.71l-25.88-96.59
+		c-14.29-53.35,17.36-108.18,70.71-122.47l96.59-25.88c53.35-14.29,108.18,17.36,122.47,70.71l25.88,96.59
+		C7081.31,879.93,7049.65,934.76,6996.3,949.05z"/>
+	</clipPath>
+	<clipPath id="small-profile">
+		<circle cx="6950.53" cy="1348.01" r="52.52"/>
+	</clipPath>
+	<linearGradient id="grad1" x1="0" y1="0" x2="0" y2="1">
+	<stop offset="0%" stop-color="#da0082"/>
+	<stop offset="100%" stop-color="#d852a9"/>
+	</linearGradient>
+	<radialGradient id="grad2" cx="0%" cy="0%" r="100%" fx="0%" fy="0%">
+	<stop offset="0%" stop-color="#ffbe0b">
+		<animate 
+		attributeName="stop-opacity"
+		values="1; 0.4; 1"
+		dur="9.5s"
+		repeatCount="indefinite"
+		easing="ease-in-out"
+		/>
+	</stop>
+	<stop offset="100%" stop-color="#ffbe0b" stop-opacity="0"/>
+	</radialGradient>
+	<radialGradient id="grad3" cx="100%" cy="100%" r="100%" fx="100%" fy="100%">
+	<stop offset="0%" stop-color="#ffd366">
+		<animate 
+		attributeName="stop-opacity"
+		values="1; 0.4; 1"
+		dur="8.2s"
+		repeatCount="indefinite"
+		easing="ease-in-out"
+		/>
+	</stop>
+	<stop offset="100%" stop-color="#ffd366" stop-opacity="0"/>
+	</radialGradient>
+	<linearGradient id="grad4" x1="0" y1="0" x2="0" y2="1">
+		<stop offset="0%" stop-color="#5299ff"/>
+		<stop offset="100%" stop-color="#92c4ff"/>
+	</linearGradient>
 </defs>
 
 
 <path class="shw" d="M1881.91,196.59l509.87,1902.87c14.29,53.35-17.36,108.18-70.71,122.47l-850.01,227.76
 	c-53.35,14.29-108.18-17.36-122.47-70.71L838.71,476.12c-14.29-53.35,17.36-108.18,70.71-122.47l850.01-227.76
 	C1812.78,111.59,1867.61,143.25,1881.91,196.59z"/>
-
 <g style="clip-path:url(#interface1);">
 	<g>
 		<rect fill="url(#grad1)" x="530.24" y="747.79" transform="matrix(-0.2588 -0.9659 0.9659 -0.2588 789.3894 3181.3035)" width="2170" height="1080"/>
@@ -124,7 +107,6 @@
 <path class="shw" d="M3311.33,196.59l509.87,1902.87c14.29,53.35-17.36,108.18-70.71,122.47l-850.01,227.76
 	c-53.35,14.29-108.18-17.36-122.47-70.71L2268.13,476.12c-14.29-53.35,17.36-108.18,70.71-122.47l850.01-227.76
 	C3242.21,111.59,3297.04,143.25,3311.33,196.59z"/>
-
 <g style="clip-path:url(#interface2);">
 	<rect class="w" x="1959.67" y="747.79" transform="matrix(-0.2588 -0.9659 0.9659 -0.2588 2588.7778 4562.0229)" width="2170" height="1080"/>
 	
@@ -3223,18 +3205,12 @@ PG6P33Ouqs17I48PKWXXaGXFwuNm+uV//9k=">
 	c-53.35,14.29-108.18-17.36-122.47-70.71L6558.8,476.17c-14.29-53.35,17.36-108.18,70.71-122.47l850.01-227.76
 	C7532.87,111.64,7587.71,143.3,7602,196.65z"/>
 <g style="clip-path:url(#interface5);">
-
-	
 	<rect fill="url(#grad1)" x="6540.4" y="236.41" transform="matrix(0.9659 -0.2588 0.2588 0.9659 154.1899 1844.005)" width="1080" height="200"/>
 	<rect fill="url(#grad2)" x="6540.4" y="236.41" transform="matrix(0.9659 -0.2588 0.2588 0.9659 154.1899 1844.005)" width="1080" height="200"/>
 	<rect fill="url(#grad3)" x="6540.4" y="236.41" transform="matrix(0.9659 -0.2588 0.2588 0.9659 154.1899 1844.005)" width="1080" height="200"/>
 	
-
 	<path class="st3" d="M8073.05,1954.63l-1043.2,279.52L6580.54,557.29c-4.29-16,5.21-32.45,21.21-36.74l985.24-264
 		c16-4.29,32.45,5.21,36.74,21.21L8073.05,1954.63z"/>
-
-
-
 	<path class="shw" d="M8138.15,2196.01l-1043.2,279.52L6630.38,741.7c-4.29-16,5.21-32.45,21.21-36.74l985.24-264
 		c16-4.29,32.45,5.21,36.74,21.21L8138.15,2196.01z"/>
 	<path class="w" d="M8138.15,2196.01l-1043.2,279.52L6630.38,741.7c-4.29-16,5.21-32.45,21.21-36.74l985.24-264
