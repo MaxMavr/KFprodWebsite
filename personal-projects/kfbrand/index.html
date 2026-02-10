@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 
-<!--
-  Оригинальные авторские права
-  принадлежат KFproduction
-  Редакция 2024
--->
+<!--#include virtual="/plug-in-elements/copyright-signature.html" -->
 
 <html lang="ru-RU">
   <head>
@@ -12,33 +8,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Брендбук KFproduction</title>
-    <meta
-      name="description"
-      content="Брендбук KFproduction: логотип, правила и примеры его размещения, фирменные цвета, шрифт и написание названия"
-    />
+    <meta name="description" content="Брендбук KFproduction: логотип, правила и примеры его размещения, фирменные цвета, шрифт и написание названия"/>
 
-    <link rel="icon" href="../../img/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" type="image/svg+xml" href="../../img/favicon.svg" />
     <link rel="stylesheet" type="text/css" href="../../styles/reset.css" />
     <link rel="stylesheet" type="text/css" href="../../styles/base.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="../../styles/projects-grid.css"
-    />
+    <link rel="stylesheet" type="text/css" href="../../styles/projects-grid.css"/>
     <link rel="stylesheet" type="text/css" href="../../styles/projects.css" />
+    <link rel="stylesheet" type="text/css" href="project.css" />
   </head>
 
   <body>
-    <header>
-      <h1>
-        Брендбук <br />
-        KFproduction
-      </h1>
+    <header class="project-header">
+      <h1>Брендбук<br />KFproduction</h1>
       <div>
-        <p class="minor">
-          Логотип&nbsp;&bull; Цвета&nbsp;&bull; Шрифт&nbsp;&bull;
-          Написание&nbsp;названия
-        </p>
+        <div class="tag-container">
+          <span class="tag"><span class="minor">Логотип</span></span>
+          <span class="tag"><span class="minor">Цвета</span></span>
+          <span class="tag"><span class="minor">Шрифт</span></span>
+          <span class="tag"><span class="minor">Написание&nbsp;названия</span></span>
+        </div>
 
         <div class="button-container">
           <a
@@ -57,267 +46,478 @@
     </header>
 
     <main>
-      <p>
-        Тут&nbsp;рассказано, как&nbsp;правильно использовать стиль KFproduction.
-        Стремимся к&nbsp;единообразию и&nbsp;узнаваемости во&nbsp;всех
-        упоминаниях.
-      </p>
+      <section class="paragraph">
+        <p>
+          Тут&nbsp;рассказано, как&nbsp;правильно использовать стиль KFproduction.
+          Стремимся к&nbsp;единообразию и&nbsp;узнаваемости во&nbsp;всех
+          упоминаниях
+        </p>
+      </section>
 
-      <h2>Логотип</h2>
-      <p>
-        Используйте логотип только в&nbsp;фирменных цветах KFproduction.
-        Изменение цвета монограммы или&nbsp;иконки недопустимо.
-      </p>
-      <article class="logo-demonstration">
-        <div class="big" style="background-color: #f2f3f5; background-color: var(--bg-accent-color)">
-          <object type="image/svg+xml" data="img/logo.svg"></object>
-          <a
-            class="pop-up-button hlink minor"
-            href="../../download-res/kfbrand/KFproduction-dark-logo.zip"
-            download
-            data-mode="dnld"
-            data-img="../../img/icons/pop-up/kf-logo.svg"
-            data-msg="Основной логотип скачан"
-            >Скачать</a
-          >
-        </div>
-        <div
-          class="small"
-          style="background-color: #231f20;  background-color: var(--bg-accent-invert-color)"
-        >
-          <object type="image/svg+xml" data="img/logo-w.svg"></object>
-          <a
-            class="pop-up-button hlink minor"
-            href="../../download-res/kfbrand/KFproduction-light-logo.zip"
-            download
-            data-mode="dnld"
-            data-img="../../img/icons/pop-up/kf-logo.svg"
-            data-msg="Основной логотип скачан"
-            >Скачать</a
-          >
-        </div>
-        <div
-          class="small"
-          style="background-color: #231f20; background-color: var(--bg-accent-invert-color)"
-        >
-          <object type="image/svg+xml" data="img/logo-wb.svg"></object>
+      <section class="section">
+        <section class="paragraph">
+          <h2>Логотип</h2>
           <p>
+            Используйте логотип только в&nbsp;фирменных цветах KFproduction.
+            Изменение цвета монограммы или&nbsp;иконки недопустимо
+          </p>
+        </section>
+
+        <article class="logo-demonstration">
+          <div class="big" style="background-color: #f2f3f5; background-color: var(--bg-accent-color)">
+            <object type="image/svg+xml" data="img/logo/main.svg"></object>
             <a
               class="pop-up-button hlink minor"
-              href="../../download-res/kfbrand/KFproduction-mono-light-logo.zip"
+              href="../../download-res/kfbrand/KFproduction-dark-logo.zip"
               download
               data-mode="dnld"
               data-img="../../img/icons/pop-up/kf-logo.svg"
-              data-msg="Монохромный логотип скачан"
-              >Скачать светлую</a
+              data-msg="Основной логотип скачан"
+              >Скачать</a
             >
+          </div>
+          <div class="small" style="background-color: #231f20;  background-color: var(--bg-accent-invert-color)">
+            <object type="image/svg+xml" data="img/logo/white.svg"></object>
             <a
               class="pop-up-button hlink minor"
-              href="../../download-res/kfbrand/KFproduction-mono-dark-logo.zip"
+              href="../../download-res/kfbrand/KFproduction-light-logo.zip"
               download
               data-mode="dnld"
               data-img="../../img/icons/pop-up/kf-logo.svg"
-              data-msg="Монохромный логотип скачан"
-              >Скачать тёмную</a
+              data-msg="Основной логотип скачан"
+              >Скачать</a
             >
-          </p>
-        </div>
-      </article>
-
-      <h2>Цвета</h2>
-      <p>
-        Цвета, которые были подобраны для логотипа, сочетаются со всеми шестью
-        соседями.
-      </p>
-      <div class="color-container">
-        <a
-          class="pop-up-button color white"
-          style="background-color: #231f20"
-          data-mode="copy"
-          data-img="../../img/icons/pop-up/pipette.svg"
-          data-msg="Цвет скопирован"
-          data-copytxt="#231F20"
-        >
-          <span>#231F20</span>
-          <span>35 31 32</span>
-          <span>0 11 9 86</span>
-          <span>Крутой чёрный</span>
-        </a>
-
-        <a
-          class="pop-up-button color black"
-          style="background-color: #ff9e33"
-          data-mode="copy"
-          data-img="../../img/icons/pop-up/pipette.svg"
-          data-msg="Цвет скопирован"
-          data-copytxt="#FF9E33"
-        >
-          <span>#FF9E33</span>
-          <span>255 158 51</span>
-          <span>0 38 80 0</span>
-        </a>
-
-        <a
-          class="pop-up-button color black"
-          style="background-color: #ff6433"
-          data-mode="copy"
-          data-img="../../img/icons/pop-up/pipette.svg"
-          data-msg="Цвет скопирован"
-          data-copytxt="#FF6433"
-        >
-          <span>#FF6433</span>
-          <span>255 100 51</span>
-          <span>0 61 80 0</span>
-        </a>
-
-        <a
-          class="pop-up-button color white"
-          style="background-color: #ff4267"
-          data-mode="copy"
-          data-img="../../img/icons/pop-up/pipette.svg"
-          data-msg="Цвет скопирован"
-          data-copytxt="#FF4267"
-        >
-          <span>#FF4267</span>
-          <span>255 66 103</span>
-          <span>0 74 60 0</span>
-        </a>
-
-        <a
-          class="pop-up-button color black"
-          style="background-color: #1bcec4"
-          data-mode="copy"
-          data-img="../../img/icons/pop-up/pipette.svg"
-          data-msg="Цвет скопирован"
-          data-copytxt="#1BCEC4"
-        >
-          <span>#1BCEC4</span>
-          <span>27 206 196</span>
-          <span>87 0 5 19</span>
-        </a>
-
-        <a
-          class="pop-up-button color white"
-          style="background-color: #9943e2"
-          data-mode="copy"
-          data-img="../../img/icons/pop-up/pipette.svg"
-          data-msg="Цвет скопирован"
-          data-copytxt="#9943E2"
-        >
-          <span>#9943E2</span>
-          <span>153 67 226</span>
-          <span>32 70 0 11</span>
-        </a>
-
-        <a
-          class="pop-up-button color white"
-          style="background-color: #5646ff"
-          data-mode="copy"
-          data-img="../../img/icons/pop-up/pipette.svg"
-          data-msg="Цвет скопирован"
-          data-copytxt="#5646FF"
-        >
-          <span>#5646FF</span>
-          <span>86 70 255</span>
-          <span>66 73 0 0</span>
-        </a>
-
-        <a
-          class="pop-up-button color white"
-          style="background-color: #414271"
-          data-mode="copy"
-          data-img="../../img/icons/pop-up/pipette.svg"
-          data-msg="Цвет скопирован"
-          data-copytxt="#414271"
-        >
-          <span>#414271</span>
-          <span>65 66 113</span>
-          <span>42 42 0 56</span>
-        </a>
-      </div>
-
-      <h2>Шрифт</h2>
-      <div class="font-demonstration-container">
-        <div class="font-demonstration">
-          <div class="font-name">
-            <h3>Noah</h3>
-            <span class="minor">Bold&nbsp;&bull; Regular</span>
           </div>
-          <p style="font-family: Noah">
-            Аа Бб Вв Гг Дд Ее Ёё Жж Зз Ии Йй Кк Лл Мм Нн Оо Пп Рр Сс Тт Уу Фф Хх
-            Цц Чч Шш Щщ Ъъ Ыы Ьь Ээ Юю Яя
-          </p>
-          <p style="font-family: Noah">
-            Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww
-            Xx Yy Zz
-          </p>
-          <p style="font-family: Noah">
-            0 1 2 3 4 5 6 7 8 9 ! ? @ # $ % & * № ( )
-          </p>
-
-          <div class="button-container">
-            <a href="https://fontstorage.com/ru/font/fontfabric/noah"
-            class="button fontstorage"></a>
+          <div class="small" style="background-color: #231f20; background-color: var(--bg-accent-invert-color)">
+            <object type="image/svg+xml" data="img/logo/black-white.svg"></object>
+            <p>
+              <a
+                class="pop-up-button hlink minor"
+                href="../../download-res/kfbrand/KFproduction-mono-light-logo.zip"
+                download
+                data-mode="dnld"
+                data-img="../../img/icons/pop-up/kf-logo.svg"
+                data-msg="Монохромный логотип скачан"
+                >Скачать светлую</a
+              >
+              <a
+                class="pop-up-button hlink minor"
+                href="../../download-res/kfbrand/KFproduction-mono-dark-logo.zip"
+                download
+                data-mode="dnld"
+                data-img="../../img/icons/pop-up/kf-logo.svg"
+                data-msg="Монохромный логотип скачан"
+                >Скачать тёмную</a
+              >
+            </p>
           </div>
-        </div>
-      </div>
+        </article>
+      </section>
       
-      <h2>Текстовое написание</h2>
-      <p>
-        Название следует писать слитно и&nbsp;без&nbsp;кавычек, с&nbsp;двумя
-        заглавными буквами
-        &laquo;K&raquo;&nbsp;и&nbsp;&laquo;F&raquo;&nbsp;&mdash;&nbsp;KFproduction.
-        Кстати, использовать текстовое написание вместо логотипа запрещено.
-      </p>
+      <section class="section">
+        <section class="paragraph">
+          <h2>Цвета</h2>
+          <p>
+            Цвета, которые были подобраны для логотипа, сочетаются со всеми шестью
+            соседями
+          </p>
+        </section>
+        
+        <div class="color-palette-container">
+          <a
+            class="pop-up-button color white"
+            style="background-color: #231F20"
+            data-mode="copy"
+            data-img="../../img/icons/pop-up/pipette.svg"
+            data-msg="Цвет скопирован"
+            data-copytxt="#231F20"
+          >
+            <div class="color-spec">
+              <div class="color-title">Крутой чёрный</div>
+
+              <div class="color-model">HEX</div>
+              <div class="color-value hex-value">#231F20</div>
+
+              <div class="color-model">RGB</div>
+              <div class="color-value">35</div>
+              <div class="color-value">31</div>
+              <div class="color-value">32</div>
+              <div></div>
+
+              <div class="color-model">CMYK</div>
+              <div class="color-value">0</div>
+              <div class="color-value">11</div>
+              <div class="color-value">9</div>
+              <div class="color-value">86</div>
+            </div>
+          </a>
+          <a
+            class="pop-up-button color black"
+            style="background-color: #FF9E33"
+            data-mode="copy"
+            data-img="../../img/icons/pop-up/pipette.svg"
+            data-msg="Цвет скопирован"
+            data-copytxt="#FF9E33"
+          >
+            <div class="color-spec">
+              <div class="color-model">HEX</div>
+              <div class="color-value hex-value">#FF9E33</div>
+
+              <div class="color-model">RGB</div>
+              <div class="color-value">255</div>
+              <div class="color-value">158</div>
+              <div class="color-value">51</div>
+              <div></div>
+
+              <div class="color-model">CMYK</div>
+              <div class="color-value">0</div>
+              <div class="color-value">38</div>
+              <div class="color-value">80</div>
+              <div class="color-value">0</div>
+            </div>
+          </a>
+          <a
+            class="pop-up-button color black"
+            style="background-color: #FF6433"
+            data-mode="copy"
+            data-img="../../img/icons/pop-up/pipette.svg"
+            data-msg="Цвет скопирован"
+            data-copytxt="#FF6433"
+          >
+            <div class="color-spec">
+              <div class="color-model">HEX</div>
+              <div class="color-value hex-value">#FF6433</div>
+
+              <div class="color-model">RGB</div>
+              <div class="color-value">255</div>
+              <div class="color-value">100</div>
+              <div class="color-value">51</div>
+              <div></div>
+
+              <div class="color-model">CMYK</div>
+              <div class="color-value">0</div>
+              <div class="color-value">61</div>
+              <div class="color-value">80</div>
+              <div class="color-value">0</div>
+            </div>
+          </a>
+          <a
+            class="pop-up-button color white"
+            style="background-color: #FF4267"
+            data-mode="copy"
+            data-img="../../img/icons/pop-up/pipette.svg"
+            data-msg="Цвет скопирован"
+            data-copytxt="#FF4267"
+          >
+            <div class="color-spec">
+              <div class="color-model">HEX</div>
+              <div class="color-value hex-value">#FF4267</div>
+
+              <div class="color-model">RGB</div>
+              <div class="color-value">255</div>
+              <div class="color-value">66</div>
+              <div class="color-value">103</div>
+              <div></div>
+
+              <div class="color-model">CMYK</div>
+              <div class="color-value">0</div>
+              <div class="color-value">74</div>
+              <div class="color-value">60</div>
+              <div class="color-value">0</div>
+            </div>
+          </a>
+          <a
+            class="pop-up-button color black"
+            style="background-color: #1BCEC4"
+            data-mode="copy"
+            data-img="../../img/icons/pop-up/pipette.svg"
+            data-msg="Цвет скопирован"
+            data-copytxt="#1BCEC4"
+          >
+            <div class="color-spec">
+              <div class="color-model">HEX</div>
+              <div class="color-value hex-value">#1BCEC4</div>
+
+              <div class="color-model">RGB</div>
+              <div class="color-value">27</div>
+              <div class="color-value">206</div>
+              <div class="color-value">196</div>
+              <div></div>
+
+              <div class="color-model">CMYK</div>
+              <div class="color-value">87</div>
+              <div class="color-value">0</div>
+              <div class="color-value">5</div>
+              <div class="color-value">19</div>
+            </div>
+          </a>
+          <a
+            class="pop-up-button color white"
+            style="background-color: #9943E2"
+            data-mode="copy"
+            data-img="../../img/icons/pop-up/pipette.svg"
+            data-msg="Цвет скопирован"
+            data-copytxt="#9943E2"
+          >
+            <div class="color-spec">
+              <div class="color-model">HEX</div>
+              <div class="color-value hex-value">#9943E2</div>
+
+              <div class="color-model">RGB</div>
+              <div class="color-value">153</div>
+              <div class="color-value">67</div>
+              <div class="color-value">226</div>
+              <div></div>
+
+              <div class="color-model">CMYK</div>
+              <div class="color-value">32</div>
+              <div class="color-value">70</div>
+              <div class="color-value">0</div>
+              <div class="color-value">11</div>
+            </div>
+          </a>
+          <a
+            class="pop-up-button color white"
+            style="background-color: #5646FF"
+            data-mode="copy"
+            data-img="../../img/icons/pop-up/pipette.svg"
+            data-msg="Цвет скопирован"
+            data-copytxt="#5646FF"
+          >
+            <div class="color-spec">
+              <div class="color-model">HEX</div>
+              <div class="color-value hex-value">#5646FF</div>
+
+              <div class="color-model">RGB</div>
+              <div class="color-value">86</div>
+              <div class="color-value">70</div>
+              <div class="color-value">255</div>
+              <div></div>
+
+              <div class="color-model">CMYK</div>
+              <div class="color-value">66</div>
+              <div class="color-value">73</div>
+              <div class="color-value">0</div>
+              <div class="color-value">0</div>
+            </div>
+          </a>
+          <a
+            class="pop-up-button color white"
+            style="background-color: #414271"
+            data-mode="copy"
+            data-img="../../img/icons/pop-up/pipette.svg"
+            data-msg="Цвет скопирован"
+            data-copytxt="#414271"
+          >
+            <div class="color-spec">
+              <div class="color-model">HEX</div>
+              <div class="color-value hex-value">#414271</div>
+
+              <div class="color-model">RGB</div>
+              <div class="color-value">65</div>
+              <div class="color-value">66</div>
+              <div class="color-value">113</div>
+              <div></div>
+
+              <div class="color-model">CMYK</div>
+              <div class="color-value">42</div>
+              <div class="color-value">42</div>
+              <div class="color-value">0</div>
+              <div class="color-value">56</div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="section">
+        <section class="paragraph">
+          <h2>Шрифт</h2>
+        </section>
+
+        <div class="font-demonstration-container">
+          <div class="font-demonstration">
+            <div class="font-name">
+              <h3>Noah</h3>
+              <span class="minor">Bold&nbsp;&bull; Regular</span>
+            </div>
+            <p style="font-family: Noah">
+              Аа Бб Вв Гг Дд Ее Ёё Жж Зз Ии Йй Кк Лл Мм Нн Оо Пп Рр Сс Тт Уу Фф Хх
+              Цц Чч Шш Щщ Ъъ Ыы Ьь Ээ Юю Яя
+            </p>
+            <p style="font-family: Noah">
+              Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww
+              Xx Yy Zz
+            </p>
+            <p style="font-family: Noah">
+              0 1 2 3 4 5 6 7 8 9 ! ? @ # $ % & * № ( )
+            </p>
+
+            <div class="button-container">
+              <a href="https://fontstorage.com/ru/font/fontfabric/noah" class="button fontstorage"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="paragraph">
+        <h2>Текстовое написание</h2>
+        <p>
+          Название следует писать слитно и&nbsp;без&nbsp;кавычек, с&nbsp;двумя
+          заглавными буквами
+          &laquo;K&raquo;&nbsp;и&nbsp;&laquo;F&raquo;&nbsp;&mdash;&nbsp;KFproduction.
+          Кстати, использовать текстовое написание вместо логотипа запрещено
+        </p>
+      </section>
 
       <div class="project-footer">
         <p class="minor">Дизайнер<br />Максим Мавряшин</p>
         <p class="minor">Готово в&nbsp;октябре<br />2020&nbsp;года</p>
       </div>
+
+      <section class="paragraph">
+        <h2 class="large-heading">Этапы создания</h2>
+      </section>
+
+      <section class="section">
+        <div class="two-columns">
+          <object type="image/svg+xml" data="img/boat.svg"></object>
+
+          <section class="paragraph center-vertical">
+            <p>
+              Первая версия логотипа, 2018 год. Дизайн «Kusher Family production»
+              не полагался на тренды, а плыл по волнам
+            </p>
+          </section>
+        </div>
+
+        <div class="two-columns">
+          <section class="paragraph center-vertical">
+            <p>
+              Вторая и&nbsp;третья версии, 2019 и&nbsp;2020 год соответственно.
+              Остался только узнаваемый парус
+            </p>
+          </section>
+
+          <object type="image/svg+xml" data="img/sails.svg"></object>
+        </div>
+      </section>
+
+
+
+      <section class="section">
+        <section class="paragraph">
+          <h2>Шрифт</h2>
+          <p>
+            Вместе с формой знака менялся и шрифт
+          </p>
+        </section>
+        
+        <section class="paragraph">
+          <div class="two-columns">
+            <section class="paragraph center-vertical">
+              <h3>LilyUPC</h3>
+              <p>
+                Строгая гарнитура, которая играла
+                на&nbsp;контрасте со&nbsp;свободными работами
+              </p>
+            </section>
+
+            <object type="image/svg+xml" data="img/new-logo1.svg"></object>
+          </div>
+        </section>
+        
+        <section class="paragraph">
+          <div class="two-columns">
+            <section class="paragraph center-vertical">
+              <h3>Coco Gothic</h3>
+              <p>
+                Пробел между словами пропал: сокращение
+                &laquo;Kusher Family production&raquo; превратилось
+                в&nbsp;новый бренд&nbsp;&mdash; KFproduction
+              </p>
+            </section>
+
+            <object type="image/svg+xml" data="img/new-logo2.svg"></object>
+          </div>
+        </section>
+      </section>
+
+      <section class="section">
+        <section class="paragraph">
+          <h2>Первая версия нового логотипа</h2>
+          <p>
+            В&nbsp;шрифтовой части &laquo;KF&raquo; отделено
+            от&nbsp;&laquo;production&raquo;&nbsp;&mdash;
+            но&nbsp;не&nbsp;пробелом, а&nbsp;весом шрифта
+          </p>
+        </section>
+        
+        <section class="paragraph">
+          <object type="image/svg+xml" data="img/new-logo3.svg"></object>
+        </section>
+      </section>
+
+      <section class="section">
+        <section class="paragraph">
+          <h2>Вторая версия</h2>
+          <p>
+            Во&nbsp;второй версии изменилась устаревшая форма паруса
+          </p>
+        </section>
+
+        <section class="paragraph">
+          <object type="image/svg+xml" data="img/new-logo4.svg"></object>
+        </section>
+      </section>
+
+      <div class="four-columns">
+        <object type="image/svg+xml" data="img/form/form1.svg"></object>
+        <object type="image/svg+xml" data="img/form/form2.svg"></object>
+        <object type="image/svg+xml" data="img/form/form3.svg"></object>
+        <object type="image/svg+xml" data="img/form/form4.svg"></object>
+      </div>
+
+      <section class="paragraph">
+        <h2>Новый подход к&nbsp;дизайну</h2>
+        <p>
+          Cвободные идеи уступили место фундаментальным,
+          поэтому от&nbsp;паруса решено отказаться. Теперь главную роль
+          в&nbsp;логотипе играет &laquo;KF&raquo;&nbsp;&mdash;
+          в&nbsp;дескрипторе не&nbsp;отделяется
+        </p>
+      </section>
+
+      <div class="four-columns" style="gap: var(--gap-main);">
+        <object class="center-vertical" type="image/svg+xml" data="img/new-logo-stage/stage1.svg"></object>
+        <object class="center-vertical" type="image/svg+xml" data="img/new-logo-stage/stage2.svg"></object>
+        <object class="center-vertical" type="image/svg+xml" data="img/new-logo-stage/stage3.svg"></object>
+        <object class="center-vertical" type="image/svg+xml" data="img/new-logo-stage/stage4.svg"></object>
+      </div>
+
+      <section class="paragraph">
+        <p>
+          Шрифт Noah Bold совместил в&nbsp;себе строгость Acme Gothic и&nbsp;мягкость Coco Gothic.
+        </p>
+      </section>
+
+      <object type="image/svg+xml" data="img/epilogue.svg"></object>
+
+      <section class="paragraph">
+        <p>
+          В&nbsp;итоге логотип был полностью переработан и&nbsp;получил два варианта: цветной и&nbsp;чёрно-белый
+        </p>
+        <p class="minor">Редакция 2023&nbsp;года</p>
+      </section>
     </main>
 
     <div class="pop-up-container"></div>
 
-    <footer>
-      <a
-        class="logo-footer"
-        href="../../index.html#narrow"
-        target="KFproduction"
-      ></a>
-      <p class="copyright minor white">
-        Оригинальные авторские&nbsp;права
-        <br />
-        принадлежат&nbsp;KFproduction
-        <br />
-        Редакция&nbsp;2024
-      </p>
-      <div class="footer-button-container">
-        <a
-          class="pop-up-button hlink minor white"
-          data-mode="copy"
-          data-img="../../img/icons/pop-up/at-sign.svg"
-          data-msg="Почта скопирована"
-          data-copytxt="KFproduction@yandex.ru"
-          >KFproduction@yandex.ru</a
-        >
-        <div class="button-container">
-          <a href="https://vk.com/kfprod" class="button vk"></a>
-          <a href="https://t.me/maxmavr" class="button tg"></a>
-          <a href="https://www.youtube.com/@kfprod" class="button yt"></a>
-        </div>
-        <a
-          class="pop-up-button button mail"
-          data-mode="copy"
-          data-img="../../img/icons/pop-up/at-sign.svg"
-          data-msg="Почта скопирована"
-          data-copytxt="KFproduction@yandex.ru"
-        ></a>
-      </div>
-    </footer>
+    <!--#include virtual="/plug-in-elements/projects-footer.html" -->
+    <!--#include virtual="/plug-in-elements/sticky-personal-footer.html" -->
 
     <script src="../../scripts/lang&theme.js"></script>
-    <script src="../../scripts/poster.js"></script>
     <script src="../../scripts/hlink.js"></script>
+    <script src="../../scripts/color-palette.js"></script>
     <script src="../../scripts/pop-up.js"></script>
   </body>
 </html>

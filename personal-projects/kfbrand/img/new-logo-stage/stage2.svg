@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 117.5 100">
+<style type="text/css">
+	path,polygon{fill:#231f20;}
+	@media (prefers-color-scheme: dark){path,polygon{fill:#f2f3f5}}
+</style>
+
+<polygon points="117.5,7 117.5,0 71,0 67.5,0 64,0 64,100 71,100 71,54.42 111.98,54.42 111.98,47.42 71,47.42 71,7 "/>
+<path d="M57,0h-7c0,24.46-18.99,44.56-43,46.35V0H0v100h7V53.65c24.01,1.8,43,21.89,43,46.35h7
+	c0-22.81-14.35-42.32-34.5-50C42.65,42.32,57,22.81,57,0z" />
+</svg>

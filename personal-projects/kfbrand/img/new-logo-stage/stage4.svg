@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 107 107">
+<style type="text/css">
+	path,rect{fill:#231f20;}
+	@media (prefers-color-scheme: dark){path,rect{fill:#f2f3f5}}
+</style>
+
+<path opacity="0.1" d="M53.5,3.5c0,27.61-22.39,50-50,50v-50H53.5z"/>
+<path opacity="0.2" d="M53.5,3.5v50h-50C31.11,53.5,53.5,31.11,53.5,3.5z"/>
+<path opacity="0.3" d="M3.5,53.5h50v50C53.5,75.89,31.11,53.5,3.5,53.5z"/>
+<path opacity="0.4" d="M3.5,53.5c27.61,0,50,22.39,50,50h-50V53.5z"/>
+<rect opacity="0.5" x="53.5" y="53.5" width="50" height="50"/>
+<rect opacity="0.6" x="53.5" y="28.5" width="50" height="25"/>
+<rect opacity="0.7" x="53.5" y="3.5" width="50" height="25"/>
+</svg>
