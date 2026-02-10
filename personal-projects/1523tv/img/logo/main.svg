@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 755 410">
 	<style type="text/css">
-		@import url("../../../styles/logos-draft.css");
+		@import url("../../../../styles/logos-draft.css");
+		.d{fill:url(#d);}
 
 		.s1{fill:#1AB5EA;}
 		.s2{fill:#0763AB;}
@@ -9,14 +10,14 @@
 		.s4{fill:#EA5826;}
 	</style>
 
-	<defs>
-		<pattern id="d" width="6" height="6" patternUnits="userSpaceOnUse"
-			patternTransform="rotate(45 50 50)">
-			<line class="h" x1="0" y1="0" x2="0" y2="10"></line>
-		</pattern>
-	</defs>
-
 	<g class="main">
+		<defs>
+			<pattern id="d" width="6" height="6" patternUnits="userSpaceOnUse"
+				patternTransform="rotate(45 50 50)">
+				<line class="h" x1="0" y1="0" x2="0" y2="10"></line>
+			</pattern>
+		</defs>
+
 		<rect x="4.19" y="4.92" class="bg" width="746.62" height="400.16" />
 		<rect x="4.19" y="4.92" class="dl" width="746.62" height="400.16" />
 
