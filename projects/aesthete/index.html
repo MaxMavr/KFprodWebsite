@@ -14,7 +14,6 @@
     <link rel="stylesheet" type="text/css" href="../../styles/base.css" />
     <link rel="stylesheet" type="text/css" href="../../styles/projects-grid.css"/>
     <link rel="stylesheet" type="text/css" href="../../styles/projects.css" />
-    <link rel="stylesheet" type="text/css" href="project.css" />
   </head>
 
   <body>
@@ -66,7 +65,7 @@
           </p>
         </section>
 
-        <div class="color-container">
+        <div class="color-palette-container">
           <a
             class="pop-up-button color white"
             style="background-color: #1C2229"
@@ -75,10 +74,22 @@
             data-msg="Цвет скопирован"
             data-copytxt="#1C2229"
           >
-            <span>#1C2229</span>
-            <span>28 34 41</span>
-            <span>32 17 0 84</span>
-            <span>Ночной индиго</span>
+            <div class="color-spec">
+              <div class="color-model">HEX</div>
+              <div class="color-value hex-value">#1C2229</div>
+
+              <div class="color-model">RGB</div>
+              <div class="color-value">28</div>
+              <div class="color-value">34</div>
+              <div class="color-value">41</div>
+              <div></div>
+
+              <div class="color-model">CMYK</div>
+              <div class="color-value">32</div>
+              <div class="color-value">17</div>
+              <div class="color-value">0</div>
+              <div class="color-value">84</div>
+            </div>
           </a>
           <a
             class="pop-up-button color black"
@@ -88,9 +99,22 @@
             data-msg="Цвет скопирован"
             data-copytxt="#FFFFFF"
           >
-            <span>#FFFFFF</span>
-            <span>255 255 255</span>
-            <span>0 0 0 0</span>
+            <div class="color-spec">
+              <div class="color-model">HEX</div>
+              <div class="color-value hex-value">#FFFFFF</div>
+
+              <div class="color-model">RGB</div>
+              <div class="color-value">255</div>
+              <div class="color-value">255</div>
+              <div class="color-value">255</div>
+              <div></div>
+
+              <div class="color-model">CMYK</div>
+              <div class="color-value">0</div>
+              <div class="color-value">0</div>
+              <div class="color-value">0</div>
+              <div class="color-value">0</div>
+            </div>
           </a>
           <a
             class="pop-up-button color black"
@@ -100,10 +124,22 @@
             data-msg="Цвет скопирован"
             data-copytxt="#FEB060"
           >
-            <span>#FEB060</span>
-            <span>254 176 96</span>
-            <span>0 31 62 0</span>
-            <span>Золотистый жёлтый</span>
+            <div class="color-spec">
+              <div class="color-model">HEX</div>
+              <div class="color-value hex-value">#FEB060</div>
+
+              <div class="color-model">RGB</div>
+              <div class="color-value">254</div>
+              <div class="color-value">176</div>
+              <div class="color-value">96</div>
+              <div></div>
+
+              <div class="color-model">CMYK</div>
+              <div class="color-value">0</div>
+              <div class="color-value">31</div>
+              <div class="color-value">62</div>
+              <div class="color-value">0</div>
+            </div>
           </a>
         </div>
       </section>
@@ -164,6 +200,7 @@
 
     <script src="../../scripts/lang&theme.js"></script>
     <script src="../../scripts/hlink.js"></script>
+    <script src="../../scripts/color-palette.js"></script>
     <script src="../../scripts/pop-up.js"></script>
   </body>
 </html>

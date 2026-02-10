@@ -2,12 +2,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 256px;
-  border-radius: 20px;
+  border-radius: var(--border-radius);
   overflow: hidden;
-  
-  font-weight: normal;
-  font-size: var(--minor-font-size);
 }
 
 .color-title {
@@ -25,7 +21,7 @@
   display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(5, min-content);
-  gap: calc(var(--gap-detail) / 2) var(--gap-detail);
+  gap: var(--gap-detail);
 
   -webkit-transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   -o-transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
@@ -34,7 +30,7 @@
 
 .color-value {
   font-feature-settings: "tnum";
-  text-align: end;
+  text-align: start;
   width: 33px;
 }
 
@@ -46,7 +42,6 @@
 .color {
   -ms-flex-preferred-size: 0;
   flex-basis: 0;
-  padding: 20px 0;
   overflow: hidden;
   cursor: pointer;
   -webkit-box-flex: 1;
@@ -71,16 +66,21 @@
 
 .color-spec {
   opacity: 0;
+  margin: var(--gap-main) 0;
+  
+  font-weight: normal;
+  font-size: var(--minor-font-size);
+  line-height: 1;
 }
 
 .color.expand {
   -ms-flex-preferred-size: 25%;
   flex-basis: 25%;
-  padding: 20px;
 }
 
 .color.expand .color-spec {
   opacity: 100%;
+  margin: var(--gap-main) var(--gap-block);
 }
 
 @media (max-width: 800px) {
@@ -90,7 +90,11 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    height: 60vh;
+    height: 100vh;
+  }
+
+  .color-spec {
+    margin: auto var(--gap-block);
   }
 
   .color-model {
@@ -99,9 +103,5 @@
 
   .color-value {
     width: 27px;
-  }
-
-  .color {
-    padding: 0 20px;
   }
 }
