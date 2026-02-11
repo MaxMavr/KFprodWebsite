@@ -20,6 +20,10 @@
   text-align: center;
 }
 
+.center-vertical {
+  margin: auto 0;
+}
+
 .minor {
   font-size: 20px;
   font-weight: normal;

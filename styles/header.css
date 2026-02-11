@@ -42,6 +42,7 @@ header {
   position: fixed;
   inset: 0;
   background: var(--black);
+  border-bottom: 1px solid var(--border-color);
   z-index: 30;
 }
 

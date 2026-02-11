@@ -47,11 +47,6 @@
   width: 100%;
 }
 
-.hlink:not([href]) {
-  opacity: 30%;
-  pointer-events: none;
-}
-
 .hlink-with-icon {
   display: -webkit-box;
   display: -ms-flexbox;

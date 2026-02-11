@@ -49,6 +49,10 @@
   --border-radius: 20px;
   
   /* Кегли */
+  --first-heading-font-size: 112px;
+  --second-heading-font-size: 48px;
+  --third-heading-font-size: 40px;
+
   --main-font-size: 32px;
   --minor-font-size: 20px;
 }
@@ -84,5 +88,9 @@ svg {
   :root  {
     --main-font-size: 24px;
     --minor-font-size: 16px;
+
+    --first-heading-font-size: 48px;
+    --second-heading-font-size: 40px;
+    --third-heading-font-size: 32px;
   }
 }

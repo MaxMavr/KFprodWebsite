@@ -71,17 +71,8 @@
   --shadow-button-color: transparent;
 }
 
-.button-container.alpha .button {
+.button.alpha {
   opacity: 60%;
-}
-
-.button.in-text {
-  cursor: default;
-  display: inline-block;
-  height: 38px;
-  vertical-align: sub;
-  -webkit-box-shadow: 0 0 12px 0 var(--shadow-button-color);
-  box-shadow: 0 0 12px 0 var(--shadow-button-color);
 }
 
 .button.tg {

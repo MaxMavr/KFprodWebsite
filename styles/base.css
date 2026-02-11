@@ -51,25 +51,31 @@ span:not([class]) {
   font-size: var(--minor-font-size);
 }
 
-h1 {
+h1, h2, h3 {
+  line-height: 1;
   font-weight: bold;
   max-height: 100%;
   max-width: 100%;
-  font-size: 112px;
-  vertical-align: baseline;
-  line-height: 1;
-  margin: 40px auto 0;
-  width: 80%;
+}
+
+h1 {
+  font-size: var(--first-heading-font-size);
+}
+
+.large-heading {
+  font-size: var(--first-heading-font-size);
+}
+
+h1.headerless {
+  margin-top: var(--gap-main);
 }
 
 h2 {
-  font-size: 48px;
-  line-height: 1;
+  font-size: var(--second-heading-font-size);
 }
 
 h3 {
-  font-size: 40px;
-  line-height: 1;
+  font-size: var(--third-heading-font-size);
 }
 
 p:not([class]) {
@@ -92,25 +98,6 @@ strong {
 }
 
 @media (max-width: 800px) {
-  h1 {
-    font-size: 48px;
-    max-width: 100%;
-  }
-
-  h2 {
-    font-size: 40px;
-  }
-
-  h3 {
-    font-size: 32px;
-    line-height: 1;
-  }
-
-  h1,
-  .paragraph {
-    width: 100%;
-  }
-
   .fun {
     display: none;
   }

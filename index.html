@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 
-<!--
-  Оригинальные авторские права
-  принадлежат KFproduction
-  Редакция 2024
--->
+<!--#include virtual="/plug-in-elements/copyright-signature.html" -->
 
 <html lang="ru-RU">
   <head>
@@ -12,12 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>KFproduction</title>
-    <meta
-      name="description"
-      content="Портфолио: шрифты, логотипы, айдентика, плакаты и личные проекты"
-    />
+    <meta name="description" content="Портфолио: шрифты, логотипы, айдентика, плакаты и личные проекты"/>
 
-    <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
     <link rel="stylesheet" type="text/css" href="styles/reset.css" />
     <link rel="stylesheet" type="text/css" href="styles/base.css" />
     <link rel="stylesheet" type="text/css" href="styles/header.css" />
@@ -61,18 +54,17 @@
     <div class="header-plug"></div>
 
     <main>
-      <h1 id="p">Портфолио</h1>
-
-      <p>
-        Большинство работ, собранное в&nbsp;удобные кейсы.
-        <br />
-        Дополните&nbsp;его&nbsp;&mdash; закажите себе
-        <br />
-        <span class="minor">
+      <section class="paragraph">
+        <h1 id="p">Портфолио</h1>
+        <p>
+          Большинство работ, собранное в&nbsp;удобные кейсы.<br />
+          Дополните&nbsp;его&nbsp;&mdash; закажите себе
+        </p>
+        <p class="minor">
           Это <b>преАльфа</b> версия сайта. Для того чтобы посмотреть все страницы
           <a href="service-pages/all-pages/" class="hlink">тыкайте сюда</a>
-        </span>
-      </p>
+        </p>
+      </section>
 
       <noscript>
         <p class="minor">
@@ -179,36 +171,25 @@
         </article>
       </div>
 
-      <p style="text-align: center">
-        И-и-и <br />Мы&nbsp;закончили.<br />
-        Спасибо, что&nbsp;посмотрели.<br />
-        Выходы находятся по&nbsp;обе&nbsp;стороны комнаты.<br />
-        Пока!<br />
-        <span class="minor">
+      <section class="paragraph center">
+        <p>
+          И-и-и&hellip;<br />
+          Мы&nbsp;закончили. Спасибо, что&nbsp;посмотрели<br />
+          Выходы находятся по&nbsp;обе&nbsp;стороны комнаты<br />
+        </p>
+        <p class="minor">
           Если что-то не&nbsp;кликается,
           <a class="hlink" href="https://t.me/kfprodbot">напишите</a>
           &mdash;&nbsp;исправлю
-        </span>
-      </p>
+        </p>
+      </section>
+
+
     </main>
 
     <div class="pop-up-container"></div>
 
-    <footer>
-      <a class="logo-footer" href="/"></a>
-      <p class="copyright minor white">
-        Оригинальные авторские&nbsp;права
-        <br />
-        принадлежат&nbsp;KFproduction
-        <br />
-        Редакция&nbsp;2024
-      </p>
-      <div class="button-container white">
-        <a href="https://vk.com/kfprod" class="button vk"></a>
-        <a href="https://t.me/maxmavr" class="button tg"></a>
-        <a href="https://www.youtube.com/@kfprod" class="button yt"></a>
-      </div>
-    </footer>
+    <!--#include virtual="/plug-in-elements/main-footer.html" -->
 
     <script src="scripts/lang&theme.js"></script>
     <script src="scripts/header.js"></script>
