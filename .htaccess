@@ -1,4 +1,4 @@
-# 05.02.2026 06:24
+# 11.02.2026 16:09
 
 # Включаем необходимые модули
 Options +Includes -Indexes
@@ -73,11 +73,11 @@ RewriteRule ^(artemy)/?$ /articles/$1/ [R=301,L]
 
 
 # Fonts
-
+RewriteRule ^(melectron|morfin|nuqun)/?$ /fonts/$1/ [R=301,L]
 
 
 # Other pages
-RewriteRule ^(bottle-caps|cv|history|personal|showreel|useful)/?$ /other-pages/$1/ [R=301,L]
+RewriteRule ^(crown-caps|cv|personal|showreel|useful)/?$ /other-pages/$1/ [R=301,L]
 
 
 # Personal projects
@@ -85,7 +85,7 @@ RewriteRule ^(1523tv|birthday|desktops|kfbrand|minecraft-posters|posters)/?$ /pe
 
 
 # Projects
-RewriteRule ^(1ppc|aesthete|amusevill|amusics|default|lumet|melectron|morfin|morfinizm|morfinizm-lyrics|nuqun|oh-my-toast|stickers|wild-mathing)/?$ /projects/$1/ [R=301,L]
+RewriteRule ^(1ppc|aesthete|amusevill|amusics|default|lumet|mix|morfinizm|morfinizm-lyrics|ohmt|stickers|wild-mathing)/?$ /projects/$1/ [R=301,L]
 
 
 # Service pages
