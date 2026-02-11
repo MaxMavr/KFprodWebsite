@@ -1,18 +1,17 @@
+/* Пример заполнения для фона */
 .with-fill {
-  background-color: #f2f3f5;
   background-color: var(--bg-accent-color);
-  border: 1px solid #231f20;
-  border: 1px solid var(--border-color); 
-  padding: var(--gap-block);
-}
-
-.with-border-radius {
+  border: var(--border-width) solid var(--border-color);
+  padding: var(--padding-medium);
   border-radius: var(--border-radius);
 }
 
+.with-rounding {
+  border-radius: var(--border-radius);
+}
+
+/* Пример заполнения для переходов */
 .with-transition {
-  -webkit-transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
-  -o-transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
 }
 
@@ -25,18 +24,16 @@
 }
 
 .minor {
-  font-size: 20px;
+  font-size: var(--minor-font-size);
   font-weight: normal;
   opacity: 60%;
 }
 
 .white {
-  color: #f2f3f5;
   color: var(--white);
 }
 
 .black {
-  color: #231f20;
   color: var(--black);
 }
 
@@ -46,19 +43,18 @@
 }
 
 .glass {
-  padding: var(--gap-section);
+  padding: var(--padding-medium);
   border-radius: var(--border-radius);
   backdrop-filter: blur(20px);
-  border: 1px solid #231f20;
-  border: 1px solid var(--border-color); 
+  border: var(--border-width) solid var(--border-color);
 }
 
 .glass.white {
-  border: 1px solid var(--white-trans10);
+  border: var(--border-width) solid var(--white-border-color);
 }
 
 .glass.black {
-  border: 1px solid var(--black-trans10);
+  border: var(--border-width) solid var(--black-border-color);
 }
 
 .noise {
@@ -69,9 +65,25 @@
 
 
 @media (max-width: 800px) {
-  .visible-in-desktop { display: none; }
+  .visible-in-desktop {
+    display: none;
+  }
 }
 
 @media (min-width: 800px) {
-  .visible-in-mobile { display: none; }
+  .visible-in-mobile {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .visible-in-dark {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .visible-in-light {
+    display: none;
+  }
 }
