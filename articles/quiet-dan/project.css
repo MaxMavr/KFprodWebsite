@@ -1,0 +1,12 @@
+.full-screen-background {
+  max-height: 90%;
+  max-width: 90%;
+}
+
+.project-header {
+  flex-direction: row-reverse;
+}
+
+.project-header > div > *:last-child {
+  margin-bottom: 10%;
+}

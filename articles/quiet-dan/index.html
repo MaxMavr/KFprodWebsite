@@ -16,34 +16,36 @@
     <link rel="stylesheet" type="text/css" href="../../styles/poster-grid.css"/>
     <link rel="stylesheet" type="text/css" href="../../styles/image-viewer.css"/>
     <link rel="stylesheet" type="text/css" href="../../styles/projects.css" />
+    <link rel="stylesheet" type="text/css" href="../../styles/full-screen.css"/>
+    <link rel="stylesheet" type="text/css" href="project.css" />
   </head>
 
   <body>
-    <header class="project-header">
-      <h1>Тихий Дэн</h1>
-      <div>
-        <div class="tag-container">
-          <span class="tag"><span class="minor">Плакат</span></span>
-          <span class="tag"><span class="minor">Нуар</span></span>
-          <span class="tag"><span class="minor">Brebsi</span></span>
+    <h1 style="display: none;">Тихий Дэн</h1>
+
+    <div class="full-screen-header">
+      <header class="project-header header-in-full-screen">
+        <div class="quiet-dan-header-container">
+          <div class="tag-container">
+            <span class="tag"><span class="minor">Плакат</span></span>
+            <span class="tag"><span class="minor">Нуар</span></span>
+            <span class="tag"><span class="minor">Brebsi</span></span>
+            <a href="https://t.me/kfprod/7" class="hlink-with-icon">
+              Пост в тгк
+              <object class="medium icon icon-arrow" type="image/svg+xml" data="../../img/icons/arrow-up-right.svg"></object>
+            </a>
+          </div>
+          <p>
+            Постер к&nbsp;аудиокниге<br />
+            Повесть&nbsp;/ Триллер
+          </p>
         </div>
-        <div>
-          <a href="https://t.me/kfprod/7" class="hlink-with-icon">
-            Пост в тгк
-            <object class="medium icon icon-arrow" type="image/svg+xml" data="../../img/icons/arrow-up-right.svg"></object>
-          </a>
-        </div>
-      </div>
-    </header>
+      </header>
+
+      <object class="full-screen-background" type="image/svg+xml" data="img/title.svg"></object>
+    </div>
 
     <main>
-      <section class="paragraph">
-        <p>
-          Постер к&nbsp;аудиокниге
-          Повесть&nbsp;/ Триллер
-        </p>
-      </section>
-
       <section class="section">
         <section class="paragraph">
           <p>
@@ -52,9 +54,7 @@
             который задал тон всей серии.
           </p>
         </section>
-
-        <img src="img/title.svg" />
-
+        
         <section class="paragraph">
           <p>
             Палитра&nbsp;&mdash; серо-красная, как в&nbsp;классических нуарах:
