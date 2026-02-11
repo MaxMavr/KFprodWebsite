@@ -14,7 +14,7 @@
   --black-trans60: #231f2099;
   --black-bg: #191717;
   --black-draw-color: #2b2628;
-  --black-border-color: --black-trans10;
+  --black-border-color: var(--black-trans10);
 
   --white: #f2f3f5;
   --white-trans10: #f2f3f51a;
@@ -22,7 +22,7 @@
   --white-trans60: #f2f3f599;
   --white-bg: #fff;
   --white-draw-color: #d7dbe5;
-  --white-border-color: --white-trans10;
+  --white-border-color: var(--white-trans10);
 
 
   --scrollbar-bg-color: transparent;
@@ -58,6 +58,8 @@
   --border-radius: 20px;
   --border-width: 1px;
   --border-opacity: 10%;
+
+  --border: var(--border-width) solid var(--border-color);
   
   /* Кегли */
   --first-heading-font-size: 112px;

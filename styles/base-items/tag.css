@@ -1,22 +1,20 @@
 .tag-container {
   display: flex;
-  gap: 12px;
+  gap: var(--gap-element);
   flex-wrap: wrap;
 }
 
 .tag {
   padding: 6px 12px;
   border-radius: 10px;
-  border: 1px solid #231f20;
-  border: 1px solid var(--border-color); 
+  border: var(--border);
   backdrop-filter: blur(20px);
-  /* text-transform: capitalize; */
 }
 
 .tag.white {
-  border: 1px solid var(--white-trans10);
+  border-color: var(--white-border-color);
 }
 
 .tag.black {
-  border: 1px solid var(--black-trans10);
+  border-color: var(--black-border-color);
 }

@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 
-<!--
-  Оригинальные авторские права
-  принадлежат KFproduction
-  Редакция 2024
--->
+<!--#include virtual="/plug-in-elements/copyright-signature.html" -->
 
 <html lang="ru-RU">
   <head>
@@ -12,34 +8,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Личное</title>
-    <meta
-      name="description"
-      content="Личные проекты, аккуратно может шокировать"
-    />
+    <meta name="description" content="Личные проекты, аккуратно может шокировать"/>
 
     <link rel="icon" href="../../img/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" type="text/css" href="../../styles/reset.css" />
     <link rel="stylesheet" type="text/css" href="../../styles/base.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="../../styles/projects-grid.css"
-    />
+    <link rel="stylesheet" type="text/css" href="../../styles/projects-grid.css"/>
     <link rel="stylesheet" type="text/css" href="../../styles/projects.css" />
     <link rel="stylesheet" type="text/css" href="project.css" />
   </head>
 
   <body>
+    <h1 style="display: none;">Личное</h1>
     <header>
       <object type="image/svg+xml" data="img/header.svg"></object>
     </header>
 
     <main>
-      <p>
-        Здесь собраны работы, которые я&nbsp;делал для&nbsp;себя
-        или&nbsp;которые не&nbsp;так&nbsp;привлекательны для&nbsp;основного
-        портфолио<span class="fun">. А ещё приколы</span>
-      </p>
+      <section class="paragraph">
+        <p>
+          Здесь собраны работы, которые я&nbsp;делал для&nbsp;себя
+          или&nbsp;которые не&nbsp;так&nbsp;привлекательны для&nbsp;основного
+          портфолио<span class="fun">. А ещё приколы</span>
+        </p>
+      </section>
 
       <div class="grid-container">
         <article
@@ -89,85 +81,44 @@
       </div>
 
       <div class="two-columns">
-        <div>
+        <div class="block">
           <img src="img/tg/post-pop-trah-punk-indie.webp" />
 
-          <h3>Пост-<wbr />поп-<wbr />трах-<wbr />панк-<wbr />инди</h3>
-          <p>
-            Прекрасный телеграм канал с&nbsp;вырезками
-            из&nbsp;песен&nbsp;&mdash; то,&nbsp;что показалось смешным,
-            гениальным или&nbsp;с&nbsp;хорошей рифмой
-          </p>
-
-          <div class="button-container">
-            <a
-              href="https://t.me/post_pop_trah_punk_indie"
-              class="button tg colored"
-            ></a>
-          </div>
+          <section class="description">
+            <div class="button-container">
+              <h3>Пост-<wbr />поп-<wbr />трах-<wbr />панк-<wbr />инди</h3>
+              <a href="https://t.me/post_pop_trah_punk_indie" class="button tg"></a>
+            </div>
+            <p>
+              Прекрасный телеграм канал с&nbsp;вырезками
+              из&nbsp;песен&nbsp;&mdash; то,&nbsp;что показалось смешным,
+              гениальным или&nbsp;с&nbsp;хорошей рифмой
+            </p>
+          </section>
         </div>
 
-        <div>
+        <div class="block">
           <img src="img/tg/pozitivchik.webp" />
 
-          <h3>no3uTuB4uK бот</h3>
-          <p>
-            Бот, созданный для&nbsp;хихи и&nbsp;хаха. Закидываешь текст,
-            и&nbsp;он&nbsp;генерит мемас
-          </p>
-          <div class="button-container">
-            <a href="https://t.me/no3uTuB4uK_bot" class="button tg colored"></a>
-          </div>
+          <section class="description">
+            <div class="button-container">
+              <h3>no3uTuB4uK бот</h3>
+              <a href="https://t.me/no3uTuB4uK_bot" class="button tg"></a>
+            </div>
+            <p>
+              Бот, созданный для&nbsp;хихи и&nbsp;хаха. Закидываешь текст,
+              и&nbsp;он&nbsp;генерит мемас
+            </p>
+          </section>
         </div>
       </div>
-
-      <p>
-        Так же я состою в Команде
-        <a href="../phasalopedia/index.html" class="hlink">Phasalopedia</a>
-      </p>
     </main>
 
     <div class="pop-up-container"></div>
 
-    <footer>
-      <a
-        class="logo-footer"
-        href="../../index.html#narrow"
-        target="KFproduction"
-      ></a>
-      <p class="copyright minor white">
-        Оригинальные авторские&nbsp;права
-        <br />
-        принадлежат&nbsp;KFproduction
-        <br />
-        Редакция&nbsp;2024
-      </p>
-      <div class="footer-button-container">
-        <a
-          class="pop-up-button hlink minor white"
-          data-mode="copy"
-          data-img="../../img/icons/pop-up/at-sign.svg"
-          data-msg="Почта скопирована"
-          data-copytxt="KFproduction@yandex.ru"
-          >KFproduction@yandex.ru</a
-        >
-        <div class="button-container">
-          <a href="https://vk.com/kfprod" class="button vk"></a>
-          <a href="https://t.me/maxmavr" class="button tg"></a>
-          <a href="https://www.youtube.com/@kfprod" class="button yt"></a>
-        </div>
-        <a
-          class="pop-up-button button mail"
-          data-mode="copy"
-          data-img="../../img/icons/pop-up/at-sign.svg"
-          data-msg="Почта скопирована"
-          data-copytxt="KFproduction@yandex.ru"
-        ></a>
-      </div>
-    </footer>
+    <!--#include virtual="/plug-in-elements/main-footer.html" -->
 
     <script src="../../scripts/lang&theme.js"></script>
-    <script src="../../scripts/poster.js"></script>
     <script src="../../scripts/hlink.js"></script>
     <script src="../../scripts/pop-up.js"></script>
   </body>

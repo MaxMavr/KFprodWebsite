@@ -1,7 +1,7 @@
 /* Пример заполнения для фона */
 .with-fill {
   background-color: var(--bg-accent-color);
-  border: var(--border-width) solid var(--border-color);
+  border: var(--border);
   padding: var(--padding-medium);
   border-radius: var(--border-radius);
 }
@@ -46,15 +46,15 @@
   padding: var(--padding-medium);
   border-radius: var(--border-radius);
   backdrop-filter: blur(20px);
-  border: var(--border-width) solid var(--border-color);
+  border: var(--border);
 }
 
 .glass.white {
-  border: var(--border-width) solid var(--white-border-color);
+  border-color: var(--white-border-color);
 }
 
 .glass.black {
-  border: var(--border-width) solid var(--black-border-color);
+  border-color: var(--black-border-color);
 }
 
 .noise {
