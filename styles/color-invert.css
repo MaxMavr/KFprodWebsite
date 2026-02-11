@@ -1,0 +1,43 @@
+.color-invert {
+  --soft-color: #FFF;
+  --rich-color: #000;
+
+  position: relative;
+  transition: var(--transition-quick);
+
+  background-color: var(--soft-color);
+  padding: var(--padding-medium);
+  border-radius: var(--border-radius);
+  color: var(--rich-color);
+}
+
+.color-invert::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: var(--border-width) solid var(--rich-color);
+  border-radius: var(--border-radius);
+  opacity: var(--border-opacity);
+  pointer-events: none;
+}
+
+.color-invert:hover {
+  background-color: var(--rich-color);
+  color: var(--soft-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  .color-invert {
+    background-color: var(--rich-color);
+    color: var(--soft-color);
+  }
+
+  .color-invert::before {
+    border: var(--border-width) solid var(--soft-color);
+  }
+
+  .color-invert:hover {
+    background-color: var(--soft-color);
+    color: var(--rich-color);
+  }
+}
