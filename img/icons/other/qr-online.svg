@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#028B4F">
+    <path d="M10,10H6V6h4V10z M11,5H5v6h6V5z" />
+    <rect x="7" y="7" width="2" height="2" />
+    <path d="M10,18H6v-4h4V18z M11,13H5v6h6V13z" />
+    <rect x="7" y="15" width="2" height="2" />
+    <path d="M18,10h-4V6h4V10z M19,5h-6v6h6V5z" />
+    <rect x="15" y="7" width="2" height="2" />
+    <polygon points="13,19 13,13 16,13 16,14 18,14 18,13 19,13 19,17 15,17 15,16 14,16 14,19 " />
+    <rect x="16" y="18" width="1" height="1" />
+    <rect x="18" y="18" width="1" height="1" />
+</svg>

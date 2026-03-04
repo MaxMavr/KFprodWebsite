@@ -5,24 +5,14 @@
 @import url(projects-items/sticky-footer.css);
 
 .project-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
   align-items: stretch;
-  -ms-flex-line-pack: end;
   align-content: flex-end;
 
   width: 80%;
   max-width: 1600px;
-  -webkit-column-gap: 80px;
-  -moz-column-gap: 80px;
   column-gap: 80px;
   margin: 80px auto 0 auto;
 
@@ -30,12 +20,10 @@
 }
 
 .project-header > div {
-  display: -ms-grid;
   display: grid;
-  -ms-flex-line-pack: justify;
   align-content: space-between;
   height: inherit;
-  gap: 12px;
+  gap: var(--gap-element);
 }
 
 .project-header > div > *:last-child {
@@ -52,16 +40,11 @@ h1 {
 }
 
 .project-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-column-gap: var(--gap-section);
-  -moz-column-gap: var(--gap-section);
   column-gap: var(--gap-section);
   row-gap: var(--gap-block);
-  margin: 0 12px;
+  margin: 0 var(--gap-element);
 }
 
 .project-footer :last-child {
@@ -71,7 +54,6 @@ h1 {
 
 @media (max-width: 800px) {
   .project-header .button-container {
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 

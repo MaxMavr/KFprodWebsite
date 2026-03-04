@@ -37,3 +37,9 @@
 .description {
   margin: 0 12px;
 }
+
+@media (max-width: 800px) {
+  .paragraph {
+    width: 100%;
+  }
+}

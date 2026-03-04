@@ -1,34 +1,17 @@
 footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  gap: 12px;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
+  gap: var(--gap-element);
   align-items: flex-start;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 
   background: var(--black);
 
   max-width: 100%;
-  padding: 20px;
-  -ms-flex-item-align: end;
+  padding: var(--padding-medium);
   align-self: flex-end;
-}
 
-.footer-button-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  grid-gap: 12px;
+  border-top: var(--border);
 }
 
 footer .hlink {
@@ -120,15 +103,10 @@ footer .copyright:hover {
   }
 
   footer .mail {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
 
   .footer-button-container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
   }
 }
