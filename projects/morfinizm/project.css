@@ -1,0 +1,12 @@
+.morfin-font {
+  font-family: Morfin;
+}
+
+.project-header {
+  padding: 40px;
+}
+
+.project-header h1 {
+  font-weight: normal;
+  line-height: 80%;
+}
