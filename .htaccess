@@ -1,4 +1,4 @@
-# 11.02.2026 16:09
+# 24.03.2026 00:52
 
 # Включаем необходимые модули
 Options +Includes -Indexes
@@ -69,7 +69,7 @@ RewriteRule ^(about|download)/?$ /kfbrand/ [R=301,L]
 
 
 # Articles
-RewriteRule ^(artemy)/?$ /articles/$1/ [R=301,L]
+RewriteRule ^(artemy|quiet-dan)/?$ /articles/$1/ [R=301,L]
 
 
 # Fonts
@@ -85,7 +85,7 @@ RewriteRule ^(1523tv|birthday|desktops|kfbrand|minecraft-posters|posters)/?$ /pe
 
 
 # Projects
-RewriteRule ^(1ppc|aesthete|amusevill|amusics|default|lumet|mix|morfinizm|morfinizm-lyrics|ohmt|stickers|wild-mathing)/?$ /projects/$1/ [R=301,L]
+RewriteRule ^(1ppc|aesthete|amusevill|amusics|default|lumet|mix|morfinizm|morfinizm-lyrics|ohmt|oqun|stickers|wild-mathing)/?$ /projects/$1/ [R=301,L]
 
 
 # Service pages
