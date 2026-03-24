@@ -1,21 +1,16 @@
 <!DOCTYPE html>
 
-<!--
-  Оригинальные авторские права
-  принадлежат KFproduction
-  Редакция 2024
--->
+<!--#include virtual="/plug-in-elements/copyright-signature.html" -->
 
 <html lang="ru-RU">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Мавряшин Максим — графический дизайнер. Профессиональные навыки и портфолио работ"
-    />
+
     <title>Резюме</title>
-    <link rel="icon" href="../../img/favicon.svg" type="image/svg+xml" />
+    <meta name="description" content="Мавряшин Максим — графический дизайнер. Профессиональные навыки и портфолио работ"/>
+    
+    <link rel="icon" type="image/svg+xml" href="../../img/favicon.svg" />
     <link rel="stylesheet" type="text/css" href="../../styles/reset.css" />
     <link rel="stylesheet" type="text/css" href="../../styles/base.css" />
     <link rel="stylesheet" type="text/css" href="../../styles/grids.css" />
@@ -24,9 +19,10 @@
 
   <body>
     <main>
-      <div class="cv-container">
-        <section>
-          <img class="cv-photo" src="img/cv.webp" alt="" />
+      <section class="section">
+        <img class="cv-photo" src="img/cv.webp" />
+
+        <section class="description">
           <h1>Максим Мавряшин</h1>
 
           <p class="minor">
@@ -39,7 +35,9 @@
             <br />
             Фриланс
           </p>
-
+        </section>
+        
+        <section class="block">
           <div class="button-container">
             <a
               href="../../download-res/cv/cv.pdf"
@@ -49,23 +47,25 @@
               data-img="../../img/icons/pop-up/file-text.svg"
               data-msg="Резюме скачано"
             >
-              Скачать .pdf
+              Скачать PDF
             </a>
           </div>
           <p class="minor">
             Фотограф<br /><a class="hlink" href="https://t.me/alisabarsukova">Алиса Барсукова</a>
           </p>
         </section>
+      </section>
 
-        <section>
+      <section class="section">
+        <section class="block">
           <p>Я&nbsp;Максим. Работаю 6&nbsp;лет. Отрисовал ХХ&nbsp;проектов</p>
           <p>
             Много чего умею, посмотрите
-            <a class="hlink" href="../../#narrow" target="KFproduction"
+            <a class="hlink" href="/#narrow" target="KFproduction"
               >портфолио</a
             >. Если понравится, есть ещё&nbsp;<a
               class="hlink"
-              href="../../projects/personal"
+              href="/personal/"
               >личные проекты</a
             >
             &mdash;&nbsp;там&nbsp;тоже интересно
@@ -90,7 +90,7 @@
           </p>
           <p>
             На&nbsp;досуге рисую
-            <a class="hlink" href="../../projects/morfin">шрифты</a>
+            <a class="hlink" href="/fonts/">шрифты</a>
             и&nbsp;плакаты, собираю коллекцию крышечек и&nbsp;внимательно слушаю
             музыку. Люблю порядок: каждый мой&nbsp;проект, даже самый маленький,
             лежит в&nbsp;отдельной директории
@@ -99,63 +99,39 @@
             Считаю, что&nbsp;хороший дизайн &mdash;&nbsp;это&nbsp;удобство,
             а&nbsp;не&nbsp;красота. Искусством не&nbsp;занимаюсь
           </p>
-
-          <p class="minor">
-            Айдентика&nbsp;&bull; Полиграфия&nbsp;&bull;
-            Дизайн&nbsp;упаковки&nbsp;&bull; Логотипы&nbsp;&bull;
-            Брендбуки&nbsp;&bull; Гайдлайны&nbsp;&bull; Постеры&nbsp;&bull;
-            Презентации&nbsp;&bull; Рекламные&nbsp;баннеры
-          </p>
-
-          <div class="button-container">
-            <div class="button-container">
-              <a class="button ai in-text"></a>
-              <a class="button ps in-text"></a>
-              <a class="button ae in-text"></a>
-              <a class="button pr in-text"></a>
-            </div>
-
-            <div class="button-container">
-              <a class="button au in-text"></a>
-              <a class="button fontlab in-text"></a>
-              <a class="button git in-text"></a>
-              <a class="button python in-text"></a>
-            </div>
-          </div>
         </section>
-      </div>
 
-      <div class="pop-up-container"></div>
+        <div class="tag-container">
+          <span class="tag"><span class="minor">Айдентика</span></span>
+          <span class="tag"><span class="minor">Полиграфия</span></span>
+          <span class="tag"><span class="minor">Дизайн&nbsp;упаковки</span></span>
+          <span class="tag"><span class="minor">Брендбуки</span></span>
+          <span class="tag"><span class="minor">Гайдлайны</span></span>
+          <span class="tag"><span class="minor">Постеры</span></span>
+          <span class="tag"><span class="minor">Презентации</span></span>
+          <span class="tag"><span class="minor">Рекламные&nbsp;баннеры</span></span>
+        </div>
+
+        <div class="icon-container">
+          <div class="icon-container">
+            <img class="large icon with-rounding" src="../../img/icons/program/ai.svg">
+            <img class="large icon with-rounding" src="../../img/icons/program/ps.svg">
+            <img class="large icon with-rounding" src="../../img/icons/program/ae.svg">
+            <img class="large icon with-rounding" src="../../img/icons/program/pr.svg">
+          </div>
+          <div class="icon-container">
+            <img class="large icon with-rounding" src="../../img/icons/program/au.svg">
+            <img class="large icon with-rounding" src="../../img/icons/program/fontlab.svg">
+            <img class="large icon with-rounding" src="../../img/icons/program/git.svg">
+            <img class="large icon with-rounding" src="../../img/icons/program/python.svg">
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer>
-      <a class="logo-footer" href="../../#narrow" target="KFproduction"></a>
-      <p class="copyright minor white">
-        Оригинальные авторские права<br />принадлежат&nbsp;KFproduction<br />Редакция&nbsp;2024
-      </p>
-      <div class="footer-button-container">
-        <a
-          class="pop-up-button hlink minor white"
-          data-mode="copy"
-          data-img="../../img/icons/pop-up/at-sign.svg"
-          data-msg="Почта скопирована"
-          data-copytxt="KFproduction@yandex.ru"
-          >KFproduction@yandex.ru</a
-        >
-        <div class="button-container">
-          <a href="https://vk.com/kfprod" class="button vk"></a>
-          <a href="https://t.me/maxmavr" class="button tg"></a>
-          <a href="https://www.youtube.com/@kfprod" class="button yt"></a>
-        </div>
-        <a
-          class="pop-up-button button mail"
-          data-mode="copy"
-          data-img="../../img/icons/pop-up/at-sign.svg"
-          data-msg="Почта скопирована"
-          data-copytxt="KFproduction@yandex.ru"
-        ></a>
-      </div>
-    </footer>
+    <div class="pop-up-container"></div>
+
+    <!--#include virtual="/plug-in-elements/projects-footer.html" -->
 
     <script src="../../scripts/lang&theme.js"></script>
     <script src="../../scripts/hlink.js"></script>
