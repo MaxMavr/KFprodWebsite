@@ -87,7 +87,7 @@
 @font-face {
   font-family: "Magnet Trial";
   font-weight: bold;
-  src: url(Magnet-Trial-bold.ttf);
+  src: url(Magnet-Trial-Bold.ttf);
 }
 
 @font-face {
@@ -98,4 +98,10 @@
 @font-face {
   font-family: Pecita;
   src: url(Pecita.otf);
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  font-weight: bold;
+  src: url(Bebas-Neue-Bold.otf);
 }

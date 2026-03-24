@@ -1,3 +1,11 @@
+.icon-container {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  z-index: 10;
+  flex-wrap: wrap;
+}
+
 .icon {
   height: 16px;
   width: 16px;
@@ -18,4 +26,8 @@
 .icon.large {
   height: 48px;
   width: 48px;
+}
+
+.icon.with-rounding {
+  border-radius: 12px;
 }
