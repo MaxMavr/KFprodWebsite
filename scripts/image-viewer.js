@@ -4,17 +4,18 @@ const imageViewerContainers = document.querySelectorAll(".image-viewer-container
 
 imageViewerContainers.forEach(container => {
   container.addEventListener("click", (e) => {
-    const img = e.target.closest("img");
-    if (!img) return;
+    const mediaElement = e.target.closest("img, video");
+    
+    if (!mediaElement) return;
 
-    popUpPosterCreate(img.cloneNode(true));
+    popUpPosterCreate(mediaElement.cloneNode(true));
   });
 });
 
-function popUpPosterCreate(img) {
+function popUpPosterCreate(mediaElement) {
   const newPopup = document.createElement("div");
   newPopup.classList.add("image-viewer-overlay-bg");
-  newPopup.appendChild(img);
+  newPopup.appendChild(mediaElement);
 
   newPopup.onclick = () => {
     newPopup.classList.remove("is-visible");

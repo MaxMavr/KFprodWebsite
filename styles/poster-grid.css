@@ -1,20 +1,15 @@
 .poster-demonstration-container {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr var(--gap-block) 1fr;
   grid-template-columns: 1fr 1fr;
-  -webkit-column-gap: var(--gap-block);
-  -moz-column-gap: var(--gap-block);
   column-gap: var(--gap-block);
   row-gap: var(--gap-section);
 }
 
-.poster-demonstration img {
+.poster-demonstration :is(img, video) {
   aspect-ratio: 1;
   background-color: #f2f3f5;
   background-color: var(--bg-accent-color);
   width: 100%;
-  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -23,27 +18,27 @@
   grid-template-columns: 1fr;
 }
 
-.poster-demonstration-container.s1x1 .poster-demonstration img {
+.poster-demonstration-container.s1x1 .poster-demonstration :is(img, video) {
   aspect-ratio: 1;
 }
 
-.poster-demonstration-container.a4 .poster-demonstration img {
+.poster-demonstration-container.a4 .poster-demonstration :is(img, video) {
   aspect-ratio: 3 / 4;
 }
 
-.poster-demonstration-container.s16x9 .poster-demonstration img {
+.poster-demonstration-container.s16x9 .poster-demonstration :is(img, video) {
   aspect-ratio: 16 / 9;
 }
 
-.poster-demonstration.s1x1 img {
+.poster-demonstration.s1x1 :is(img, video) {
   aspect-ratio: 1;
 }
 
-.poster-demonstration.a4 img {
+.poster-demonstration.a4 :is(img, video) {
   aspect-ratio: 3 / 4;
 }
 
-.poster-demonstration.s16x9 img {
+.poster-demonstration.s16x9 :is(img, video) {
   aspect-ratio: 16 / 9;
 }
 
