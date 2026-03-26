@@ -1,0 +1,142 @@
+.code-block {
+    background: var(--black);
+    color: var(--white);
+    font-family: 'Fira Code', 'Consolas', monospace;
+    line-height: 1.5;
+    border: var(--border);
+    padding: var(--padding-medium);
+    overflow-x: auto;
+}
+
+/* Полоса прокрутки */
+.code-block::-webkit-scrollbar {
+  width: 10px;
+}
+
+.code-block::-webkit-scrollbar-track {
+  background-color: #00000000;
+  background-color: transparent;
+  background-color: var(--scrollbar-bg-color);
+}
+
+.code-block::-webkit-scrollbar-thumb {
+  background-color: #231f2066;
+  background-color: var(--scrollbar-color);
+  border-radius: 20px;
+}
+
+.code-block.language-python {
+    /* Комментарии */
+    .token.comment,
+    .token.doctype {
+        color: #69676c;
+        font-style: italic;
+    }
+
+    /* Ключевые слова */
+    .token.keyword,
+    .token.control {
+        color: #ff6188;
+        font-weight: bold;
+    }
+
+    /* Функции */
+    .token.function,
+    .token.builtin {
+        color: #78dce8;
+    }
+
+    /* Классы */
+    .token.class-name,
+    .token.type {
+        color: #fce566;
+        font-weight: bold;
+    }
+
+    /* Строки */
+    .token.string,
+    .token.char {
+        color: #a9dc76;
+    }
+
+    /* Числа */
+    .token.number,
+    .token.integer {
+        color: #ab9df2;
+    }
+
+    /* Булевы значения и None */
+    .token.boolean,
+    .token.constant {
+        color: #ab9df2;
+        font-weight: bold;
+    }
+
+    /* Операторы */
+    .token.operator {
+        color: #ff6188;
+    }
+
+    /* Пунктуация */
+    .token.punctuation {
+        color: #727072;
+    }
+
+    /* Декораторы */
+    .token.decorator,
+    .token.atrule {
+        color: #ffd866;
+        font-weight: bold;
+    }
+
+    /* Параметры функций */
+    .token.parameter,
+    .token.variable {
+        color: #fcfcfa;
+    }
+
+    /* Атрибуты */
+    .token.attr-name {
+        color: #78dce8;
+        font-style: italic;
+    }
+
+    /* Значения атрибутов */
+    .token.attr-value,
+    .token.attr-value .token.punctuation {
+        color: #a9dc76;
+    }
+
+    /* Теги (для смешанного контента) */
+    .token.tag {
+        color: #ff6188;
+    }
+
+    /* Важные элементы */
+    .token.important {
+        color: #ff6188;
+        font-weight: bold;
+    }
+
+    /* Вставленный текст */
+    .token.inserted {
+        color: #a9dc76;
+    }
+
+    /* Удалённый текст */
+    .token.deleted {
+        color: #ff6188;
+        text-decoration: line-through;
+    }
+
+    /* Регулярные выражения */
+    .token.regex {
+        color: #fc9867;
+    }
+
+    /* URL */
+    .token.url {
+        color: #78dce8;
+        text-decoration: underline;
+    }
+}
