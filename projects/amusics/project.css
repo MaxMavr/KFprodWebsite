@@ -1,0 +1,77 @@
+.full-screen-header {
+  background-color: black;
+  overflow: hidden;
+  position: relative;
+}
+
+.fira-font {
+  font-family: Fira, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.mesh-gradient {
+    background: linear-gradient(to bottom, #eda668 20%, #d38850 100%);
+    mix-blend-mode: hard-light;
+    filter: blur(30px);
+}
+
+.point-gradient {
+  transform-origin: center;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.45, 0, 0.55, 1); /* плавное "плавание" */
+}
+
+.point-gradient1 {
+  animation: drift1 6s infinite;
+}
+
+@keyframes drift1 {
+  0%, 100% { transform: translate(0, 0) rotate(0); }
+  25%       { transform: translate(6px, -4.5px) rotate(0.3deg); }
+  50%       { transform: translate(-5.4px, 3.6px) rotate(-0.2deg); }
+  75%       { transform: translate(3px, -2.4px) rotate(0.1deg); }
+}
+
+.point-gradient2 {
+  animation: drift2 10s infinite;
+}
+
+@keyframes drift2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  30%      { transform: translate(-6.6px, 3px) scale(1.02); }
+  60%      { transform: translate(5.4px, -3.9px) scale(0.99); }
+  90%      { transform: translate(-3px, 2.1px) scale(1.01); }
+}
+
+.point-gradient3 {
+  animation: drift3 7s infinite;
+}
+
+@keyframes drift3 {
+  0%, 100% { transform: translate(0, 0) rotate(0); }
+  20%      { transform: translate(4.5px, 6px) rotate(-0.4deg); }
+  50%      { transform: translate(-3.6px, -5.4px) rotate(0.3deg); }
+  80%      { transform: translate(2.4px, 3px) rotate(-0.2deg); }
+}
+
+.point-gradient4 {
+  animation: drift4 10s infinite;
+}
+
+@keyframes drift4 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  25%      { transform: translate(0, -4.5px) scale(1.03); }
+  50%      { transform: translate(0, 5.4px) scale(0.98); }
+  75%      { transform: translate(0, -3px) scale(1.01); }
+}
+
+.point-gradient5 {
+  animation: drift5 7s infinite;
+}
+
+@keyframes drift5 {
+  0%, 100% { transform: translate(0, 0) rotate(0); }
+  30%      { transform: translate(-5.4px, -3px) rotate(0.5deg); }
+  60%      { transform: translate(4.5px, 2.4px) rotate(-0.4deg); }
+  90%      { transform: translate(-3px, 1.5px) rotate(0.2deg); }
+}
