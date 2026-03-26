@@ -28,6 +28,19 @@
   width: 48px;
 }
 
-.icon.with-rounding {
+.icon.small.with-rounding {
   border-radius: 12px;
+}
+
+.icon.medium.with-rounding {
+  border-radius: 8px;
+}
+
+.icon.large.with-rounding {
+  border-radius: 4px;
+}
+
+.icon.in-text {
+  vertical-align: middle;
+  display: inline-block;
 }

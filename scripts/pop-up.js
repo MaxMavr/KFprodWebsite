@@ -12,7 +12,7 @@ popUpButtons.forEach((button) => {
     button.onclick = () => {
       popUpCreate(button.dataset.img, button.dataset.msg, "download");
     };
-  } else console.log("Не инструкций для попапа");
+  } else console.log("Не инструкций для поп-ап");
 });
 
 function textCopy(text) {

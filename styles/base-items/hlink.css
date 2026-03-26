@@ -1,12 +1,8 @@
 .hlink,
 .hlink-with-icon {
-  -webkit-transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
-  -o-transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   text-decoration: none;
   white-space: nowrap;
-  -webkit-user-select: all;
-  -moz-user-select: all;
   user-select: all;
   cursor: pointer;
 }
@@ -21,8 +17,6 @@
 }
 
 .hlink::after {
-  -webkit-transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
-  -o-transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   position: absolute;
   content: "";
@@ -38,8 +32,6 @@
 }
 
 .hlink.minor::after {
-  -webkit-transform: translate(-50%, -200%);
-  -ms-transform: translate(-50%, -200%);
   transform: translate(-50%, -200%);
 }
 
@@ -48,9 +40,7 @@
 }
 
 .hlink-with-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-flex;
   font-size: 20px;
   font-weight: normal;
   color: var(--txt-color, #231f20);
