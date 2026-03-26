@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<!--#include virtual="/plug-in-elements/copyright-signature.html" -->
+
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Кристаллизации искусства из беспорядка</title>
+    <meta name="description" content="История создания плаката">
+    
+    <link rel="icon" type="image/svg+xml" href="../../img/favicon.svg" />
+    <link rel="stylesheet" type="text/css" href="../../styles/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../../styles/base.css" />
+    <link rel="stylesheet" type="text/css" href="../../styles/projects-grid.css"/>
+    <link rel="stylesheet" type="text/css" href="../../styles/poster-grid.css"/>
+    <link rel="stylesheet" type="text/css" href="../../styles/image-viewer.css"/>
+    <link rel="stylesheet" type="text/css" href="../../styles/projects.css" />
+    <link rel="stylesheet" type="text/css" href="../../styles/full-screen.css"/>
+    <link rel="stylesheet" type="text/css" href="../../styles/highlight-code.css"/>
+  </head>
+
+  <body>
+    <div class="full-screen-header">
+      <img style="height: 100%; object-fit: cover" src="img/header.svg" />
+
+      <header class="project-header">
+        <h1 >Кристал&shy;лизации искус&shy;ства<br />из беспо&shy;рядка</h1>
+        <div>
+          <div class="tag-container">
+            <span class="tag"><span class="minor">Плакат</span></span>
+            <span class="tag"><span class="minor">Пиксели</span></span>
+            <span class="tag"><span class="minor">Беспорядок</span></span>
+          </div>
+          <div>
+            <a href="https://t.me/kfprod/13" class="hlink-with-icon">
+              Пост в тг
+              <object class="medium icon icon-arrow" type="image/svg+xml" data="../../img/icons/arrow-up-right.svg"></object>
+            </a>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <main>
+      <section class="paragraph">
+        <p>
+          Последнее время меня очень привлекает эстетика пикселей,
+          и&nbsp;одной из&nbsp;таких технологий является дизеринг.
+        </p>
+        <p>
+          В&nbsp;обработке изображений дизеринг&nbsp;&mdash; это техника,
+          используемая для создания иллюзии большей глубины цвета в&nbsp;изображениях
+          с&nbsp;ограниченной цветовой палитрой.
+        </p>
+        <p>
+          Также я&nbsp;давно хотел нарисовать плакат для своей любимой строчки
+          в&nbsp;русской музыке, а&nbsp;именно: &laquo;Кристаллизации
+          искусства из&nbsp;беспорядка&raquo;.
+        </p>
+        <p>
+          Эта фраза идеально описывает саму суть дизеринга&nbsp;&mdash;
+          из&nbsp;хаоса пикселей и&nbsp;шума рождается упорядоченное изображение
+        </p>
+      </section>
+
+
+      <section class="section">
+        <section class="paragraph">
+          <p>
+            Так как я&nbsp;не&nbsp;стал&nbsp;бы размещать каждый пиксель вручную,
+            сначала я&nbsp;написал скрипты на&nbsp;Питоне.
+          </p>
+          <p>
+            Есть несколько алгоритмов, как можно подмешивать шум в&nbsp;изображение.
+            Одними из&nbsp;популярных являются &laquo;рандомный&raquo;
+            и&nbsp;&laquo;байер&raquo;, упорядоченный и&nbsp;нет
+          </p>
+        </section>
+
+        <div class="two-columns">
+          <section style="min-width: 0;" class="block">
+            <img src="img/noise_dither.svg">
+            <pre class="code-block language-python">def noise_dither(brightness: float) -> bool:
+  threshold = random.random()
+  return brightness > threshold</pre>
+          </section>
+          <section style="min-width: 0;" class="block">
+            <img src="img/pattern_dither_8x8.svg">
+            <pre class="code-block language-python">def pattern_dither_8x8(x: int, y: int, brightness: float) -> bool:
+  threshold = BAYER_8x8[y % 8][x % 8]
+  return brightness > threshold</pre>
+          </section>
+        </div>
+      </section>
+
+      <section class="section">
+        <section class="paragraph">
+          <p>
+            Я&nbsp;разработал эскизы для основной композиции плаката
+            и&nbsp;затем растрировал текст, чтобы он&nbsp;гармонировал
+            с&nbsp;дизенрингом
+          </p>
+        </section>
+      
+        <div class="poster-demonstration-container image-viewer-container a4">
+          <div class="poster-demonstration element">
+            <img src="img/sketch.webp" loading="lazy" />
+          </div>
+
+          <div class="poster-demonstration element">
+            <img style="image-rendering: pixelated;" src="img/sketch-pixels.webp" loading="lazy" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <section class="paragraph">
+          <p>
+            Осталось только сделать постобработку — выбрать цвет, он должен быть очень ярким
+          </p>
+        </section>
+
+        <div class="color-palette-container">
+          <a
+            class="pop-up-button color white"
+            style="background-color: #E542B3"
+            data-mode="copy"
+            data-img="../../img/icons/pop-up/pipette.svg"
+            data-msg="Цвет скопирован"
+            data-copytxt="#E542B3"
+          >
+            <div class="color-spec">
+              <div class="color-model">HEX</div>
+              <div class="color-value hex-value">#E542B3</div>
+
+              <div class="color-model">RGB</div>
+              <div class="color-value">229</div>
+              <div class="color-value">66</div>
+              <div class="color-value">179</div>
+              <div></div>
+
+              <div class="color-model">CMYK</div>
+              <div class="color-value">0</div>
+              <div class="color-value">71</div>
+              <div class="color-value">22</div>
+              <div class="color-value">10</div>
+            </div>
+          </a>
+          <a
+            class="pop-up-button color black"
+            style="background-color: #C4F500"
+            data-mode="copy"
+            data-img="../../img/icons/pop-up/pipette.svg"
+            data-msg="Цвет скопирован"
+            data-copytxt="#C4F500"
+          >
+            <div class="color-spec">
+              <div class="color-model">HEX</div>
+              <div class="color-value hex-value">#C4F500</div>
+
+              <div class="color-model">RGB</div>
+              <div class="color-value">196</div>
+              <div class="color-value">245</div>
+              <div class="color-value">0</div>
+              <div></div>
+
+              <div class="color-model">CMYK</div>
+              <div class="color-value">20</div>
+              <div class="color-value">0</div>
+              <div class="color-value">100</div>
+              <div class="color-value">4</div>
+            </div>
+          </a>
+          <a
+            class="pop-up-button color white"
+            style="background-color: #0000FF"
+            data-mode="copy"
+            data-img="../../img/icons/pop-up/pipette.svg"
+            data-msg="Цвет скопирован"
+            data-copytxt="#0000FF"
+          >
+            <div class="color-spec">
+              <div class="color-model">HEX</div>
+              <div class="color-value hex-value">#0000FF</div>
+
+              <div class="color-model">RGB</div>
+              <div class="color-value">0</div>
+              <div class="color-value">0</div>
+              <div class="color-value">255</div>
+              <div></div>
+
+              <div class="color-model">CMYK</div>
+              <div class="color-value">100</div>
+              <div class="color-value">100</div>
+              <div class="color-value">0</div>
+              <div class="color-value">0</div>
+            </div>
+          </a>
+          <a
+            class="pop-up-button color white"
+            style="background-color: #3A45FF"
+            data-mode="copy"
+            data-img="../../img/icons/pop-up/pipette.svg"
+            data-msg="Цвет скопирован"
+            data-copytxt="#3A45FF"
+          >
+            <div class="color-spec">
+              <div class="color-model">HEX</div>
+              <div class="color-value hex-value">#3A45FF</div>
+
+              <div class="color-model">RGB</div>
+              <div class="color-value">58</div>
+              <div class="color-value">69</div>
+              <div class="color-value">255</div>
+              <div></div>
+
+              <div class="color-model">CMYK</div>
+              <div class="color-value">77</div>
+              <div class="color-value">73</div>
+              <div class="color-value">0</div>
+              <div class="color-value">0</div>
+            </div>
+          </a>
+          <a
+            class="pop-up-button color black"
+            style="background-color: #EBEFF8"
+            data-mode="copy"
+            data-img="../../img/icons/pop-up/pipette.svg"
+            data-msg="Цвет скопирован"
+            data-copytxt="#EBEFF8"
+          >
+            <div class="color-spec">
+              <div class="color-model">HEX</div>
+              <div class="color-value hex-value">#EBEFF8</div>
+
+              <div class="color-model">RGB</div>
+              <div class="color-value">235</div>
+              <div class="color-value">239</div>
+              <div class="color-value">248</div>
+              <div></div>
+
+              <div class="color-model">CMYK</div>
+              <div class="color-value">5</div>
+              <div class="color-value">4</div>
+              <div class="color-value">0</div>
+              <div class="color-value">3</div>
+            </div>
+          </a>
+          <a
+            class="pop-up-button color white"
+            style="background-color: #101215"
+            data-mode="copy"
+            data-img="../../img/icons/pop-up/pipette.svg"
+            data-msg="Цвет скопирован"
+            data-copytxt="#101215"
+          >
+            <div class="color-spec">
+              <div class="color-model">HEX</div>
+              <div class="color-value hex-value">#101215</div>
+
+              <div class="color-model">RGB</div>
+              <div class="color-value">16</div>
+              <div class="color-value">18</div>
+              <div class="color-value">21</div>
+              <div></div>
+
+              <div class="color-model">CMYK</div>
+              <div class="color-value">24</div>
+              <div class="color-value">14</div>
+              <div class="color-value">0</div>
+              <div class="color-value">92</div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="section">
+        <img class="img-demonstration" src="img/pic.webp" />
+
+        <div class="project-footer">
+          <p class="minor">Дизайнер<br />Максим Мавряшин</p>
+          <p class="minor">Готово в&nbsp;августе<br />2025&nbsp;года</p>
+        </div>
+      </section>
+
+      <div class="grid-container">
+        <article
+          class="s3x2"
+          style="background-image: url(../../projects/morfin/img/cover.webp)"
+        >
+          <a
+            class="white"
+            href="../../projects/morfin/morfin.html"
+            target="_blank"
+          >
+            <h3>Морфин</h3>
+            <p class="minor">Шрифт</p>
+          </a>
+          <a href="../../projects/morfin/morfin.html"></a>
+        </article>
+
+        <article
+          class="s3x2"
+          style="background-image: url(../../projects/morfin/img/cover.webp)"
+        >
+          <a
+            class="white"
+            href="../../projects/morfin/morfin.html"
+            target="_blank"
+          >
+            <h3>Морфин</h3>
+            <p class="minor">Шрифт</p>
+          </a>
+          <a href="../../projects/morfin/morfin.html"></a>
+        </article>
+      </div>
+    </main>
+
+    <div class="pop-up-container"></div>
+    <div class="image-viewer-overlay"></div>
+
+    <!--#include virtual="/plug-in-elements/projects-footer.html" -->
+    <!--#include virtual="/plug-in-elements/sticky-personal-footer.html" -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-markup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+
+    <script src="../../scripts/highlight-code.js"></script>
+
+    <script src="../../scripts/lang&theme.js"></script>
+    <script src="../../scripts/color-palette.js"></script>
+    <script src="../../scripts/image-viewer.js"></script>
+    <script src="../../scripts/hlink.js"></script>
+    <script src="../../scripts/pop-up.js"></script>
+  </body>
+</html>
