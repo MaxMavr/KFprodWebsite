@@ -29,6 +29,10 @@
   opacity: 60%;
 }
 
+.text-color {
+  color: var(--txt-color);
+}
+
 .white {
   color: var(--white);
 }

@@ -6,7 +6,7 @@
 @import url("base-items/footer.css");
 @import url("base-items/pop-up.css");
 @import url("base-items/tag.css");
-@import url("base-items/two-columns.css");
+@import url("base-items/columns.css");
 @import url("base-items/items.css");
 @import url("base-items/icons.css");
 @import url("base-items/modifier.css");
@@ -66,6 +66,10 @@ h1 {
   font-size: var(--first-heading-font-size);
 }
 
+a {
+  text-decoration: none;
+}
+
 h1.headerless {
   margin-top: var(--gap-main);
 }
@@ -89,7 +93,7 @@ p:not([class]) {
   transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
 }
 
-p:hover .fun {
+:is(h1, h2, h3, p):hover .fun {
   opacity: 100%;
 }
 
