@@ -35,10 +35,6 @@ footer .hlink.minor::after {
   transform: translate(-50%, 460%);
 }
 
-footer .mail {
-  display: none;
-}
-
 footer .copyright {
   opacity: 2.5%;
   -webkit-transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
@@ -100,10 +96,6 @@ footer .copyright:hover {
 @media (max-width: 800px) {
   footer .hlink {
     display: none;
-  }
-
-  footer .mail {
-    display: flex;
   }
 
   .footer-button-container {

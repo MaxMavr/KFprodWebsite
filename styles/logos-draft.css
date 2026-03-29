@@ -70,6 +70,44 @@
   stroke-opacity: 0;
 }
 
+.main.nb {
+  .mjl, .mnl, .dl {
+    stroke: var(--white);
+  }
+
+  .logo {
+    fill: var(--white);
+  }
+
+  .logo-draft{
+    fill: var(--white);
+    stroke: var(--white);
+  }
+
+  .h{
+    stroke: var(--white);
+  }
+}
+
+.main.nw {
+  .mjl, .mnl, .dl {
+    stroke: var(--black);
+  }
+
+  .logo {
+    fill: var(--black);
+  }
+
+  .logo-draft{
+    fill: var(--black);
+    stroke: var(--black);
+  }
+
+  .h{
+    stroke: var(--black);
+  }
+}
+
 .main.w {
   .mjl, .mnl, .dl {
     stroke: var(--draft-invert-color);

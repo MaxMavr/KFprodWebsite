@@ -1,6 +1,6 @@
 .icon-container {
   display: flex;
-  gap: 12px;
+  gap: var(--gap-element);
   align-items: center;
   z-index: 10;
   flex-wrap: wrap;
@@ -11,6 +11,7 @@
   width: 16px;
   aspect-ratio: 1;
   pointer-events: none;
+  flex-shrink: 0;
 }
 
 .icon.small {

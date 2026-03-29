@@ -1,38 +1,26 @@
 .button-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  gap: 12px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  gap: var(--gap-element);
   align-items: center;
   z-index: 10;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
 .button {
-  border-radius: 12px;
+  border-radius: var(--button-border-radius);
   padding: 12px 24px;
-  -webkit-transition: all 0.3s cubic-bezier(0.75, 0.35, 0.4, 0.99);
-  -o-transition: all 0.3s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   transition: all 0.3s cubic-bezier(0.75, 0.35, 0.4, 0.99);
 
   font-weight: bold;
   font-size: 20px;
 
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
   text-decoration: none;
   cursor: pointer;
 
   --shadow-button-color: var(--shadow-color);
-  color: #231f20;
   color: var(--txt-color);
-  background-color: #f2f3f5;
   background-color: var(--bg-accent-color);
 
   -webkit-box-shadow: 0 0 0 0 var(#f2f3f599);
@@ -42,29 +30,31 @@
 }
 
 .button.white {
-  color: #231f20;
   color: var(--black);
-  background-color: #f2f3f5;
   background-color: var(--white);
   --shadow-button-color: var(--white-shadow);
 }
 .button.black {
-  color: #f2f3f5;
   color: var(--white);
-  background-color: #231f20;
   background-color: var(--black);
   --shadow-button-color: var(--black-shadow);
 }
 .button.colored {
-  color: #f2f3f5;
   color: var(--white);
-  background-color: #5646ff;
   background-color: var(--link-color);
   --shadow-button-color: var(--link-color);
 }
 
+.button.with-icon {
+  aspect-ratio: 1;
+  padding: 0;
+  background-color: transparent;
+  --shadow-button-color: transparent;
+}
+
 .button:empty {
   height: 48px;
+  width: 48px;
   aspect-ratio: 1;
   padding: 0;
   background-color: transparent;
@@ -232,25 +222,16 @@
 }
 
 .button:hover:not(.in-text):not(:active) {
-  -webkit-transform: scale(1.05, 1.05);
-  -ms-transform: scale(1.05, 1.05);
   transform: scale(1.05, 1.05);
-  -webkit-box-shadow: 0px 6px 12px -6px var(--shadow-button-color);
   box-shadow: 0px 6px 12px -6px var(--shadow-button-color);
   opacity: 100%;
 }
 
 .button:empty:hover:not(.in-text):not(:active) {
-  -webkit-transform: scale(1.1, 1.1);
-  -ms-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1);
 }
 
 .button:active {
-  -webkit-transition: all 0.1s cubic-bezier(0.75, 0.35, 0.4, 0.99);
-  -o-transition: all 0.1s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   transition: all 0.1s cubic-bezier(0.75, 0.35, 0.4, 0.99);
-  -webkit-transform: scale(1, 1);
-  -ms-transform: scale(1, 1);
   transform: scale(1, 1);
 }
