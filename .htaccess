@@ -1,4 +1,4 @@
-# 24.03.2026 00:52
+# 30.03.2026 01:20
 
 # Включаем необходимые модули
 Options +Includes -Indexes
@@ -65,28 +65,32 @@ RewriteCond %{REQUEST_URI} !(.*)/$
 RewriteRule ^(.*)$ $1/ [L,R=301]
 
 # Объединенные правила перенаправлений
-RewriteRule ^(about|download)/?$ /kfbrand/ [R=301,L]
+RewriteRule ^(about|download)/?$ /kfbrand/ [R=301,L,NC]
+
+RewriteRule ^(personal-projects|articles|other-pages)/?$ /personal/ [R=301,L,NC]
+
+RewriteRule ^(service-pages)/?$ / [R=301,L,NC]
 
 
 # Articles
-RewriteRule ^(artemy|quiet-dan)/?$ /articles/$1/ [R=301,L]
+RewriteRule ^(artemy|community-circle|crystallization|quiet-dan)/?$ /articles/$1/ [R=301,L,NC]
 
 
 # Fonts
-RewriteRule ^(melectron|morfin|nuqun)/?$ /fonts/$1/ [R=301,L]
+RewriteRule ^(melectron|morfin|nuqun)/?$ /fonts/$1/ [R=301,L,NC]
 
 
 # Other pages
-RewriteRule ^(crown-caps|cv|personal|showreel|useful)/?$ /other-pages/$1/ [R=301,L]
+RewriteRule ^(crown-caps|cv|fonts|personal|showreel|social|useful|vibes)/?$ /other-pages/$1/ [R=301,L,NC]
 
 
 # Personal projects
-RewriteRule ^(1523tv|birthday|desktops|kfbrand|minecraft-posters|posters)/?$ /personal-projects/$1/ [R=301,L]
+RewriteRule ^(1523tv|birthday|desktops|kfbrand|minecraft-posters|posters)/?$ /personal-projects/$1/ [R=301,L,NC]
 
 
 # Projects
-RewriteRule ^(1ppc|aesthete|amusevill|amusics|default|lumet|mix|morfinizm|morfinizm-lyrics|ohmt|oqun|stickers|wild-mathing)/?$ /projects/$1/ [R=301,L]
+RewriteRule ^(1ppc|aesthete|almaz|amusevill|amusics|bio-point|default|lumet|mix|morfinizm|morfinizm-lyrics|moti|ohmt|oqun|stickers|wild-mathing)/?$ /projects/$1/ [R=301,L,NC]
 
 
 # Service pages
-RewriteRule ^(404|all-pages)/?$ /service-pages/$1/ [R=301,L]
+RewriteRule ^(404|all-pages)/?$ /service-pages/$1/ [R=301,L,NC]
