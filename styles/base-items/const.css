@@ -8,6 +8,14 @@
   --highlight-y-color: #ff9e33;
   --highlight-d-color: #414271;
 
+  --soft-highlight-o-color:#FFE8E1;
+  --soft-highlight-r-color:#FFE3E8;
+  --soft-highlight-p-color:#F0E3FB;
+  --soft-highlight-g-color:#D1F5F3;
+  --soft-highlight-b-color:#DDDAFF;
+  --soft-highlight-y-color:#FFECD6;
+  --soft-highlight-d-color:#D9D9E3;
+
   --black: #231f20;
   --black-trans10: #231f201a;
   --black-trans30: #231f204d;

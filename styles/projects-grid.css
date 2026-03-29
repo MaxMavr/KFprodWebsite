@@ -11,7 +11,7 @@
   grid-auto-rows: var(--cell-size);
 }
 
-.grid-container article {
+.grid-container .grid-item {
   display: flex;
   flex-direction: column;
   
@@ -22,79 +22,55 @@
   background-size: cover;
 
   background-color: var(--bg-accent-color);
-  /* border: var(--border); */
+  border: var(--border);
   z-index: 0;
   border-radius: 20px;
   overflow: hidden;
 }
 
-.grid-container article:not(:has(p:not([class]))):hover {
+.grid-container .grid-item.clickable:hover {
   transform: translateY(-10px);
   box-shadow: 0px 10px 20px -10px var(--shadow-color);
 }
 
-.grid-container article > a {
-  color: var(--white);
+.grid-container .grid-item.clickable:active {
+  transform: translateY(0px);
 }
 
-.grid-container article > a:nth-child(2),
-.grid-container article.s1x1 > a:nth-child(1) {
+.grid-paragraph,
+.grid-container .grid-item-title {
+  padding: var(--padding-medium);
+}
+
+.grid-container .grid-item-fill {
   flex: 1;
 }
 
-.grid-container article > a:nth-child(1) {
-  display: flex;
-  flex-direction: column;
-  gap: var(--gap-element);
-  padding: var(--padding-medium);
-  padding-bottom: 0;
-  text-decoration: none;
-}
-
-.grid-container article p:not([class]) {
-  flex: 1;
-  text-overflow: ellipsis;
-  margin: 0;
-}
-
-.grid-container article.paragraph {
-  width: 100%;
-  padding: var(--padding-medium);
-  position: relative;
-}
-
-.grid-container article.paragraph object {
-  z-index: -1;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.grid-container article.s1x1 {
+.grid-container .grid-item.s1x1 {
   grid-column: span 1;
   grid-row: span 1;
 
-  a:nth-child(2) {
+  .grid-item-title {
     display: none;
   }
 }
 
-.grid-container article.s2x1 {
+.grid-container .grid-item.s2x1 {
   grid-column: span 2;
   grid-row: span 1;
 }
 
-.grid-container article.s2x2 {
+.grid-container .grid-item.s2x2 {
   grid-column: span 2;
   grid-row: span 2;
 }
 
-.grid-container article.s4x2 {
+.grid-container .grid-item.s4x2 {
   grid-column: span 4;
   grid-row: span 2;
 }
 
-.grid-container article.s3x2 {
+.grid-container .grid-item.s3x2 {
   grid-column: span 3;
   grid-row: span 2;
 }
@@ -110,7 +86,7 @@
     --columns: 4;
   }
 
-  .grid-container article.s3x2 {
+  .grid-container .grid-item.s3x2 {
     grid-column: span 2;
     grid-row: span 2;
   }
@@ -121,17 +97,17 @@
     --columns: 2;
   }
 
-  .grid-container article.s3x2 {
+  .grid-container .grid-item.s3x2 {
     grid-column: span 2;
     grid-row: span 1;
   }
 
-  .grid-container article.s4x2 {
+  .grid-container .grid-item.s4x2 {
     grid-column: span 2;
     grid-row: span 2;
   }
-
-  .grid-container article > a:nth-child(1) {
+  
+  .grid-item-title {
     display: none;
   }
 }

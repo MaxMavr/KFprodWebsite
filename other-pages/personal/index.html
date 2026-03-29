@@ -10,11 +10,13 @@
     <title>Личное</title>
     <meta name="description" content="Личные проекты, аккуратно может шокировать"/>
 
-    <link rel="icon" type="image/svg+xml" href="../../img/favicon.svg" />
-    <link rel="stylesheet" type="text/css" href="../../styles/reset.css" />
-    <link rel="stylesheet" type="text/css" href="../../styles/base.css" />
-    <link rel="stylesheet" type="text/css" href="../../styles/projects-grid.css"/>
-    <link rel="stylesheet" type="text/css" href="../../styles/projects.css" />
+    <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
+    <link rel="stylesheet" type="text/css" href="/styles/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/base.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/projects-grid.css"/>
+    <link rel="stylesheet" type="text/css" href="/styles/projects.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/color-invert.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/link-grid.css" />
     <link rel="stylesheet" type="text/css" href="project.css" />
   </head>
 
@@ -34,53 +36,129 @@
       </section>
 
       <div class="grid-container">
-        <article
-          class="s3x2"
-          style="background-image: url(../../personal-projects/kfbrand/img/cover.svg)"
-        >
-          <a
-            class="white"
-            href="../../projects/morfin/morfin.html"
-            target="_blank"
-          >
-            <h3>Морфин</h3>
-            <p class="minor">Шрифт</p>
+        <div class="grid-item clickable s4x2"
+             style="background-image: url(/personal-projects/kfbrand/img/cover.svg)">
+          <a class="white grid-item-title element" href="/personal-projects/kfbrand" target="_blank">
+            <h3>БрендБук KF</h3>
+            <div class="tag-container">
+              <span class="tag white"><span class="minor">Логотип</span></span>
+            </div>
           </a>
-          <a href="../../projects/morfin/morfin.html"></a>
-        </article>
-        
-        <article
-          class="s3x2"
-          style="background-image: url(../../projects/morfin/img/cover.webp)"
-        >
-          <a
-            class="white"
-            href="../../projects/morfin/morfin.html"
-            target="_blank"
-          >
-            <h3>Морфин</h3>
-            <p class="minor">Шрифт</p>
-          </a>
-          <a href="../../projects/morfin/morfin.html"></a>
-        </article>
+          <a class="grid-item-fill" href="/personal-projects/kfbrand"></a>
+        </div>
 
-        <article
-          class="s3x2"
-          style="background-image: url(../../projects/morfin/img/cover.webp)"
-        >
-          <a
-            class="white"
-            href="../../projects/morfin/morfin.html"
-            target="_blank"
-          >
-            <h3>Морфин</h3>
-            <p class="minor">Шрифт</p>
+        <div class="grid-item clickable s2x2"
+             style="background-color: var(--black); background-image: url(/personal-projects/posters/img/cover.webp)">
+          <a class="white grid-item-title element" href="/personal-projects/posters" target="_blank">
+            <h3>Плакаты</h3>
+            <div class="tag-container">
+              <span class="tag white"><span class="minor">Картинки</span></span>
+            </div>
           </a>
-          <a href="../../projects/morfin/morfin.html"></a>
-        </article>
+          <a class="grid-item-fill" href="/personal-projects/posters"></a>
+        </div>
+
+        <div class="grid-item clickable s2x2"
+             style="background-image: url(/personal-projects/birthday/img/cover.webp)">
+          <a class="text-color grid-item-title element" href="/personal-projects/birthday" target="_blank">
+            <h3>Открытки к др</h3>
+            <div class="tag-container">
+              <span class="tag"><span class="minor">Картинки</span></span>
+            </div>
+          </a>
+          <a class="grid-item-fill" href="/personal-projects/birthday"></a>
+        </div>
+
+        <div class="grid-item clickable s2x2"
+             style="background-color: var(--black); background-image: url(/personal-projects/desktops/img/cover.webp)">
+          <a class="white grid-item-title element" href="/personal-projects/desktops" target="_blank">
+            <h3>Рабочии столы</h3>
+            <div class="tag-container">
+              <span class="tag white"><span class="minor">Картинки</span></span>
+            </div>
+          </a>
+          <a class="grid-item-fill" href="/personal-projects/desktops"></a>
+        </div>
+
+        <div class="grid-item clickable s2x2"
+             style="background-image: url(/personal-projects/minecraft-posters/img/cover.webp)">
+          <a class="white grid-item-title element" href="/personal-projects/minecraft-posters" target="_blank">
+            <h3>Плакаты сервера</h3>
+            <div class="tag-container">
+              <span class="tag white"><span class="minor">Плакаты</span></span>
+            </div>
+          </a>
+          <a class="grid-item-fill" href="/personal-projects/minecraft-posters"></a>
+        </div>
+
+        <div class="grid-item clickable s2x2"
+             style="background-image: url(/personal-projects/1523tv/img/cover.svg)">
+          <a class="text-color grid-item-title element" href="/personal-projects/1523tv" target="_blank">
+            <h3>Лицейское телевидение</h3>
+            <div class="tag-container">
+              <span class="tag"><span class="minor">Логотип</span></span>
+            </div>
+          </a>
+          <a class="grid-item-fill" href="/personal-projects/1523tv"></a>
+        </div> 
       </div>
 
-      <div class="two-columns">
+      <section class="section">
+        <h2>Статьи о&nbsp;плакатах</h2>
+        <div class="grid-container">
+          <div class="grid-item clickable s2x1"
+              style="background-image: url(/articles/community-circle/img/cover.webp)">
+            <a class="text-color grid-item-title element" href="/articles/community-circle" target="_blank">
+              <h3></h3>
+            </a>
+            <a class="grid-item-fill" href="/articles/community-circle"></a>
+          </div>
+          <div class="grid-item clickable s2x1"
+              style="background-image: url(/articles/crystallization/img/cover.svg)">
+            <a class="text-color grid-item-title element" href="/articles/crystallization" target="_blank">
+              <h3></h3>
+            </a>
+            <a class="grid-item-fill" href="/articles/crystallization"></a>
+          </div>
+          <div class="grid-item clickable s2x1"
+              style="background-image: url(/articles/artemy/img/cover.webp)">
+            <a class="text-color grid-item-title element" href="/articles/artemy" target="_blank">
+              <h3></h3>
+            </a>
+            <a class="grid-item-fill" href="/articles/artemy"></a>
+          </div>
+          <div class="grid-item clickable s2x1"
+              style="background-image: url(/articles/quiet-dan/img/cover.svg)">
+            <a class="text-color grid-item-title element" href="/articles/quiet-dan" target="_blank">
+              <h3></h3>
+            </a>
+            <a class="grid-item-fill" href="/articles/quiet-dan"></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Остальное</h2>
+        <div style="gap: var(--gap-block)" class="link-grid">
+          <a href="/other-pages/useful" class="color-invert"
+            style="--rich-color: var(--highlight-r-color); --soft-color: var(--soft-highlight-r-color);">
+            <h3>Полезные ссылки</h3>
+            <p class="minor">Со&nbsp;всего интернета</p>
+          </a>
+          <a href="/other-pages/vibes" class="color-invert"
+            style="--rich-color: var(--highlight-p-color); --soft-color: var(--soft-highlight-p-color);">
+            <h3>Вдохновение</h3>
+            <p class="minor">Красивые картинки</p>
+          </a>
+          <a href="/other-pages/social" class="color-invert"
+            style="--rich-color: var(--highlight-o-color); --soft-color: var(--soft-highlight-o-color);">
+            <h3>Контакты</h3>
+            <p class="minor">Актуальные ссылки</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- <div class="two-columns">
         <div class="block">
           <img src="img/tg/post-pop-trah-punk-indie.webp" />
 
@@ -111,7 +189,7 @@
             </p>
           </section>
         </div>
-      </div>
+      </div> -->
     </main>
 
     <div class="pop-up-container"></div>
