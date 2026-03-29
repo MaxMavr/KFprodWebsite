@@ -10,13 +10,13 @@
     <title>Постеры</title>
     <meta name="description" content="Разнообразные бесплатные плакаты"/>
 
-    <link rel="icon" type="image/svg+xml" href="../../img/favicon.svg" />
-    <link rel="stylesheet" type="text/css" href="../../styles/reset.css" />
-    <link rel="stylesheet" type="text/css" href="../../styles/base.css" />
-    <link rel="stylesheet" type="text/css" href="../../styles/projects-grid.css" />
-    <link rel="stylesheet" type="text/css" href="../../styles/poster-grid.css" />
-    <link rel="stylesheet" type="text/css" href="../../styles/projects.css" />
-    <link rel="stylesheet" type="text/css" href="../../styles/image-viewer.css" />
+    <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
+    <link rel="stylesheet" type="text/css" href="/styles/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/base.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/projects-grid.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/poster-grid.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/projects.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/image-viewer.css" />
   </head>
 
   <body>
@@ -46,7 +46,7 @@
           <section class="description">
               <a href="/articles/community-circle/" class="minor hlink-with-icon">
                 Кружок общения
-                <object class="medium icon icon-arrow" type="image/svg+xml" data="../../img/icons/arrow-up-right.svg"></object>
+                <object class="medium icon icon-arrow" type="image/svg+xml" data="/img/icons/arrow-up-right.svg"></object>
               </a>
           </section>
         </div>
@@ -64,7 +64,7 @@
           <section class="description">
             <a href="/articles/crystallization/" class="minor hlink-with-icon">
               Кристаллизации искусства из беспорядка
-              <object class="medium icon icon-arrow" type="image/svg+xml" data="../../img/icons/arrow-up-right.svg"></object>
+              <object class="medium icon icon-arrow" type="image/svg+xml" data="/img/icons/arrow-up-right.svg"></object>
             </a>
           </section>
         </div>
@@ -73,7 +73,7 @@
           <section class="description">
             <a href="/articles/artemy/" class="minor hlink-with-icon">
               Лучшее
-              <object class="medium icon icon-arrow" type="image/svg+xml" data="../../img/icons/arrow-up-right.svg"></object>
+              <object class="medium icon icon-arrow" type="image/svg+xml" data="/img/icons/arrow-up-right.svg"></object>
             </a>
           </section>
         </div>
@@ -82,7 +82,7 @@
           <section class="description">
             <a href="/articles/quiet-dan/" class="minor hlink-with-icon">
               Тихий Дэн
-              <object class="medium icon icon-arrow" type="image/svg+xml" data="../../img/icons/arrow-up-right.svg"></object>
+              <object class="medium icon icon-arrow" type="image/svg+xml" data="/img/icons/arrow-up-right.svg"></object>
             </a>
           </section>
         </div>
@@ -131,7 +131,7 @@
           <section class="description">
             <a href="/fonts/melectron/" class="minor hlink-with-icon">
               Melectron тизер
-              <object class="medium icon icon-arrow" type="image/svg+xml" data="../../img/icons/arrow-up-right.svg"></object>
+              <object class="medium icon icon-arrow" type="image/svg+xml" data="/img/icons/arrow-up-right.svg"></object>
             </a>
           </section>
         </div>
@@ -140,7 +140,7 @@
           <section class="description">
             <a href="/fonts/nuqun/" class="minor hlink-with-icon">
               Nuqun тизер
-              <object class="medium icon icon-arrow" type="image/svg+xml" data="../../img/icons/arrow-up-right.svg"></object>
+              <object class="medium icon icon-arrow" type="image/svg+xml" data="/img/icons/arrow-up-right.svg"></object>
             </a>
           </section>
         </div>
@@ -241,10 +241,10 @@
             <span class="button-container">
               <a
               class="pop-up-button button"
-              href="../../download-res/posters/gnoinyi.pdf"
+              href="/download-res/posters/gnoinyi.pdf"
               download
               data-mode="dnld"
-              data-img="../../img/icons/pop-up/file.svg"
+              data-img="/img/icons/pop-up/file.svg"
               data-msg="Оригинал скачан">
                 PDF
               </a>
@@ -475,35 +475,25 @@
       </div>
 
       <div class="grid-container">
-        <article
-          class="s3x2"
-          style="background-image: url(../../projects/morfin/img/cover.webp)"
-        >
-          <a
-            class="white"
-            href="../../projects/morfin/morfin.html"
-            target="_blank"
-          >
-            <h3>Морфин</h3>
-            <p class="minor">Шрифт</p>
-          </a>
-          <a href="../../projects/morfin/morfin.html"></a>
-        </article>
+        <a href="/other-pages/personal" class="grid-item clickable s3x2"
+             style="position: relative;">
+          <object
+            class="handwrite"
+            style="width: 120%; top: 15%"
+            type="image/svg+xml"
+            data="/other-pages/personal/img/cover.svg"></object>
+        </a>
 
-        <article
-          class="s3x2"
-          style="background-image: url(../../projects/morfin/img/cover.webp)"
-        >
-          <a
-            class="white"
-            href="../../projects/morfin/morfin.html"
-            target="_blank"
-          >
-            <h3>Морфин</h3>
-            <p class="minor">Шрифт</p>
+        <div class="grid-item clickable s3x2"
+             style="background-color: var(--black); background-image: url(/personal-projects/desktops/img/cover.webp)">
+          <a class="white grid-item-title element" href="/personal-projects/desktops" target="_blank">
+            <h3>Рабочие столы</h3>
+            <div class="tag-container">
+              <span class="tag white"><span class="minor">Картинки</span></span>
+            </div>
           </a>
-          <a href="../../projects/morfin/morfin.html"></a>
-        </article>
+          <a class="grid-item-fill" href="/personal-projects/desktops"></a>
+        </div>
       </div>
 
       <section class="element">
@@ -519,9 +509,9 @@
     <!--#include virtual="/plug-in-elements/projects-footer.html" -->
     <!--#include virtual="/plug-in-elements/sticky-personal-footer.html" -->
 
-    <script src="../../scripts/lang&theme.js"></script>
-    <script src="../../scripts/image-viewer.js"></script>
-    <script src="../../scripts/hlink.js"></script>
-    <script src="../../scripts/pop-up.js"></script>
+    <script src="/scripts/lang&theme.js"></script>
+    <script src="/scripts/image-viewer.js"></script>
+    <script src="/scripts/hlink.js"></script>
+    <script src="/scripts/pop-up.js"></script>
   </body>
 </html>
