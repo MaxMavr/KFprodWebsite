@@ -1,0 +1,27 @@
+.moti-color {
+    flex-direction: row;
+    gap: var(--gap-large-element); 
+    justify-content: start;
+}
+
+.moti-color .color-spec {
+    margin: 0;
+}
+
+.moti-color.expand .color-spec {
+    margin: 0;
+}
+
+.color-invert {
+    background-color: var(--rich-color);
+    color: var(--soft-color);
+}
+
+.color-invert::before {
+    border: var(--border-width) solid var(--soft-color);
+}
+
+.color-invert:hover {
+    background-color: var(--soft-color);
+    color: var(--rich-color);
+}
