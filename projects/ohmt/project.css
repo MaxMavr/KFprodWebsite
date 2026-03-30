@@ -17,14 +17,6 @@
   justify-content: center;
 }
 
-.ohmt-tag-button-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
 .full-screen-block {
   position: relative;
 }

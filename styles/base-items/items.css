@@ -31,6 +31,14 @@
   pointer-events: none;
 }
 
+.between-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
 :is(.block,
     .section,
     .element,
