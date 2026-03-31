@@ -49,11 +49,13 @@
 }
 
 .hlink-with-icon .icon {
-  -webkit-transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
-  -o-transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
 }
 
 .hlink-with-icon:hover .icon-arrow {
   transform: translate(10%, -10%);
+}
+
+.hlink-with-icon:hover .icon-rotate-arrow {
+  transform: rotate(45deg);
 }
