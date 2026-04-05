@@ -1,7 +1,8 @@
-const stickyFooter = document.querySelector(".sticky-footer");
-const buttonUp = document.querySelector(".button-up");
-const bodyHeight = document.body.scrollHeight - window.innerHeight;
-const showStickyFooterOnTop = 40;
+const SHOW_STICKY_FOOTER_ON_TOP = 40;
+
+const FOOTER = document.querySelector("footer");
+const STICKY_FOOTER = document.getElementById('sticky-footer');
+const BUTTON_UP = STICKY_FOOTER?.querySelector(".button-up");
 
 function upScroll() {
   window.scrollTo({
@@ -10,21 +11,34 @@ function upScroll() {
   });
 }
 
-function onScroll(event) {
-  const footer = document.querySelector("footer");
-  if (!footer) return;
-
-  const showStickyFooterOnBottom = footer.clientHeight;
-
-  if (
-    scrollY >= showStickyFooterOnTop &&
-    bodyHeight - showStickyFooterOnBottom >= scrollY
-  ) {
-    stickyFooter.classList.add("isvisible");
-  } else {
-    stickyFooter.classList.remove("isvisible");
+let isTicking = false;
+function onScroll() {
+  if (!isTicking) {
+    window.requestAnimationFrame(() => {
+      handleScrollLogic();
+      isTicking = false;
+    });
+    isTicking = true;
   }
 }
 
-window.addEventListener("scroll", onScroll, false);
-buttonUp?.addEventListener("click", upScroll);
+function handleScrollLogic() {
+  if (!FOOTER || !STICKY_FOOTER) return;
+
+  const scrollY = window.scrollY;
+  const maxScrollY = document.documentElement.scrollHeight - window.innerHeight;
+  const footerHeight = FOOTER.offsetHeight;
+
+  const isVisible = scrollY >= SHOW_STICKY_FOOTER_ON_TOP && scrollY <= maxScrollY - footerHeight;
+  STICKY_FOOTER.classList.toggle("isvisible", isVisible);
+}
+
+
+if (FOOTER && STICKY_FOOTER) {
+  window.addEventListener("scroll", onScroll, { passive: true });
+} else console.warn('Предупреждение: не найден футер или прилипающий футер');
+
+
+if (BUTTON_UP) {
+  BUTTON_UP.addEventListener("click", upScroll);
+} else console.warn('Предупреждение: не найдена кнопка «Наверх»');
