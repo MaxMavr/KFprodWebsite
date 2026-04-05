@@ -1,4 +1,4 @@
-# 05.04.2026 17:00
+# 05.04.2026 21:11
 
 # Включаем необходимые модули
 Options +Includes -Indexes
@@ -67,11 +67,11 @@ RewriteRule ^(.*)$ $1/ [L,R=301]
 # Объединенные правила перенаправлений
 RewriteRule ^(about|download)/?$ /kfbrand/ [R=301,L,NC]
 
+RewriteRule ^(service-pages|projects)/?$ / [R=301,L,NC]
+
 RewriteRule ^(personal-projects|articles|other-pages)/?$ /personal/ [R=301,L,NC]
 
 RewriteRule ^(contacts|contact|c|socials|s|vk|tg)/?$ /social/ [R=301,L,NC]
-
-RewriteRule ^(service-pages)/?$ / [R=301,L,NC]
 
 
 # Articles
