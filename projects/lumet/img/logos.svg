@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3584 3584">
 <style type="text/css">
-	@import url("../../../styles/logos-draft.css");
+	@import url("/styles/logos-draft.css");
 	.mjl,.mnl,.dl,.logo-draft{stroke-width:6;}
 	.logo{fill:#FFFFFF;}
 	.mjl,.mnl{stroke-dasharray:3650;stroke-dashoffset:3650;}

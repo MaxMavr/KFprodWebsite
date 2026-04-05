@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
 <style type="text/css">
-    @import url("../../../../styles/logos-draft.css");
+    @import url("/styles/logos-draft.css");
     .d{fill:url(#d);}
 </style>
 

@@ -1,6 +1,6 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1056.97 557.37" >
 <style type="text/css">
-	@import url("../../../styles/base-items/const.css");
+	@import url("/styles/base-items/const.css");
 
     .rotating-cube {
 		transform-box: fill-box;

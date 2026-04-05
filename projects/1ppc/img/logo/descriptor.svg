@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 890 395.6">
 <style type="text/css">
-	@import url("../../../../styles/logos-draft.css");
+	@import url("/styles/logos-draft.css");
 	.st0{fill:#3C8EFF;}
 	.st1{fill:#FFB93E;}
 	.st2{fill:#E1005A;}

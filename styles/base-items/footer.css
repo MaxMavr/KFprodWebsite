@@ -76,12 +76,12 @@ footer .copyright:hover {
 }
 
 .logo-footer:before {
-  background-image: url(../../img/logo/logo-footer.svg);
+  background-image: url(/img/logo/logo-footer.svg);
   opacity: 1;
 }
 
 .logo-footer:after {
-  background-image: url(../../img/logo/logo-footer-color.svg);
+  background-image: url(/img/logo/logo-footer-color.svg);
   opacity: 0;
 }
 

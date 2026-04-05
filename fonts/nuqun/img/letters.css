@@ -1,4 +1,4 @@
-@import url(../../../styles/base-items/const.css);
+@import url(/styles/base-items/const.css);
 
 .mj,
 .mn,
@@ -6,9 +6,7 @@
 .c,
 .cl,
 .l {
-  -webkit-transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
-  -o-transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
-  transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  transition: var(--transition-smooth);
 }
 
 .mj,
@@ -38,7 +36,6 @@
   opacity: 0;
   stroke-miterlimit: 30;
   stroke-dasharray: 36;
-  -webkit-animation: stroke-movement linear 15s infinite;
   animation: stroke-movement linear 15s infinite;
 }
 
@@ -55,7 +52,7 @@
 .l {
   fill: var(--draft-color);
   opacity: 0;
-  font-family: "Noah-Regular";
+  font-family: Noah, Arial, sans-serif;
   font-size: 50px;
   text-anchor: middle;
 }

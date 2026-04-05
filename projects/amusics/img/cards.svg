@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="340 110 1290 970">
 <style type="text/css">
-    @import url("../../../styles/base-items/const.css");
+    @import url("/styles/base-items/const.css");
 
 	.bg{opacity:0}
 	.bs{opacity:1}

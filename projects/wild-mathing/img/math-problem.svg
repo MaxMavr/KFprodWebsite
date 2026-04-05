@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
 <style type="text/css">
-	@import url("../../../styles/base-items/const.css");
+	@import url("/styles/base-items/const.css");
 	.st5{fill:var(--txt-color);-webkit-transition: all 0.3s cubic-bezier(0.75, 0.35, 0.4, 0.99);-o-transition: all 0.3s cubic-bezier(0.75, 0.35, 0.4, 0.99);transition: all 0.3s cubic-bezier(0.75, 0.35, 0.4, 0.99);}
 	.st0{fill:var(--bg-color);}
 	.st1{fill:none;stroke:var(--txt-color);stroke-width:0.5;stroke-miterlimit:10;}

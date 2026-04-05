@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 893.57 469.87">
 <style type="text/css">
-	@import url("../../../../styles/logos-draft.css");
+	@import url("/styles/logos-draft.css");
 	.d{fill:url(#d);}
 	--draft-invert-color: #252525;
 	--draft-color: #FFF;

@@ -66,174 +66,174 @@
 }
 
 .button.tg {
-  background-image: url(../../img/icons/logo-black/tg-logo.svg);
+  background-image: url(/img/icons/logo-black/tg-logo.svg);
 }
 .button.vk {
-  background-image: url(../../img/icons/logo-black/vk-logo.svg);
+  background-image: url(/img/icons/logo-black/vk-logo.svg);
 }
 .button.yt {
-  background-image: url(../../img/icons/logo-black/yt-logo.svg);
+  background-image: url(/img/icons/logo-black/yt-logo.svg);
 }
 .button.hh {
-  background-image: url(../../img/icons/logo-black/hh.svg);
+  background-image: url(/img/icons/logo-black/hh.svg);
 }
 .button.fontesk {
-  background-image: url(../../img/icons/logo-black/fontesk-logo.svg);
+  background-image: url(/img/icons/logo-black/fontesk-logo.svg);
 }
 .button.fontstorage {
-  background-image: url(../../img/icons/logo-black/fontstorage-logo.svg);
+  background-image: url(/img/icons/logo-black/fontstorage-logo.svg);
 }
 .button.myskotom {
-  background-image: url(../../img/icons/logo-black/myskotom-logo.svg);
+  background-image: url(/img/icons/logo-black/myskotom-logo.svg);
 }
 .button.fonts-online {
-  background-image: url(../../img/icons/logo-black/fonts-online-logo.svg);
+  background-image: url(/img/icons/logo-black/fonts-online-logo.svg);
 }
 
 @media (prefers-color-scheme: dark) {
   .button.tg {
-    background-image: url(../../img/icons/logo-white/tg-logo.svg);
+    background-image: url(/img/icons/logo-white/tg-logo.svg);
   }
   .button.vk {
-    background-image: url(../../img/icons/logo-white/vk-logo.svg);
+    background-image: url(/img/icons/logo-white/vk-logo.svg);
   }
   .button.yt {
-    background-image: url(../../img/icons/logo-white/yt-logo.svg);
+    background-image: url(/img/icons/logo-white/yt-logo.svg);
   }
   .button.hh {
-    background-image: url(../../img/icons/logo-white/hh.svg);
+    background-image: url(/img/icons/logo-white/hh.svg);
   }
   .button.fontesk {
-    background-image: url(../../img/icons/logo-white/fontesk-logo.svg);
+    background-image: url(/img/icons/logo-white/fontesk-logo.svg);
   }
   .button.fontstorage {
-    background-image: url(../../img/icons/logo-white/fontstorage-logo.svg);
+    background-image: url(/img/icons/logo-white/fontstorage-logo.svg);
   }
   .button.myskotom {
-    background-image: url(../../img/icons/logo-white/myskotom-logo.svg);
+    background-image: url(/img/icons/logo-white/myskotom-logo.svg);
   }
   .button.fonts-online {
-    background-image: url(../../img/icons/logo-white/fonts-online-logo.svg);
+    background-image: url(/img/icons/logo-white/fonts-online-logo.svg);
   }
 }
 
 .button.tg.black {
-  background-image: url(../../img/icons/logo-black/tg-logo.svg);
+  background-image: url(/img/icons/logo-black/tg-logo.svg);
 }
 .button.vk.black {
-  background-image: url(../../img/icons/logo-black/vk-logo.svg);
+  background-image: url(/img/icons/logo-black/vk-logo.svg);
 }
 .button.yt.black {
-  background-image: url(../../img/icons/logo-black/yt-logo.svg);
+  background-image: url(/img/icons/logo-black/yt-logo.svg);
 }
 .button.hh.black {
-  background-image: url(../../img/icons/logo-black/hh.svg);
+  background-image: url(/img/icons/logo-black/hh.svg);
 }
 .button.fontesk.black {
-  background-image: url(../../img/icons/logo-black/fontesk-logo.svg);
+  background-image: url(/img/icons/logo-black/fontesk-logo.svg);
 }
 .button.fontstorage.black {
-  background-image: url(../../img/icons/logo-black/fontstorage-logo.svg);
+  background-image: url(/img/icons/logo-black/fontstorage-logo.svg);
 }
 .button.myskotom.black {
-  background-image: url(../../img/icons/logo-black/myskotom-logo.svg);
+  background-image: url(/img/icons/logo-black/myskotom-logo.svg);
 }
 .button.fonts-online.black {
-  background-image: url(../../img/icons/logo-black/fonts-online-logo.svg);
+  background-image: url(/img/icons/logo-black/fonts-online-logo.svg);
 }
 
 .button.tg.white {
-  background-image: url(../../img/icons/logo-white/tg-logo.svg);
+  background-image: url(/img/icons/logo-white/tg-logo.svg);
 }
 .button.vk.white {
-  background-image: url(../../img/icons/logo-white/vk-logo.svg);
+  background-image: url(/img/icons/logo-white/vk-logo.svg);
 }
 .button.yt.white {
-  background-image: url(../../img/icons/logo-white/yt-logo.svg);
+  background-image: url(/img/icons/logo-white/yt-logo.svg);
 }
 .button.hh.white {
-  background-image: url(../../img/icons/logo-white/hh.svg);
+  background-image: url(/img/icons/logo-white/hh.svg);
 }
 .button.fontesk.white {
-  background-image: url(../../img/icons/logo-white/fontesk-logo.svg);
+  background-image: url(/img/icons/logo-white/fontesk-logo.svg);
 }
 .button.fontstorage.white {
-  background-image: url(../../img/icons/logo-white/fontstorage-logo.svg);
+  background-image: url(/img/icons/logo-white/fontstorage-logo.svg);
 }
 .button.myskotom.white {
-  background-image: url(../../img/icons/logo-white/myskotom-logo.svg);
+  background-image: url(/img/icons/logo-white/myskotom-logo.svg);
 }
 .button.fonts-online.white {
-  background-image: url(../../img/icons/logo-white/fonts-online-logo.svg);
+  background-image: url(/img/icons/logo-white/fonts-online-logo.svg);
 }
 
 .button.tg.colored {
   --shadow-button-color: rgba(40, 168, 232, 0.3);
-  background-image: url(../../img/icons/logo-colored/tg-logo.svg);
+  background-image: url(/img/icons/logo-colored/tg-logo.svg);
 }
 .button.vk.colored {
   --shadow-button-color: rgba(0, 119, 255, 0.3);
-  background-image: url(../../img/icons/logo-colored/vk-logo.svg);
+  background-image: url(/img/icons/logo-colored/vk-logo.svg);
 }
 .button.yt.colored {
   --shadow-button-color: rgba(255, 0, 0, 0.3);
-  background-image: url(../../img/icons/logo-colored/yt-logo.svg);
+  background-image: url(/img/icons/logo-colored/yt-logo.svg);
 }
 .button.hh.colored {
-  background-image: url(../../img/icons/logo-colored/hh.svg);
+  background-image: url(/img/icons/logo-colored/hh.svg);
 }
 .button.fontesk.colored {
   --shadow-button-color: rgba(1, 148, 255, 0.3);
-  background-image: url(../../img/icons/logo-colored/fontesk-logo.svg);
+  background-image: url(/img/icons/logo-colored/fontesk-logo.svg);
 }
 .button.fontstorage.colored {
   --shadow-button-color: rgba(3, 125, 202, 0.3);
-  background-image: url(../../img/icons/logo-colored/fontstorage-logo.svg);
+  background-image: url(/img/icons/logo-colored/fontstorage-logo.svg);
 }
 .button.myskotom.colored {
   --shadow-button-color: rgba(35, 31, 32, 0.3);
-  background-image: url(../../img/icons/logo-colored/myskotom-logo.svg);
+  background-image: url(/img/icons/logo-colored/myskotom-logo.svg);
 }
 .button.fonts-online.colored {
   --shadow-button-color: rgba(35, 31, 32, 0.3);
-  background-image: url(../../img/icons/logo-colored/fonts-online-logo.svg);
+  background-image: url(/img/icons/logo-colored/fonts-online-logo.svg);
 }
 
 .button.ae {
   --shadow-button-color: rgba(34, 0, 79, 0.302);
-  background-image: url(../../img/icons/program/ae.svg);
+  background-image: url(/img/icons/program/ae.svg);
 }
 .button.ai {
   --shadow-button-color: rgba(51, 0, 0, 0.302);
-  background-image: url(../../img/icons/program/ai.svg);
+  background-image: url(/img/icons/program/ai.svg);
 }
 .button.au {
   --shadow-button-color: rgba(0, 38, 32, 0.302);
-  background-image: url(../../img/icons/program/au.svg);
+  background-image: url(/img/icons/program/au.svg);
 }
 .button.pr {
   --shadow-button-color: rgba(55, 0, 68, 0.302);
-  background-image: url(../../img/icons/program/pr.svg);
+  background-image: url(/img/icons/program/pr.svg);
 }
 .button.ps {
   --shadow-button-color: rgba(0, 0, 38, 0.302);
-  background-image: url(../../img/icons/program/ps.svg);
+  background-image: url(/img/icons/program/ps.svg);
 }
 .button.git {
   --shadow-button-color: rgba(240, 60, 46, 0.302);
-  background-image: url(../../img/icons/program/git.svg);
+  background-image: url(/img/icons/program/git.svg);
 }
 .button.python {
   --shadow-button-color: rgba(56, 116, 166, 0.302);
-  background-image: url(../../img/icons/program/python.svg);
+  background-image: url(/img/icons/program/python.svg);
 }
 .button.fontlab {
   --shadow-button-color: rgba(15, 33, 51, 0.302);
-  background-image: url(../../img/icons/program/fontlab.svg);
+  background-image: url(/img/icons/program/fontlab.svg);
 }
 
 .button.mail {
-  background-image: url(../../img/icons/mail-fill.svg);
+  background-image: url(/img/icons/mail-fill.svg);
 }
 
 .button:hover:not(.in-text):not(:active) {

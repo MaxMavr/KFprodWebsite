@@ -37,33 +37,33 @@
 }
 
 .side.front {
-  background: url(../img/logo/cube/logo-front.svg) no-repeat center center /
+  background: url(/img/logo/cube/logo-front.svg) no-repeat center center /
     contain;
 }
 
 .side.top {
-  background: url(../img/logo/cube/logo-top.svg) no-repeat center center /
+  background: url(/img/logo/cube/logo-top.svg) no-repeat center center /
     contain;
   -webkit-transform: rotateX(90deg);
   transform: rotateX(90deg);
 }
 
 .side.bottom {
-  background: url(../img/logo/cube/logo-bottom.svg) no-repeat center center /
+  background: url(/img/logo/cube/logo-bottom.svg) no-repeat center center /
     contain;
   -webkit-transform: rotateX(-90deg);
   transform: rotateX(-90deg);
 }
 
 .side.right {
-  background: url(../img/logo/cube/logo-right.svg) no-repeat center center /
+  background: url(/img/logo/cube/logo-right.svg) no-repeat center center /
     contain;
   -webkit-transform: rotateY(90deg);
   transform: rotateY(90deg);
 }
 
 .side.left {
-  background: url(../img/logo/cube/logo-left.svg) no-repeat center center /
+  background: url(/img/logo/cube/logo-left.svg) no-repeat center center /
     contain;
   -webkit-transform: rotateY(-90deg);
   transform: rotateY(-90deg);

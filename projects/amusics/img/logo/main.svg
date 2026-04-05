@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 970 360">
 <style type="text/css">
-    @import url("../../../../styles/logos-draft.css");
+    @import url("/styles/logos-draft.css");
 	.logo{fill:#2C191C;}
     .d{fill:url(#d);}
 	@media (prefers-color-scheme: dark) {
