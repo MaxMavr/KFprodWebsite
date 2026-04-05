@@ -6,7 +6,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/made%20by-MaxMavr-9943e2">
-  <img src="https://img.shields.io/badge/version-1.0.2-ff4267"><br>
+  <img src="https://img.shields.io/badge/version-1.0.3-ff4267"><br>
   <img src="https://img.shields.io/badge/HTML5-ff6433">
   <img src="https://img.shields.io/badge/CSS3-5646ff">
   <img src="https://img.shields.io/badge/JavaScript-ff9e33">

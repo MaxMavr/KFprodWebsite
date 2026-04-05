@@ -27,6 +27,7 @@
   font-size: var(--minor-font-size);
   font-weight: normal;
   opacity: 60%;
+  letter-spacing: 0.3px;
 }
 
 .text-color {

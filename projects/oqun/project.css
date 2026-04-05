@@ -11,3 +11,9 @@
   line-height: 80%;
   font-size: 192px;
 }
+
+@media (max-width: 800px) {
+  .project-header h1 {
+    font-size: 96px;
+  }
+}
