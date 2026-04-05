@@ -74,6 +74,9 @@
 .button.yt {
   background-image: url(../../img/icons/logo-black/yt-logo.svg);
 }
+.button.hh {
+  background-image: url(../../img/icons/logo-black/hh.svg);
+}
 .button.fontesk {
   background-image: url(../../img/icons/logo-black/fontesk-logo.svg);
 }
@@ -96,6 +99,9 @@
   }
   .button.yt {
     background-image: url(../../img/icons/logo-white/yt-logo.svg);
+  }
+  .button.hh {
+    background-image: url(../../img/icons/logo-white/hh.svg);
   }
   .button.fontesk {
     background-image: url(../../img/icons/logo-white/fontesk-logo.svg);
@@ -120,6 +126,9 @@
 .button.yt.black {
   background-image: url(../../img/icons/logo-black/yt-logo.svg);
 }
+.button.hh.black {
+  background-image: url(../../img/icons/logo-black/hh.svg);
+}
 .button.fontesk.black {
   background-image: url(../../img/icons/logo-black/fontesk-logo.svg);
 }
@@ -141,6 +150,9 @@
 }
 .button.yt.white {
   background-image: url(../../img/icons/logo-white/yt-logo.svg);
+}
+.button.hh.white {
+  background-image: url(../../img/icons/logo-white/hh.svg);
 }
 .button.fontesk.white {
   background-image: url(../../img/icons/logo-white/fontesk-logo.svg);
@@ -166,6 +178,9 @@
 .button.yt.colored {
   --shadow-button-color: rgba(255, 0, 0, 0.3);
   background-image: url(../../img/icons/logo-colored/yt-logo.svg);
+}
+.button.hh.colored {
+  background-image: url(../../img/icons/logo-colored/hh.svg);
 }
 .button.fontesk.colored {
   --shadow-button-color: rgba(1, 148, 255, 0.3);
