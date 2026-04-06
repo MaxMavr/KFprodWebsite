@@ -9,6 +9,12 @@ main {
   margin: 80px auto 80px auto;
 }
 
+.cv-minor {
+  font-size: var(--minor-font-size);
+  font-weight: normal;
+  letter-spacing: 0.3px;
+}
+
 .cv-photo {
   pointer-events: none;
   width: 100%;
