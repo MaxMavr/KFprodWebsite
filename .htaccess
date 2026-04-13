@@ -1,4 +1,4 @@
-# 05.04.2026 21:33
+# 13.04.2026 23:57
 
 # Включаем необходимые модули
 Options +Includes -Indexes
@@ -25,6 +25,8 @@ RewriteBase /
 
 # === Обработка ошибок ===
 ErrorDocument 404 /service-pages/404/
+ErrorDocument 403 /service-pages/404/
+ErrorDocument 400 /service-pages/404/
 
 # === Оптимизация производительности ===
 # Включение сжатия
@@ -67,7 +69,7 @@ RewriteRule ^(.*)$ $1/ [L,R=301]
 # Объединенные правила перенаправлений
 RewriteRule ^(about|download)/?$ /kfbrand/ [R=301,L,NC]
 
-RewriteRule ^(service-pages|projects)/?$ / [R=301,L,NC]
+RewriteRule ^(service-pages|projects|portfolio)/?$ / [R=301,L,NC]
 
 RewriteRule ^(personal-projects|articles|other-pages)/?$ /personal/ [R=301,L,NC]
 

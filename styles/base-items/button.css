@@ -77,6 +77,9 @@
 .button.hh {
   background-image: url(/img/icons/logo-black/hh.svg);
 }
+.button.habr {
+  background-image: url(/img/icons/logo-black/habr.svg);
+}
 .button.fontesk {
   background-image: url(/img/icons/logo-black/fontesk-logo.svg);
 }
@@ -102,6 +105,9 @@
   }
   .button.hh {
     background-image: url(/img/icons/logo-white/hh.svg);
+  }
+  .button.habr {
+    background-image: url(/img/icons/logo-white/habr.svg);
   }
   .button.fontesk {
     background-image: url(/img/icons/logo-white/fontesk-logo.svg);
@@ -129,6 +135,9 @@
 .button.hh.black {
   background-image: url(/img/icons/logo-black/hh.svg);
 }
+.button.habr.black {
+  background-image: url(/img/icons/logo-black/habr.svg);
+}
 .button.fontesk.black {
   background-image: url(/img/icons/logo-black/fontesk-logo.svg);
 }
@@ -153,6 +162,9 @@
 }
 .button.hh.white {
   background-image: url(/img/icons/logo-white/hh.svg);
+}
+.button.habr.white {
+  background-image: url(/img/icons/logo-white/habr.svg);
 }
 .button.fontesk.white {
   background-image: url(/img/icons/logo-white/fontesk-logo.svg);
@@ -181,6 +193,9 @@
 }
 .button.hh.colored {
   background-image: url(/img/icons/logo-colored/hh.svg);
+}
+.button.habr.colored {
+  background-image: url(/img/icons/logo-colored/habr.svg);
 }
 .button.fontesk.colored {
   --shadow-button-color: rgba(1, 148, 255, 0.3);
