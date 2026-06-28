@@ -23,8 +23,6 @@
   color: var(--txt-color);
   background-color: var(--bg-accent-color);
 
-  -webkit-box-shadow: 0 0 0 0 var(#f2f3f599);
-  box-shadow: 0 0 0 0 var(#f2f3f599);
   -webkit-box-shadow: 0 0 0 0 var(--shadow-button-color);
   box-shadow: 0 0 0 0 var(--shadow-button-color);
 }

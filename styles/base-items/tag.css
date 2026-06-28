@@ -9,6 +9,8 @@
   border-radius: 10px;
   border: var(--border);
   backdrop-filter: blur(20px);
+  box-shadow: 0 0 6px var(--tag-shadow-color),
+      inset 0 0 6px var(--tag-glow-color);
 }
 
 .tag.white {

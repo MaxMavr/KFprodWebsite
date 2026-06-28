@@ -22,7 +22,7 @@
   width: 100vw;
   height: 100vh;
   background-color: #f2f3f54d;
-  background-color: var(--poster-bg-color);
+  background-color: var(--overlay-bg-color);
   opacity: 0;
   transition: var(--transition-smooth);
   justify-content: center;

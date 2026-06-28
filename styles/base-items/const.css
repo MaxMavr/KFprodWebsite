@@ -45,14 +45,16 @@
 
   --border-color: var(--black-border-color);
   --shadow-color: var(--white-trans60);
-  --poster-bg-color: var(--white-trans30);
+  --tag-shadow-color: var(--black-trans10);
+  --tag-glow-color: var(--white-trans10);
+  --overlay-bg-color: var(--white-trans30);
   --scrollbar-color: #231f2066;
   --link-color: var(--highlight-b-color); /* JS */
 
   /* Отступы */
   --gap-main: 120px;
   --gap-section: 40px;
-  --gap-block: 20px; /* spacing */
+  --gap-block: 20px;
 
   --gap-large-element: 24px;
   --gap-element: 12px;
@@ -99,7 +101,7 @@ svg {
 
     --border-color: var(--white-border-color);
     --shadow-color: var(--black-trans60);
-    --poster-bg-color: var(--black-trans30);
+    --overlay-bg-color: var(--black-trans30);
     --scrollbar-color: #f1f2f41a;
   }
 
