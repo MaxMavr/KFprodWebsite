@@ -1,0 +1,9 @@
+.full-screen-background {
+  max-height: 90%;
+  max-width: 90%;
+  filter: blur(0.5px);
+}
+
+.nicotine-header {
+  width: 80%;
+}
