@@ -90,12 +90,12 @@
 
         <div class="color-palette-container">
           <a
-              class="pop-up-button color black"
+              class="toast-button copy-button color black"
               style="background-color: #E2DDD9"
-              data-mode="copy"
-              data-img="/img/icons/pop-up/pipette.svg"
-              data-msg="Цвет скопирован"
-              data-copytxt="#E2DDD9"
+              data-image="/img/icons/toast/pipette.svg"
+              data-message="Цвет скопирован"
+              data-copy-text="#E2DDD9"
+              data-mobile="false"
           >
               <div class="color-spec">
               <div class="color-model">HEX</div>
@@ -119,11 +119,11 @@
               style="background: linear-gradient(180deg, #FFBE1D 30%, #FF3605 70%);"
           >
               <a
-              class="pop-up-button black"
-              data-mode="copy"
-              data-img="/img/icons/pop-up/pipette.svg"
-              data-msg="Цвет скопирован"
-              data-copytxt="#FFBE1D"
+              class="toast-button copy-button black"
+              data-image="/img/icons/toast/pipette.svg"
+              data-message="Цвет скопирован"
+              data-copy-text="#FFBE1D"
+              data-mobile="false"
           >
               <div class="color-spec">
               <div class="color-title">Солнечный янтарь</div>
@@ -144,11 +144,11 @@
               </div>
           </a>
               <a
-              class="pop-up-button white"
-              data-mode="copy"
-              data-img="/img/icons/pop-up/pipette.svg"
-              data-msg="Цвет скопирован"
-              data-copytxt="#FF3605"
+              class="toast-button copy-button white"
+              data-image="/img/icons/toast/pipette.svg"
+              data-message="Цвет скопирован"
+              data-copy-text="#FF3605"
+              data-mobile="false"
           >
               <div class="color-spec">
               <div class="color-model">HEX</div>
@@ -173,11 +173,11 @@
               style="background: linear-gradient(180deg, #FF88B9 30%, #F50066 70%);"
           >
               <a
-              class="pop-up-button black"
-              data-mode="copy"
-              data-img="/img/icons/pop-up/pipette.svg"
-              data-msg="Цвет скопирован"
-              data-copytxt="#FF88B9"
+              class="toast-button copy-button black"
+              data-image="/img/icons/toast/pipette.svg"
+              data-message="Цвет скопирован"
+              data-copy-text="#FF88B9"
+              data-mobile="false"
           >
               <div class="color-spec">
               <div class="color-title">Розовый кварц</div>
@@ -198,11 +198,11 @@
               </div>
           </a>
               <a
-              class="pop-up-button white"
-              data-mode="copy"
-              data-img="/img/icons/pop-up/pipette.svg"
-              data-msg="Цвет скопирован"
-              data-copytxt="#F50066"
+              class="toast-button copy-button white"
+              data-image="/img/icons/toast/pipette.svg"
+              data-message="Цвет скопирован"
+              data-copy-text="#F50066"
+              data-mobile="false"
           >
               <div class="color-spec">
               <div class="color-model">HEX</div>
@@ -225,11 +225,11 @@
 
           <div class="color" style="background: linear-gradient(180deg, #22E0FF 30%, #0F33FF 70%);">
             <a
-              class="pop-up-button black"
-              data-mode="copy"
-              data-img="/img/icons/pop-up/pipette.svg"
-              data-msg="Цвет скопирован"
-              data-copytxt="#22E0FF"
+              class="toast-button copy-button black"
+              data-image="/img/icons/toast/pipette.svg"
+              data-message="Цвет скопирован"
+              data-copy-text="#22E0FF"
+              data-mobile="false"
           >
               <div class="color-spec">
               <div class="color-title">Чёрный опал</div>
@@ -250,11 +250,11 @@
               </div>
           </a>
               <a
-              class="pop-up-button white"
-              data-mode="copy"
-              data-img="/img/icons/pop-up/pipette.svg"
-              data-msg="Цвет скопирован"
-              data-copytxt="#0F33FF"
+              class="toast-button copy-button white"
+              data-image="/img/icons/toast/pipette.svg"
+              data-message="Цвет скопирован"
+              data-copy-text="#0F33FF"
+              data-mobile="false"
           >
               <div class="color-spec">
               <div class="color-model">HEX</div>
@@ -323,7 +323,7 @@
       </div>
     </main>
 
-    <div class="pop-up-container"></div>
+    <div id="toast-container"></div>
     <div class="image-viewer-overlay"></div>
 
     <!--#include virtual="/plug-in-elements/projects-footer.html" -->
@@ -335,6 +335,7 @@
     <script src="/scripts/color-palette.js"></script>
     <script src="/scripts/image-viewer.js"></script>
     <script src="/scripts/hlink.js"></script>
-    <script src="/scripts/pop-up.js"></script>
+    <script src="/scripts/toast.js"></script>
+    <script src="/scripts/copy.js"></script>
   </body>
 </html>

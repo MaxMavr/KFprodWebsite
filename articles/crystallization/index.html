@@ -123,12 +123,12 @@
 
         <div class="color-palette-container">
           <a
-            class="pop-up-button color white"
+            class="toast-button copy-button color white"
             style="background-color: #E542B3"
-            data-mode="copy"
-            data-img="/img/icons/pop-up/pipette.svg"
-            data-msg="Цвет скопирован"
-            data-copytxt="#E542B3"
+            data-image="/img/icons/toast/pipette.svg"
+            data-message="Цвет скопирован"
+            data-copy-text="#E542B3"
+            data-mobile="false"
           >
             <div class="color-spec">
               <div class="color-model">HEX</div>
@@ -148,12 +148,12 @@
             </div>
           </a>
           <a
-            class="pop-up-button color black"
+            class="toast-button copy-button color black"
             style="background-color: #C4F500"
-            data-mode="copy"
-            data-img="/img/icons/pop-up/pipette.svg"
-            data-msg="Цвет скопирован"
-            data-copytxt="#C4F500"
+            data-image="/img/icons/toast/pipette.svg"
+            data-message="Цвет скопирован"
+            data-copy-text="#C4F500"
+            data-mobile="false"
           >
             <div class="color-spec">
               <div class="color-model">HEX</div>
@@ -173,12 +173,12 @@
             </div>
           </a>
           <a
-            class="pop-up-button color white"
+            class="toast-button copy-button color white"
             style="background-color: #0000FF"
-            data-mode="copy"
-            data-img="/img/icons/pop-up/pipette.svg"
-            data-msg="Цвет скопирован"
-            data-copytxt="#0000FF"
+            data-image="/img/icons/toast/pipette.svg"
+            data-message="Цвет скопирован"
+            data-copy-text="#0000FF"
+            data-mobile="false"
           >
             <div class="color-spec">
               <div class="color-model">HEX</div>
@@ -198,12 +198,12 @@
             </div>
           </a>
           <a
-            class="pop-up-button color white"
+            class="toast-button copy-button color white"
             style="background-color: #3A45FF"
-            data-mode="copy"
-            data-img="/img/icons/pop-up/pipette.svg"
-            data-msg="Цвет скопирован"
-            data-copytxt="#3A45FF"
+            data-image="/img/icons/toast/pipette.svg"
+            data-message="Цвет скопирован"
+            data-copy-text="#3A45FF"
+            data-mobile="false"
           >
             <div class="color-spec">
               <div class="color-model">HEX</div>
@@ -223,12 +223,12 @@
             </div>
           </a>
           <a
-            class="pop-up-button color black"
+            class="toast-button copy-button color black"
             style="background-color: #EBEFF8"
-            data-mode="copy"
-            data-img="/img/icons/pop-up/pipette.svg"
-            data-msg="Цвет скопирован"
-            data-copytxt="#EBEFF8"
+            data-image="/img/icons/toast/pipette.svg"
+            data-message="Цвет скопирован"
+            data-copy-text="#EBEFF8"
+            data-mobile="false"
           >
             <div class="color-spec">
               <div class="color-model">HEX</div>
@@ -248,12 +248,12 @@
             </div>
           </a>
           <a
-            class="pop-up-button color white"
+            class="toast-button copy-button color white"
             style="background-color: #101215"
-            data-mode="copy"
-            data-img="/img/icons/pop-up/pipette.svg"
-            data-msg="Цвет скопирован"
-            data-copytxt="#101215"
+            data-image="/img/icons/toast/pipette.svg"
+            data-message="Цвет скопирован"
+            data-copy-text="#101215"
+            data-mobile="false"
           >
             <div class="color-spec">
               <div class="color-model">HEX</div>
@@ -303,7 +303,7 @@
       </div>
     </main>
 
-    <div class="pop-up-container"></div>
+    <div id="toast-container"></div>
     <div class="image-viewer-overlay"></div>
 
     <!--#include virtual="/plug-in-elements/projects-footer.html" -->
@@ -319,6 +319,7 @@
     <script src="/scripts/color-palette.js"></script>
     <script src="/scripts/image-viewer.js"></script>
     <script src="/scripts/hlink.js"></script>
-    <script src="/scripts/pop-up.js"></script>
+    <script src="/scripts/toast.js"></script>
+    <script src="/scripts/copy.js"></script>
   </body>
 </html>

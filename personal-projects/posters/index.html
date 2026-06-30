@@ -286,12 +286,11 @@
             </p>
             <span class="button-container">
               <a
-              class="pop-up-button button"
+              class="toast-button button"
               href="/download-res/posters/gnoinyi.pdf"
               download
-              data-mode="dnld"
-              data-img="/img/icons/pop-up/file.svg"
-              data-msg="Оригинал скачан">
+              data-image="/img/icons/toast/file.svg"
+              data-message="Оригинал скачан">
                 пдф
               </a>
             </span>
@@ -549,7 +548,7 @@
       </section>
     </main>
 
-    <div class="pop-up-container"></div>
+    <div id="toast-container"></div>
     <div class="image-viewer-overlay"></div>
 
     <!--#include virtual="/plug-in-elements/projects-footer.html" -->
@@ -558,6 +557,7 @@
     <script src="/scripts/lang&theme.js"></script>
     <script src="/scripts/image-viewer.js"></script>
     <script src="/scripts/hlink.js"></script>
-    <script src="/scripts/pop-up.js"></script>
+    <script src="/scripts/toast.js"></script>
+    <script src="/scripts/copy.js"></script>
   </body>
 </html>
