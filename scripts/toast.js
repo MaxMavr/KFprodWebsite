@@ -77,8 +77,9 @@ const initToastButtons = () => {
       const toast = createToast(image, message, counter);
       toastContainer.appendChild(toast);
 
-      void toast.offsetHeight;
-      toast.classList.add('show');
+      requestAnimationFrame(() => {
+          toast.classList.add('show');
+      });
       
       counter++;
     });

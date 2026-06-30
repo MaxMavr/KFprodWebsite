@@ -1,0 +1,52 @@
+.viewer-overlay,
+.overlay-background {
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.viewer-container :is(img, video) {
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.viewer-container :is(img, video):hover {
+  border-radius: var(--border-radius);
+}
+
+.overlay-background {
+  display: flex;
+  backdrop-filter: blur(0);
+  width: 100vw;
+  height: 100vh;
+  background-color: #f2f3f54d;
+  background-color: var(--overlay-bg-color);
+  opacity: 0;
+  transition: var(--transition-smooth);
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.overlay-background :is(img, video) {
+  max-width: calc(100vw - 40px);
+  max-height: calc(100vh - 40px);
+  transition: var(--transition-smooth);
+  opacity: 0;
+  transform: translate(0, 10px);
+  z-index: 101;
+  pointer-events: none;
+  user-select: none;
+}
+
+.overlay-background.is-visible {
+  backdrop-filter: blur(10px);
+  opacity: 100%;
+  transform: translate(0, 0);
+}
+
+.overlay-background.is-visible :is(img, video) {
+  opacity: 100%;
+  transform: translate(0, 0);
+}
