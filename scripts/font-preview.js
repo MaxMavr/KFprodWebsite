@@ -1,26 +1,40 @@
-window.onload = () => {
-    const preview = document.querySelector('.preview');
-    preview.textContent = 'Напишите что-нибудь';
+const PLACEHOLDER = 'Напишите что-нибудь'
+
+
+function initFontPreview() {
+    const textInput = document.getElementById('font-preview');
+    
+    if (!textInput) {
+        console.error('Поле для демонстрации шрифта не найдено');
+        return;
+    }
 
     const setSelection = () => {
-        let range = document.createRange(),
-            selection = window.getSelection();
-
-        range.setStart(preview.firstChild, 19);
-        range.setEnd(preview.firstChild, 19);
+        if (!textInput.firstChild) {
+            textInput.textContent = PLACEHOLDER;
+        }
+        
+        const range = document.createRange();
+        const selection = window.getSelection();
+        const textLength = textInput.textContent.length;
+        
+        range.setStart(textInput.firstChild, textLength);
+        range.setEnd(textInput.firstChild, textLength);
         selection.removeAllRanges(); 
         selection.addRange(range); 
-        preview.focus(); 
+        textInput.focus(); 
     };
 
     const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
+        entries.forEach((e) => {
+            if (e.isIntersecting) {
                 setSelection();
-                observer.unobserve(preview);
             }
         });
     });
 
-    observer.observe(preview);
-};
+    observer.observe(textInput);
+}
+
+
+document.addEventListener('DOMContentLoaded', initFontPreview);

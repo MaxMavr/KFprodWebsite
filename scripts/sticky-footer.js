@@ -30,7 +30,7 @@ function handleScrollLogic() {
   const footerHeight = FOOTER.offsetHeight;
 
   const isVisible = scrollY >= SHOW_STICKY_FOOTER_ON_TOP && scrollY <= maxScrollY - footerHeight;
-  STICKY_FOOTER.classList.toggle("isvisible", isVisible);
+  STICKY_FOOTER.classList.toggle("is-visible", isVisible);
 }
 
 
