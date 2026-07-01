@@ -1,7 +1,7 @@
 @import url("logo-cube.css");
 
-header,
-.header-plug {
+.main-header,
+.main-header-plug {
   max-width: 100vw;
   height: 100vh;
   padding: 20px 0;
@@ -9,22 +9,22 @@ header,
   box-sizing: content-box;
 }
 
-header,
-.header-plug,
+.main-header,
+.main-header-plug,
 #scroll-arrow {
   transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
 }
 
 .logo-header,
-.header-container {
+.main-header-container {
   transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99); /* allow-discrete */
 }
 
-.header-container .hlink {
+.main-header-container .hlink {
   transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99) allow-discrete; /* allow-discrete */
 }
 
-header {
+.main-header {
   display: flex;
   align-items: center;
   position: fixed;
@@ -34,7 +34,7 @@ header {
   z-index: 30;
 }
 
-.header-container {
+.main-header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,7 +46,7 @@ header {
 
 .logo-header {
   display: flex;
-  aspect-ratio: calc(66.968 / 20);
+  aspect-ratio: 66.968 / 20;
   flex: 1 0 auto;
 }
 
@@ -54,7 +54,7 @@ header {
   height: 48px;
 }
 
-.narrow .header-container {
+.narrow .main-header-container {
   width: 80%;
 }
 
@@ -99,32 +99,32 @@ header {
   }
 }
 
-.header-container .hlink {
+.main-header-container .hlink {
   display: none;
 }
 
-.header-container .mail {
+.main-header-container .mail {
   display: none;
 }
 
-.narrow .header-container .hlink {
+.narrow .main-header-container .hlink {
   display: block;
   position: relative;
 }
 
-.narrow .header-container .mail {
+.narrow .main-header-container .mail {
   display: none;
 }
 
 @media (max-width: 800px) {
-  .header-container {
+  .main-header-container {
     width: 80%;
   }
 
-  .narrow .header-container .hlink {
+  .narrow .main-header-container .hlink {
     display: none;
   }
-  .narrow .header-container .mail {
+  .narrow .main-header-container .mail {
     display: flex;
   }
 }

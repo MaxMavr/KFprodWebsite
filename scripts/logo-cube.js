@@ -1,67 +1,126 @@
+const RAD_TO_DEG = 180;
+const PERSPECTIVE_MULTIPLIER = 2;
+const SENSITIVITY = 2.5;
+const CUBE_SIDES = ['left', 'right', 'top', 'bottom'];
+
+const SPRING_STIFFNESS = 0.08;
+const SPRING_DAMPING = 0.7;
+const EPSILON = 0.01;
+const velocity = { x: 0, y: 0 };
+
 const logo = document.querySelector('.logo-cube');
 const cube = document.querySelector('.cube');
 
-const transitionFast = 'all .2s cubic-bezier(0.35, 0.36, 0.58, 0.98)';
-const transitionSlow = 'all .5s cubic-bezier(0.75, 0.35, 0.4, 0.99)';
-const rad2deg = 180;
+const rotation = { x: 0, y: 0 };
+const targetRotation = { x: 0, y: 0 };
 
-let debounceTimeout;
+let animationId = null;
 
-const sides = ['left', 'right', 'top', 'bottom'];
 
-sides.forEach(side => {
-  const sideDiv = document.createElement('div');
-  sideDiv.classList.add('side', side);
-  cube.appendChild(sideDiv);
-});
-
-function updateCubeRotation(event) {
-  clearTimeout(debounceTimeout);
-  
-  debounceTimeout = setTimeout(() => {
-    const { clientX, clientY } = event;
-    const { clientWidth, clientHeight, offsetTop, offsetLeft } = logo;
-
-    const angleX = Math.atan((clientY - (clientHeight / 2 + offsetTop)) / (2.5 * clientHeight));
-    const angleY = Math.atan((clientX - (clientWidth / 2 + offsetLeft)) / (2.5 * clientHeight));
-
-    cube.style.transition = transitionFast;
-    cube.style.webkitTransition = transitionFast;
-    cube.style.mozTransition = transitionFast;
-    cube.style.msTransition = transitionFast;
-
-    const transformValue = `rotateX(${-rad2deg * angleX}deg) rotateY(${rad2deg * angleY}deg)`;
-    cube.style.transform = transformValue;
-    cube.style.WebkitTransform = transformValue;
-    cube.style.MozTransform = transformValue;
-  }, 16);
+function createCubeSides() {
+  CUBE_SIDES.forEach(side => {
+    const sideDiv = document.createElement('div');
+    sideDiv.classList.add('side', side);
+    cube.appendChild(sideDiv);
+  });
 }
 
-function resetCubeRotation() {
-  clearTimeout(debounceTimeout);
-  
-  cube.style.transition = transitionSlow;
-  cube.style.webkitTransition = transitionSlow;
-  cube.style.mozTransition = transitionSlow;
-  cube.style.msTransition = transitionSlow;
+function applyTransform() {
+  const transform = `rotateX(${rotation.x}deg) rotateY(${rotation.y}deg)`;
+  cube.style.transform = transform;
+}
 
-  const transformValue = 'rotateX(0deg) rotateY(0deg)';
-  cube.style.transform = transformValue;
-  cube.style.WebkitTransform = transformValue;
-  cube.style.MozTransform = transformValue;
+function resetRotation() {
+  targetRotation.x = 0;
+  targetRotation.y = 0;
 }
 
 function updateCubeParameters() {
-  const cubeOrigin = `${logo.clientHeight / 2}px ${logo.clientHeight / 2}px ${logo.clientHeight / -2}px`;
-  logo.style.perspective = `${2 * logo.clientHeight}px`;
-  logo.style.webkitPerspective = `${2 * logo.clientHeight}px`;
-  document.documentElement.style.setProperty('--cube-origin', cubeOrigin);
+  const height = logo.clientHeight;
+  const perspective = `${PERSPECTIVE_MULTIPLIER * height}px`;
+  
+  logo.style.perspective = perspective;
+  logo.style.webkitPerspective = perspective;
+  
+  const origin = `${height / 2}px ${height / 2}px ${height / -2}px`;
+  cube.style.setProperty('--cube-origin', origin);
 }
 
-updateCubeParameters();
+function calculateRotation(event) {
+  const { clientX, clientY } = event;
+  const { clientWidth, clientHeight, offsetTop, offsetLeft } = logo;
+  
+  const centerX = clientWidth / 2 + offsetLeft;
+  const centerY = clientHeight / 2 + offsetTop;
+  
+  const angleX = Math.atan((clientY - centerY) / (SENSITIVITY * clientHeight));
+  const angleY = Math.atan((clientX - centerX) / (SENSITIVITY * clientHeight));
 
-const resizeObserver = new ResizeObserver(updateCubeParameters);
-resizeObserver.observe(logo);
+  return {
+    x: -RAD_TO_DEG * angleX,
+    y: RAD_TO_DEG * angleY
+  };
+}
 
-cube.addEventListener("pointerleave", resetCubeRotation);
-cube.addEventListener("mousemove", updateCubeRotation);
+
+function animate() {
+  const ax = (targetRotation.x - rotation.x) * SPRING_STIFFNESS;
+  const ay = (targetRotation.y - rotation.y) * SPRING_STIFFNESS;
+  
+  velocity.x += ax;
+  velocity.y += ay;
+  
+  velocity.x *= SPRING_DAMPING;
+  velocity.y *= SPRING_DAMPING;
+  
+  rotation.x += velocity.x;
+  rotation.y += velocity.y;
+  
+  applyTransform();
+  
+  const dx = Math.abs(targetRotation.x - rotation.x);
+  const dy = Math.abs(targetRotation.y - rotation.y);
+  const vx = Math.abs(velocity.x);
+  const vy = Math.abs(velocity.y);
+  
+  if (dx < EPSILON && dy < EPSILON && vx < EPSILON && vy < EPSILON) {
+    rotation.x = targetRotation.x;
+    rotation.y = targetRotation.y;
+    velocity.x = 0;
+    velocity.y = 0;
+    applyTransform();
+    animationId = null;
+  } else {
+    animationId = requestAnimationFrame(animate);
+  }
+}
+
+function startAnimation() {
+  if (animationId === null) {
+    animationId = requestAnimationFrame(animate);
+  }
+}
+
+function createRotationHandler() {
+  return function(event) {
+    const newRotation = calculateRotation(event);
+    targetRotation.x = newRotation.x;
+    targetRotation.y = newRotation.y;
+    startAnimation();
+  };
+}
+
+function initLogoCube() {
+  createCubeSides();
+  updateCubeParameters();
+  
+  const handleRotation = createRotationHandler();
+  
+  const resizeObserver = new ResizeObserver(updateCubeParameters);
+  resizeObserver.observe(logo);
+  
+  cube.addEventListener('pointerleave', resetRotation);
+  cube.addEventListener('mousemove', handleRotation, { passive: true });
+}
+
+document.addEventListener('DOMContentLoaded', initLogoCube);

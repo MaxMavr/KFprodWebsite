@@ -1,12 +1,7 @@
-:root {
-  --cube-origin: 50vh 50vh -50vh; /* JS */
-}
-
 .logo-cube {
   height: 100%;
   aspect-ratio: 1;
   perspective: 100px; /* JS */
-  transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
 }
 
 .logo-text {
@@ -15,6 +10,7 @@
 }
 
 .cube {
+  --cube-origin: 50vh 50vh -50vh; /* JS */
   height: 100%;
   width: 100%;
   transform-style: preserve-3d;
