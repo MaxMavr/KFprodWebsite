@@ -4,7 +4,7 @@
 
         .s0,.s1,.s2,.s3,.s4{
         fill:none;
-        stroke:var(--txt-color);
+        stroke:var(--text-color);
         stroke-width:10;
         stroke-linecap:round;
         stroke-linejoin:round;

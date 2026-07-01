@@ -23,7 +23,7 @@ html {
 
 body {
   color: #231f20;
-  color: var(--txt-color);
+  color: var(--text-color);
   background-color: #fff;
   background-color: var(--bg-color);
   font-family: Noah, Arial, sans-serif;

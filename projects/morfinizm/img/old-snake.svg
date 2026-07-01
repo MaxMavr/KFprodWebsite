@@ -2,7 +2,7 @@
 
 <style type="text/css">
 	@import url("/styles/base-items/const.css");
-	.st0{fill:var(--txt-color);}
+	.st0{fill:var(--text-color);}
 </style>
 
 <path class="st0" d="M228.4,268.5c-26,0.9-31.7,24.8-22.7,48.1c10.8,28.2,28.4,63.2,73.6,50.1

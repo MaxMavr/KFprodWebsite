@@ -2,7 +2,7 @@
 
 <style type="text/css">
 	@import url("../../../styles/logos-draft.css");
-	.st0{fill:var(--txt-color);}
+	.st0{fill:var(--text-color);}
 	.st1{fill:#E4007D;}
 	.st2{fill:#FFEC00;}
 	.st3{fill:#009DE2;}

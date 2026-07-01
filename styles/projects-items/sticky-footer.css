@@ -25,7 +25,7 @@
 }
 
 .sticky-footer-link span {
-  color: var(--txt-color);
+  color: var(--text-color);
   user-select: none;
   white-space: nowrap;
   overflow: hidden;

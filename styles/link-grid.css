@@ -17,7 +17,7 @@
   align-items: flex-start;
   height: fit-content;
   transition: var(--transition-quick);
-  color: var(--txt-color);
+  color: var(--text-color);
 }
 
 .link-block:hover {

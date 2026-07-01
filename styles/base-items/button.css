@@ -20,7 +20,7 @@
   cursor: pointer;
 
   --shadow-button-color: var(--shadow-color);
-  color: var(--txt-color);
+  color: var(--text-color);
   background-color: var(--bg-accent-color);
 
   box-shadow: 0 0 0 0 var(--shadow-button-color);

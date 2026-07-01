@@ -41,7 +41,7 @@
   --bg-accent-invert-color: var(--black);
   --draw-color: var(--white-draw-color);
 
-  --txt-color: var(--black);
+  --text-color: var(--black);
 
   --border-color: var(--black-border-color);
   --shadow-color: var(--white-trans60);
@@ -97,7 +97,7 @@ svg {
     --bg-accent-invert-color: var(--white);
     --draw-color: var(--black-draw-color);
 
-    --txt-color: var(--white);
+    --text-color: var(--white);
 
     --border-color: var(--white-border-color);
     --shadow-color: var(--black-trans60);
