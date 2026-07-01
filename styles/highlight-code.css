@@ -8,7 +8,6 @@
     overflow-x: auto;
 }
 
-/* Полоса прокрутки */
 .code-block::-webkit-scrollbar {
   width: 10px;
 }

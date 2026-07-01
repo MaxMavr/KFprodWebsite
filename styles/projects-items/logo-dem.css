@@ -1,16 +1,11 @@
 .logo-demonstration {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   border-radius: 20px;
   overflow: hidden;
 }
 
 .logo-demonstration div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 40px;
   max-height: 100vh;
@@ -29,11 +24,7 @@
   position: absolute;
   left: 50%;
   bottom: 20px;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  -webkit-transition: all 0.3s cubic-bezier(0.75, 0.35, 0.4, 0.99);
-  -o-transition: all 0.3s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   transition: all 0.3s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   cursor: pointer;
   opacity: 0;
@@ -47,21 +38,15 @@
 }
 
 .logo-demonstration .big {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 100%;
   flex: 0 0 100%;
 }
 
 .logo-demonstration .small {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 50%;
   flex: 0 0 50%;
 }
 
 @media (max-width: 800px) {
   .logo-demonstration .small {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 100%;
     flex: 0 0 100%;
   }
 

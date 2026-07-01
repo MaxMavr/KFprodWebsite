@@ -1,7 +1,5 @@
 .project-header {
   margin-top: 250px;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
   align-items: flex-end;
   row-gap: 20px;
 }
@@ -18,10 +16,8 @@ body {
 }
 
 .nuqun-demonstration {
-  font-family: nuqun, Arial, sans-serif;
-  display: -ms-grid;
+  font-family: Nuqun, Arial, sans-serif;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   width: 100%;
   margin: 0 auto 120px;
@@ -32,34 +28,32 @@ body {
   height: 100%;
 }
 
-.preview {
+#font-preview {
   display: block;
-  font-family: nuqun, Arial, sans-serif;
+  font-family: Nuqun, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 150px;
   line-height: 70%;
 }
 
-.preview:focus {
+#font-preview:focus {
   outline: 0px solid transparent;
   border: none;
 }
 
 @media (max-width: 1200) {
   .nuqun-demonstration {
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
 @media (max-width: 800px) {
   .nuqun-demonstration {
-    -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .preview {
+  #font-preview {
     width: 100%;
     font-size: 120px;
   }

@@ -5,14 +5,11 @@
 .logo-cube {
   height: 100%;
   aspect-ratio: 1;
-  -webkit-perspective: 100px;
   perspective: 100px; /* JS */
-  -webkit-transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
-  -o-transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
 }
 
-.logo-descr {
+.logo-text {
   display: inline;
   max-height: 100%;
 }
@@ -20,10 +17,7 @@
 .cube {
   height: 100%;
   width: 100%;
-  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  -webkit-transform-origin: var(--cube-origin);
-  -ms-transform-origin: var(--cube-origin);
   transform-origin: var(--cube-origin);
 }
 
@@ -31,8 +25,6 @@
   position: absolute;
   height: inherit;
   width: inherit;
-  -webkit-transform-origin: var(--cube-origin);
-  -ms-transform-origin: var(--cube-origin);
   transform-origin: var(--cube-origin);
 }
 
@@ -44,27 +36,23 @@
 .side.top {
   background: url(/img/logo/cube/logo-top.svg) no-repeat center center /
     contain;
-  -webkit-transform: rotateX(90deg);
   transform: rotateX(90deg);
 }
 
 .side.bottom {
   background: url(/img/logo/cube/logo-bottom.svg) no-repeat center center /
     contain;
-  -webkit-transform: rotateX(-90deg);
   transform: rotateX(-90deg);
 }
 
 .side.right {
   background: url(/img/logo/cube/logo-right.svg) no-repeat center center /
     contain;
-  -webkit-transform: rotateY(90deg);
   transform: rotateY(90deg);
 }
 
 .side.left {
   background: url(/img/logo/cube/logo-left.svg) no-repeat center center /
     contain;
-  -webkit-transform: rotateY(-90deg);
   transform: rotateY(-90deg);
 }

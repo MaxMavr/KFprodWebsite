@@ -12,7 +12,7 @@
   justify-content: space-between;
 }
 
-#sticky-footer.isvisible {
+#sticky-footer.is-visible {
   opacity: 100%;
   pointer-events: all;
 }
@@ -33,7 +33,7 @@
   display: inline-block;
 }
 
-#sticky-footer.isvisible .sticky-footer-link:hover {
+#sticky-footer.is-visible .sticky-footer-link:hover {
   opacity: 100%;
 }
 

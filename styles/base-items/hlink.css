@@ -1,3 +1,7 @@
+a {
+  color: inherit;
+}
+
 .hlink,
 .hlink-with-icon {
   transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
@@ -26,8 +30,6 @@
   background: #5646ff;
   background: var(--link-color);
   left: 50%;
-  -webkit-transform: translate(-50%, -375%);
-  -ms-transform: translate(-50%, -375%);
   transform: translate(-50%, -375%);
 }
 

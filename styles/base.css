@@ -7,12 +7,11 @@
 @import url("base-items/toast.css");
 @import url("base-items/tag.css");
 @import url("base-items/columns.css");
-@import url("base-items/items.css");
-@import url("base-items/icons.css");
+@import url("base-items/item.css");
+@import url("base-items/icon.css");
 @import url("base-items/modifier.css");
 
 * {
-  -ms-touch-action: manipulation;
   touch-action: manipulation;
 }
 
@@ -33,12 +32,7 @@ body {
 }
 
 main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   gap: var(--gap-main);
   width: 80%;
@@ -88,9 +82,7 @@ p:not([class]) {
 
 .fun {
   opacity: 0;
-  -webkit-transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
-  -o-transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
-  transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
+  transition: var(--transition-quick);
 }
 
 :is(h1, h2, h3, p):hover .fun {
@@ -107,7 +99,6 @@ strong {
   }
 }
 
-/* Полоса прокрутки */
 body::-webkit-scrollbar {
   width: 10px;
 }
@@ -123,13 +114,3 @@ body::-webkit-scrollbar-thumb {
   background-color: var(--scrollbar-color);
   border-radius: 20px;
 }
-
-/* ::selection {
-  background: var(--link-color);
-  opacity: 10%;
-}
-
-::-moz-selection {
-  background: var(--link-color);
-  opacity: 10%;
-} */

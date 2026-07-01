@@ -1,21 +1,12 @@
 .font-demonstration-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 20px;
 }
 
 .font-demonstration {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 12px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
   flex-grow: 1;
   overflow: hidden;
   border-radius: 20px;
@@ -25,19 +16,10 @@
 }
 
 .font-demonstration .font-name {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 20px;
-  -moz-column-gap: 20px;
   column-gap: 20px;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
   align-items: baseline;
 }
 
@@ -48,34 +30,13 @@
   margin: 0;
   width: auto;
 
-  -webkit-mask: -webkit-gradient(linear, right black 70%, to(transparent));
   -webkit-mask: linear-gradient(to right black 70%, transparent 100%);
-  mask: -webkit-gradient(linear, right black 70%, to(transparent));
   mask: linear-gradient(to right black 70%, transparent 100%);
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
 
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    color-stop(70%, #f2f3f5),
-    to(transparent)
-  );
-
-  background: -o-linear-gradient(left, #f2f3f5 70%, transparent 100%);
-  background: linear-gradient(to right, #f2f3f5 70%, transparent 100%);
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    color-stop(70%, var(--txt-color)),
-    to(transparent)
-  );
-  background: -o-linear-gradient(left, var(--txt-color) 70%, transparent 100%);
-  background: linear-gradient(to right, var(--txt-color) 70%, transparent 100%);
+  background: linear-gradient(to right, var(--txt-color, #f2f3f5) 70%, transparent 100%);
   background-clip: text;
-  -webkit-background-clip: text;
   color: #00000000;
   color: transparent;
 }
@@ -86,9 +47,6 @@
 
 @media (max-width: 800px) {
   .font-demonstration-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
 
     width: 100vw;

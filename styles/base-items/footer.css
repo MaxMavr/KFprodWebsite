@@ -18,27 +18,17 @@ footer .hlink {
   opacity: 60%;
   height: 48px;
 
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 footer .hlink.minor::after {
-  -webkit-transform: translate(-50%, 460%);
-  -ms-transform: translate(-50%, 460%);
   transform: translate(-50%, 460%);
 }
 
 footer .copyright {
   opacity: 2.5%;
-  -webkit-transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
-  -o-transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
 }
 
@@ -50,8 +40,6 @@ footer .copyright:hover {
   position: relative;
   height: 48px;
   aspect-ratio: 3.35;
-  -webkit-transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
-  -o-transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   opacity: 60%;
 }

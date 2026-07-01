@@ -10,8 +10,6 @@
 }
 
 .mjl, .mnl, .d, .dl, .logo, .logo-draft {
-  -webkit-transition: all var(--animation-time) cubic-bezier(0.75, 0.35, 0.4, 0.99);
-  -o-transition: all var(--animation-time) cubic-bezier(0.75, 0.35, 0.4, 0.99);
   transition: all var(--animation-time) cubic-bezier(0.75, 0.35, 0.4, 0.99);
 }
 
@@ -38,8 +36,7 @@
 .dl {
   opacity: 0;
   stroke-dasharray: 12;
-  -webkit-animation: tm linear 30s infinite;
-          animation: tm linear 30s infinite;
+  animation: tm linear 30s infinite;
 }
 
 .d {
@@ -185,15 +182,6 @@
   .logo-draft {
     fill-opacity: 0.13;
     stroke-opacity: 0.5;
-  }
-}
-
-@-webkit-keyframes tm {
-  0% {
-    stroke-dashoffset: 0;
-  }
-  100% {
-    stroke-dashoffset: 1000;
   }
 }
 

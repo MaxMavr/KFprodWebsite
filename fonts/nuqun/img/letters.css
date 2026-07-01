@@ -78,15 +78,6 @@
   }
 }
 
-@-webkit-keyframes stroke-movement {
-  0% {
-    stroke-dashoffset: 0;
-  }
-  100% {
-    stroke-dashoffset: 1000;
-  }
-}
-
 @keyframes stroke-movement {
   0% {
     stroke-dashoffset: 0;

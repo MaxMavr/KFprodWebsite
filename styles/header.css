@@ -6,38 +6,26 @@ header,
   height: 100vh;
   padding: 20px 0;
 
-  -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
 
 header,
 .header-plug,
 #scroll-arrow {
-  -webkit-transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
-  -o-transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
 }
 
 .logo-header,
 .header-container {
-  -webkit-transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
-  -o-transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99);
   transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99); /* allow-discrete */
 }
 
 .header-container .hlink {
-  -webkit-transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99)
-    allow-discrete;
-  -o-transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99) allow-discrete;
   transition: all 0.5s cubic-bezier(0.75, 0.35, 0.4, 0.99) allow-discrete; /* allow-discrete */
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   position: fixed;
   inset: 0;
@@ -47,14 +35,8 @@ header {
 }
 
 .header-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   margin: 0 auto;
   width: 60%;
@@ -63,12 +45,8 @@ header {
 }
 
 .logo-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   aspect-ratio: calc(66.968 / 20);
-  -webkit-box-flex: 1;
-  -ms-flex: 1 0 auto;
   flex: 1 0 auto;
 }
 
@@ -91,66 +69,31 @@ header {
   left: 50%;
   bottom: 20px;
   height: 6vh;
-  -webkit-animation: happened 1.5s alternate infinite
-    cubic-bezier(0.6, 0, 0.4, 1);
   animation: happened 1.5s alternate infinite cubic-bezier(0.6, 0, 0.4, 1);
 }
 
 .narrow #scroll-arrow {
-  -webkit-animation: scroll-quit 1s forwards alternate
-    cubic-bezier(0.6, 0, 0.4, 1);
   animation: scroll-quit 1s forwards alternate cubic-bezier(0.6, 0, 0.4, 1);
-}
-
-@-webkit-keyframes scroll-quit {
-  0% {
-    -webkit-transform: translate(-50%, -125%);
-    transform: translate(-50%, -125%);
-    opacity: 80%;
-  }
-  100% {
-    -webkit-transform: translate(-50%, -125%);
-    transform: translate(-50%, -125%);
-    opacity: 0;
-    display: none;
-  }
 }
 
 @keyframes scroll-quit {
   0% {
-    -webkit-transform: translate(-50%, -125%);
     transform: translate(-50%, -125%);
     opacity: 80%;
   }
   100% {
-    -webkit-transform: translate(-50%, -125%);
     transform: translate(-50%, -125%);
     opacity: 0;
     display: none;
-  }
-}
-
-@-webkit-keyframes happened {
-  0% {
-    -webkit-transform: translate(-50%, -150%);
-    transform: translate(-50%, -150%);
-    opacity: 100%;
-  }
-  100% {
-    -webkit-transform: translate(-50%, -100%);
-    transform: translate(-50%, -100%);
-    opacity: 60%;
   }
 }
 
 @keyframes happened {
   0% {
-    -webkit-transform: translate(-50%, -150%);
     transform: translate(-50%, -150%);
     opacity: 100%;
   }
   100% {
-    -webkit-transform: translate(-50%, -100%);
     transform: translate(-50%, -100%);
     opacity: 60%;
   }
@@ -182,8 +125,6 @@ header {
     display: none;
   }
   .narrow .header-container .mail {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
 }

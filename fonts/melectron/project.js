@@ -1,5 +1,5 @@
 const connectionButton = document.querySelector(".connection-button");
-const preview = document.querySelector('.preview');
+const preview = document.getElementById('font-preview');
 
 connectionButton.onclick = () => {
     if (preview.classList.contains('no-connection')) {
