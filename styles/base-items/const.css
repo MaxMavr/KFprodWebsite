@@ -83,6 +83,11 @@
   /* Переходы */
   --transition-quick: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 1);
   --transition-smooth: all 0.3s cubic-bezier(0.6, 0.4, 0, 1);
+
+   /* Иконки */
+  --icon-size-small: 16px;
+  --icon-size-medium: 32px;
+  --icon-size-large: 48px;
 }
 
 svg {

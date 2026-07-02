@@ -1,0 +1,15 @@
+:root {
+    --black: #231f20;
+    --white: #f2f3f5;
+    --icon-color: var(--black);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --icon-color: var(--white);
+  }
+}
+
+* {
+  fill: var(--icon-color);
+}

@@ -7,42 +7,47 @@
 }
 
 .icon {
-  height: 16px;
-  width: 16px;
+  height: var(--icon-size-small);
+  width: var(--icon-size-small);
   aspect-ratio: 1;
   pointer-events: none;
   flex-shrink: 0;
 }
 
 .icon.small {
-  height: 16px;
-  width: 16px;
+  height: var(--icon-size-small);
+  width: var(--icon-size-small);
 }
 
 .icon.medium {
-  height: 32px;
-  width: 32px;
+  height: var(--icon-size-medium);
+  width: var(--icon-size-medium);
 }
 
 .icon.large {
-  height: 48px;
-  width: 48px;
+  height: var(--icon-size-large);
+  width: var(--icon-size-large);
 }
 
 .icon.small.with-rounding {
-  border-radius: 4px;
+  border-radius: calc(var(--icon-size-small) / 4);
 }
 
 .icon.medium.with-rounding {
-  border-radius: 8px;
+  border-radius: calc(var(--icon-size-medium) / 4);
 }
 
 .icon.large.with-rounding {
-  border-radius: 12px;
+  border-radius: calc(var(--icon-size-large) / 4);
 }
 
 .icon.circle { 
   border-radius: 50%; 
+}
+
+.icon.ellipse {
+  -webkit-mask-image: url(/img/masks/superellipse.svg);
+  mask-image: url(/img/masks/superellipse.svg);
 }
 
 .icon.in-text {
