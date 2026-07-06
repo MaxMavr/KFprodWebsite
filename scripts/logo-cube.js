@@ -3,6 +3,8 @@ const PERSPECTIVE_MULTIPLIER = 2;
 const SENSITIVITY = 2.5;
 const CUBE_SIDES = ['left', 'right', 'top', 'bottom'];
 
+const MAX_INTRO_ROTATION = 50;
+
 const SPRING_STIFFNESS = 0.08;
 const SPRING_DAMPING = 0.7;
 const EPSILON = 0.01;
@@ -110,6 +112,12 @@ function createRotationHandler() {
   };
 }
 
+function introAnimation() {
+  targetRotation.x = (Math.random() - 0.5) * MAX_INTRO_ROTATION;
+  targetRotation.y = (Math.random() - 0.5) * MAX_INTRO_ROTATION;
+  startAnimation();
+}
+
 function initLogoCube() {
   createCubeSides();
   updateCubeParameters();
@@ -121,6 +129,8 @@ function initLogoCube() {
   
   cube.addEventListener('pointerleave', resetRotation);
   cube.addEventListener('mousemove', handleRotation, { passive: true });
+
+  introAnimation();
 }
 
 document.addEventListener('DOMContentLoaded', initLogoCube);
