@@ -32,6 +32,7 @@
 }
 
 .between-container {
+  row-gap: var(--gap-element);
   display: flex;
   justify-content: space-between;
   align-items: center;

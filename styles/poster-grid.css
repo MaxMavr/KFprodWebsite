@@ -17,6 +17,10 @@
   grid-template-columns: 1fr;
 }
 
+.poster-container.with-four-columns {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 .poster-container.s1x1 .poster :is(img, video) {
   aspect-ratio: 1;
 }
@@ -42,6 +46,10 @@
 }
 
 @media (max-width: 800px) {
+  .poster-container.with-four-columns {
+    grid-template-columns: 1fr 1fr;
+  }
+  
   .poster-container {
     grid-template-columns: 1fr;
   }

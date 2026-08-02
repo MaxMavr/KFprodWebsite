@@ -1,3 +1,7 @@
+:root {
+  --overlay-bg-color: rgba(40, 20, 14, 0.3);
+}
+
 .project-header {
   margin-top: 220px;
   align-items: flex-end;
