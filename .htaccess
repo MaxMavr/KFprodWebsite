@@ -1,4 +1,4 @@
-# 05.07.2026 05:46
+# 04.08.2026 02:24
 
 # Включаем необходимые модули
 Options +Includes -Indexes
@@ -77,7 +77,7 @@ RewriteRule ^(contacts|contact|c|socials|s|vk|tg)/?$ /social/ [R=301,L,NC]
 
 
 # Articles
-RewriteRule ^(artemy|community-circle|crystallization|nicotine|quiet-dan)/?$ /articles/$1/ [R=301,L,NC]
+RewriteRule ^(artemy|b-612|community-circle|crystallization|nicotine|quiet-dan)/?$ /articles/$1/ [R=301,L,NC]
 
 
 # Fonts
