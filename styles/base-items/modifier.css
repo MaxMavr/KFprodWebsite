@@ -19,7 +19,7 @@
   text-align: center;
 }
 
-.center-vertical {
+.centered {
   margin: auto 0;
 }
 
@@ -63,7 +63,7 @@
 }
 
 .noise {
-  background-image: url(/img/textures/noise.svg);
+  background-image: url(/img/assets/textures/noise.svg);
   background-repeat: repeat;
   background-size: 256px 256px;
 }

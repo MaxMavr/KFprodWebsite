@@ -13,9 +13,11 @@
     <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
     <link rel="stylesheet" type="text/css" href="/styles/reset.css" />
     <link rel="stylesheet" type="text/css" href="/styles/base.css" />
-    <link rel="stylesheet" type="text/css" href="/styles/main-header.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/main-items/header.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/main-items/main.css" />
     <link rel="stylesheet" type="text/css" href="/styles/projects-grid.css" />
-    
+    <link rel="stylesheet" type="text/css" href="/styles/scatter-item.css" />
+
     <!--#include virtual="/plug-in-elements/yandex-metrika-counter.html" -->
   </head>
 
@@ -54,7 +56,7 @@
     <div class="main-header-plug"></div>
 
     <main>
-      <section class="paragraph">
+      <section style="position: relative;" class="paragraph">
         <h1 class="headerless" id="p">Портфолио</h1>
         
         <div>
@@ -66,6 +68,11 @@
             Это <a href="/service-pages/all-pages/">бета</a> версия сайта
             <!--. Для того чтобы посмотреть все страницы <a href="service-pages/all-pages/" class="hlink">тыкайте сюда</a> -->
           </p>
+        </div>
+
+        <div id="without-ai" class="scatter-item center">
+          <p class="minor">Сделано Максимом,<br/>
+            без&nbsp;использования ИИ</p>
         </div>
       </section>
 
@@ -352,5 +359,6 @@
     <script src="/scripts/hlink.js"></script>
     <script src="/scripts/toast.js"></script>
     <script src="/scripts/copy.js"></script>
+    <script src="/scripts/parallax.js"></script>
   </body>
 </html>

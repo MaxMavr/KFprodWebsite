@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+	style="fill:none;stroke:#f2f3f5;stroke-width:2.3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:96;stroke-dashoffset:96;">
+	<style type="text/css">
+		.a {animation: sm .7s cubic-bezier(0.75, 0.35, 0.4, 0.99) .5s forwards;}
+		.b {animation: sm .8s cubic-bezier(0.75, 0.35, 0.4, 0.99) forwards;}
+		@keyframes sm {0%{stroke-dasharray:96;stroke-dashoffset:96;}100%{stroke-dashoffset: 0;}}
+	</style>
+	<g class="b">
+		<line x1="1" y1="1" x2="23" y2="23"/>
+	</g>
+	<g class="a">
+		<polyline points="14,14 12,22 10,14 2,12 10,10 "/>
+		<polyline points="10.8,6.8 12,2 14,10 22,12 17.2,13.2 "/>
+	</g>
+</svg>

@@ -1,0 +1,50 @@
+#without-ai {
+  position: absolute;
+  transform: rotate(-11deg);
+  bottom: -80px;
+  right: 0%;
+
+  height: 180px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: -1;
+}
+
+#without-ai p {
+  opacity: 100%;
+}
+
+#without-ai::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  
+  background: var(--link-color);
+  opacity: 40%;
+  
+  -webkit-mask-image: url('/img/assets/shapes/star-100.svg');
+  mask-image: url('/img/assets/shapes/star-100.svg');
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+}
+
+@media (max-width: 1200px) {
+  #without-ai {
+    bottom: -120px;
+  }
+}
+
+/* @media (max-width: 800px) {
+  #without-ai {
+    bottom: 37%;
+    right: 8%;
+  }
+} */

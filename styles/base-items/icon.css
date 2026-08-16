@@ -46,8 +46,8 @@
 }
 
 .icon.ellipse {
-  -webkit-mask-image: url(/img/masks/superellipse.svg);
-  mask-image: url(/img/masks/superellipse.svg);
+  -webkit-mask-image: url(/img/assets/shapes/superellipse.svg);
+  mask-image: url(/img/assets/shapes/superellipse.svg);
 }
 
 .icon.in-text {
