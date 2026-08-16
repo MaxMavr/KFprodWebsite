@@ -58,6 +58,10 @@ a {
   transform: translate(10%, -10%);
 }
 
+.hlink-with-icon:hover .icon-file {
+  transform: translateY(-20%);
+}
+
 .hlink-with-icon:hover .icon-rotate-arrow {
   transform: rotate(45deg);
 }
