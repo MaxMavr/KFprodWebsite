@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+<style>*{fill:#300;}rect{fill:#FF9A00;}@media(prefers-color-scheme:dark){*{fill:#FF9A00;}rect{fill:#300;}}</style>
+<polygon points="14 2 14 8 20 8 14 2"/>
+<path d="M12,8V2h-6c-1.1,0-2,.9-2,2v16c0,1.1.9,2,2,2h12c1.1,0,2-.9,2-2v-10h-6c-1.1,0-2-.9-2-2Z"/>
+<rect x="3.5" y="14" width="17" height="4"/>
+</svg>

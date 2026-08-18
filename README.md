@@ -45,6 +45,10 @@
     ```svg
     <style>@import url("/styles/base-items/icon-color.css");</style>
     ```
+    Для иконок из обводки:
+    ```svg
+    <style>@import url("/styles/base-items/icon-stroke-color.css");</style>
+    ```
 **Шаблон**: `./TEST/icons/icon-template.ai`
 
 

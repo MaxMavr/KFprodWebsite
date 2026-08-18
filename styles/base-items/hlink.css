@@ -54,14 +54,38 @@ a {
   transition: all 0.2s cubic-bezier(0.75, 0.35, 0.4, 0.99);
 }
 
-.hlink-with-icon:hover .icon-arrow {
+.hlink-with-icon:hover .with-up-right-animation {
   transform: translate(10%, -10%);
 }
 
-.hlink-with-icon:hover .icon-file {
+.hlink-with-icon:hover .with-up-left-animation {
+  transform: translate(-10%, -10%);
+}
+
+.hlink-with-icon:hover .with-down-right-animation {
+  transform: translate(10%, 10%);
+}
+
+.hlink-with-icon:hover .with-down-left-animation {
+  transform: translate(-10%, 10%);
+}
+
+.hlink-with-icon:hover .with-right-animation {
+  transform: translateX(20%);
+}
+
+.hlink-with-icon:hover .with-left-animation {
+  transform: translateX(-20%);
+}
+
+.hlink-with-icon:hover .with-up-animation {
   transform: translateY(-20%);
 }
 
-.hlink-with-icon:hover .icon-rotate-arrow {
+.hlink-with-icon:hover .with-down-animation {
+  transform: translateY(20%);
+}
+
+.hlink-with-icon:hover .with-rotate45-animation {
   transform: rotate(45deg);
 }

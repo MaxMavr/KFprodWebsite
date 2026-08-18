@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+<style>@import url("/styles/base-items/icon-color.css");</style>
+<polygon points="14 2 14 8 20 8 14 2"/>
+<path d="M12,8V2h-6c-1.1,0-2,.9-2,2v16c0,1.1.9,2,2,2h12c1.1,0,2-.9,2-2v-10h-6c-1.1,0-2-.9-2-2Z"/>
+</svg>
