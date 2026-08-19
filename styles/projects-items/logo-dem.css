@@ -5,22 +5,23 @@
   overflow: hidden;
 }
 
-.logo-demonstration div {
+.logo-demonstration > .big,
+.logo-demonstration > .small {
   display: flex;
   padding: 40px;
   max-height: 100vh;
   position: relative;
 }
 
-.logo-demonstration div object,
-.logo-demonstration div svg {
+.logo-demonstration > .big > object,
+.logo-demonstration > .big > svg,
+.logo-demonstration > .small > object,
+.logo-demonstration > .small > svg {
   width: 100%;
   height: 100%;
 }
 
-.logo-demonstration div > a,
-.logo-demonstration div p {
-  display: block;
+.logo-demonstration-description {
   position: absolute;
   left: 50%;
   bottom: 20px;
@@ -32,25 +33,26 @@
   line-height: 70%;
 }
 
-.logo-demonstration div:hover > a,
-.logo-demonstration div:hover p {
+.logo-demonstration > .big:hover .logo-demonstration-description,
+.logo-demonstration > .small:hover .logo-demonstration-description {
   opacity: 1;
 }
 
-.logo-demonstration .big {
+.logo-demonstration > .big {
   flex: 0 0 100%;
 }
 
-.logo-demonstration .small {
+.logo-demonstration > .small {
   flex: 0 0 50%;
 }
 
 @media (max-width: 800px) {
-  .logo-demonstration .small {
+  .logo-demonstration > .small {
     flex: 0 0 100%;
   }
 
-  .logo-demonstration div {
+  .logo-demonstration > .big,
+  .logo-demonstration > .small {
     padding: 10px;
   }
 

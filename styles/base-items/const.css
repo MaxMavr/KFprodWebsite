@@ -42,6 +42,7 @@
   --draw-color: var(--white-draw-color);
 
   --text-color: var(--black);
+  --text-invert-color: var(--white);
 
   --border-color: var(--black-border-color);
   --shadow-color: var(--white-trans60);
@@ -103,6 +104,7 @@ svg {
     --draw-color: var(--black-draw-color);
 
     --text-color: var(--white);
+    --text-invert-color: var(--black);
 
     --border-color: var(--white-border-color);
     --shadow-color: var(--black-trans60);

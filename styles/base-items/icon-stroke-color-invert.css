@@ -1,0 +1,15 @@
+:root {
+    --black: #231f20;
+    --white: #f2f3f5;
+    --icon-color: var(--white);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --icon-color: var(--black);
+  }
+}
+
+* {
+  stroke: var(--icon-color);
+}

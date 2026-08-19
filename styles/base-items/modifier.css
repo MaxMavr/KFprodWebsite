@@ -34,6 +34,10 @@
   color: var(--text-color);
 }
 
+.text-invert-color {
+  color: var(--text-invert-color);
+}
+
 .white {
   color: var(--white);
 }
